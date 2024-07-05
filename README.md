@@ -50,17 +50,15 @@
     $ git submodule up
     ```
 
-  - 本地得到 testcases 文件夹之后，在`testcases/x86_64_dora`文件夹下将 https://github.com/Starry-OS/Starry/releases/download/dora/dora-musl.tar.gz 下载并且解压在这个文件夹下
+  - 本地得到 testcases 文件夹之后，在`testcases/x86_64_dora`文件夹下创建 `x86_64_dora` 文件夹，将 https://github.com/Starry-OS/Starry/releases/download/dora/x86_64_dora.tar.gz 下载并且解压在这个文件夹下
 
   - 运行如下指令
 
     ```sh
     $ ./build_img.sh -a x86_64 -file x86_64_dora 
     $ make A=apps/monolithic_userboot LOG=off FEATURES=img ACCEL=n run
-    $ ./dora-x64-musl -h
+    $ ./dora -h
     ```
-
-  - TODO：**Starry 暂时不能支持太大应用加入到 ramdisk 中，这里在下载测例之后，可以把 rust-dataflow 开头的三个大文件删除**，仅运行 dora 基础指令。近期会支持大文件加入 ramdisk。
 
 ## 相关文件
 
