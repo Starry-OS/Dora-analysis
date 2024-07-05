@@ -56,8 +56,9 @@
 
     ```sh
     $ ./build_img.sh -a x86_64 -file x86_64_dora 
-    $ make A=apps/monolithic_userboot LOG=off FEATURES=img ACCEL=n run
+    $ make A=apps/monolithic_userboot LOG=off FEATURES=img,sched_rr ACCEL=n run
     $ ./dora -h
+    $ ./dora up
     ```
 
 ## 相关文件
