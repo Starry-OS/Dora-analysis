@@ -1,0 +1,194 @@
+109164 read(11,  <unfinished ...>
+109163 futex(0x7b23dc4005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109162 futex(0x7b23dc8005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109161 futex(0x7b23dcc005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109160 futex(0x7b23dd0005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109159 futex(0x7b23dd4005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109158 futex(0x7b23dd8005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109157 futex(0x7b23ddc005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109156 futex(0x7b23de0005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109155 futex(0x7b23de4005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109154 futex(0x7b23de8005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109153 futex(0x7b23dec005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109152 futex(0x7b23df0005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109151 futex(0x7b23df4005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109150 futex(0x7b23df8005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109149 futex(0x7b23dfc005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109148 epoll_wait(4, [], 1024, 1020)    = 0
+109148 epoll_wait(4, [], 1024, 49)      = 0
+109148 futex(0x7b23e04b5a40, FUTEX_WAKE_PRIVATE, 1) = 1
+109147 <... futex resumed>)             = 0
+109148 epoll_wait(4,  <unfinished ...>
+109147 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+109147 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+109147 write(5, "\1\0\0\0\0\0\0\0", 8)  = 8
+109148 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1) = 1
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109148 epoll_wait(4, [], 1024, 205)     = 0
+109148 epoll_wait(4, [], 1024, 2751)    = 0
+109148 epoll_wait(4, [], 1024, 39)      = 0
+109148 futex(0x7b23e04b5a40, FUTEX_WAKE_PRIVATE, 1) = 1
+109147 <... futex resumed>)             = 0
+109148 epoll_wait(4,  <unfinished ...>
+109147 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+109147 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+109147 write(5, "\1\0\0\0\0\0\0\0", 8)  = 8
+109148 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1) = 1
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109148 epoll_wait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=1004881536, u64=101680060647040}}], 1024, 1301) = 1
+109148 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+109148 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
+109148 futex(0x7b23e04b5a40, FUTEX_WAKE_PRIVATE, 1) = 1
+109147 <... futex resumed>)             = 0
+109148 recvfrom(16, 0x5c7a3be549b8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109148 epoll_wait(4, [{events=EPOLLOUT, data={u32=1004881536, u64=101680060647040}}], 1024, 1246) = 1
+109148 epoll_wait(4, [{events=EPOLLIN, data={u32=2080378240, u64=135392334450048}}], 1024, 1246) = 1
+109148 accept4(13, {sa_family=AF_INET, sin_port=htons(50724), sin_addr=inet_addr("127.0.0.1")}, [128 => 16], SOCK_CLOEXEC|SOCK_NONBLOCK) = 14
+109148 epoll_ctl(6, EPOLL_CTL_ADD, 14, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=3623883264, u64=135393877955072}}) = 0
+109148 accept4(13, 0x7b23dfffc080, [128], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+109148 epoll_wait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3623883264, u64=135393877955072}}], 1024, 968) = 1
+109148 recvfrom(14, "\334\3\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+109148 recvfrom(14, "{\"Start\":{\"dataflow\":{\"communica"..., 988, 0, NULL, NULL) = 988
+109148 futex(0x7b23e04b5a40, FUTEX_WAKE_PRIVATE, 1) = 1
+109147 <... futex resumed>)             = 0
+109148 epoll_wait(4,  <unfinished ...>
+109147 readlink("/home", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora/target", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora/target/debug", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora/target/debug/rust-dataflow-example-node", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora/target", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora/target/debug", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora/target/debug/rust-dataflow-example-status-node", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora/target", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora/target/debug", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 readlink("/home/yoimiya/OS/dora/target/debug/rust-dataflow-example-sink", 0x7ffe4fbee8e0, 1023) = -1 EINVAL (Invalid argument)
+109147 getrandom("\x70\x0a\xf6\x71\x06\x60\xd0\x4b\x0b\xd9\x23\xe7\x27\xc0\xdb\xe8", 16, 0) = 16
+109147 sendto(15, "A\7\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+109147 sendto(15, "{\"inner\":{\"Spawn\":{\"dataflow_id\""..., 1857, MSG_NOSIGNAL, NULL, 0) = 1857
+109147 recvfrom(15, 0x7ffe4fc05ab0, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109148 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1004879872, u64=101680060645376}}], 1024, 968) = 1
+109148 futex(0x7b23e04b5a40, FUTEX_WAKE_PRIVATE, 1) = 1
+109147 <... futex resumed>)             = 0
+109148 epoll_wait(4,  <unfinished ...>
+109147 recvfrom(15,  <unfinished ...>
+109148 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1004879872, u64=101680060645376}}], 1024, 961) = 1
+109147 <... recvfrom resumed>"\33\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+109148 epoll_wait(4,  <unfinished ...>
+109147 recvfrom(15, "{\"SpawnResult\":{\"Ok\":null}}", 27, 0, NULL, NULL) = 27
+109147 write(3, "2024-07-05T04:01:05.449535Z  INF"..., 2033) = 2033
+109147 write(5, "\1\0\0\0\0\0\0\0", 8)  = 8
+109148 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 961) = 1
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109148 futex(0x7b23dcc005c0, FUTEX_WAKE_PRIVATE, 1) = 1
+109161 <... futex resumed>)             = 0
+109148 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+109161 epoll_wait(4,  <unfinished ...>
+109148 <... sendto resumed>)            = 8
+109148 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0) = 67
+109148 recvfrom(14, 0x7b23d80014a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+109148 futex(0x7b23e00005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109161 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=2080378240, u64=135392334450048}}], 1024, 961) = 1
+109161 accept4(13, {sa_family=AF_INET, sin_port=htons(50740), sin_addr=inet_addr("127.0.0.1")}, [128 => 16], SOCK_CLOEXEC|SOCK_NONBLOCK) = 17
+109161 epoll_ctl(6, EPOLL_CTL_ADD, 17, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=3623884928, u64=135393877956736}}) = 0
+109161 accept4(13, 0x7b23dcbfc080, [128], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+109161 epoll_wait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3623884928, u64=135393877956736}}], 1024, 960) = 1
+109161 recvfrom(17, "V\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+109161 recvfrom(17, "{\"LogSubscribe\":{\"dataflow_id\":\""..., 86, 0, NULL, NULL) = 86
+109161 futex(0x7b23e04b5a40, FUTEX_WAKE_PRIVATE, 1) = 1
+109147 <... futex resumed>)             = 0
+109161 epoll_wait(4,  <unfinished ...>
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109161 <... epoll_wait resumed>[], 1024, 960) = 0
+109161 epoll_wait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3623883264, u64=135393877955072}}], 1024, 1663) = 1
+109161 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+109161 recvfrom(14, 0x7b23880041d0, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+109161 epoll_wait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=1004881536, u64=101680060647040}}], 1024, 1624) = 1
+109161 recvfrom(16, "G\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+109161 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 327, 0, NULL, NULL) = 327
+109161 futex(0x7b23e04b5a40, FUTEX_WAKE_PRIVATE, 1) = 1
+109147 <... futex resumed>)             = 0
+109161 recvfrom(16, 0x5c7a3be549b8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+109147 sendto(17, "\273\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+109161 epoll_wait(4, [{events=EPOLLOUT, data={u32=1004881536, u64=101680060647040}}], 1024, 1621) = 1
+109147 <... sendto resumed>)            = 8
+109161 epoll_wait(4,  <unfinished ...>
+109147 sendto(17, "{\"dataflow_id\":\"0190810d-85a4-78"..., 187, MSG_NOSIGNAL, NULL, 0) = 187
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109161 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1004881536, u64=101680060647040}}], 1024, 1621) = 1
+109161 recvfrom(16, "N\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+109161 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 334, 0, NULL, NULL) = 334
+109161 futex(0x7b23e04b5a40, FUTEX_WAKE_PRIVATE, 1) = 1
+109147 <... futex resumed>)             = 0
+109161 recvfrom(16, 0x5c7a3be549b8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+109147 sendto(17, "\302\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+109161 epoll_wait(4, [{events=EPOLLOUT, data={u32=1004881536, u64=101680060647040}}], 1024, 1615) = 1
+109147 <... sendto resumed>)            = 8
+109147 sendto(17, "{\"dataflow_id\":\"0190810d-85a4-78"..., 194, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+109161 epoll_wait(4,  <unfinished ...>
+109147 <... sendto resumed>)            = 194
+109161 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1004881536, u64=101680060647040}}], 1024, 1615) = 1
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109161 recvfrom(16, "G\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+109161 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 327, 0, NULL, NULL) = 327
+109161 futex(0x7b23e04b5a40, FUTEX_WAKE_PRIVATE, 1) = 1
+109147 <... futex resumed>)             = 0
+109161 recvfrom(16, "\220\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+109161 recvfrom(16,  <unfinished ...>
+109147 sendto(17, "\273\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+109161 <... recvfrom resumed>"{\"inner\":{\"Event\":{\"machine_id\":"..., 400, 0, NULL, NULL) = 400
+109147 <... sendto resumed>)            = 8
+109147 sendto(17, "{\"dataflow_id\":\"0190810d-85a4-78"..., 187, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+109161 recvfrom(16,  <unfinished ...>
+109147 <... sendto resumed>)            = 187
+109161 <... recvfrom resumed>0x5c7a3be549b8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+109161 epoll_wait(4, [{events=EPOLLOUT, data={u32=1004881536, u64=101680060647040}}], 1024, 1615) = 1
+109161 epoll_wait(4,  <unfinished ...>
+109147 epoll_ctl(6, EPOLL_CTL_DEL, 17, NULL) = 0
+109147 close(17)                        = 0
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109161 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=3623883264, u64=135393877955072}}], 1024, 1615) = 1
+109161 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+109161 futex(0x7b23e04b5a40, FUTEX_WAKE_PRIVATE, 1) = 1
+109147 <... futex resumed>)             = 0
+109161 epoll_wait(4,  <unfinished ...>
+109147 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+109161 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 1581) = 1
+109147 <... write resumed>)             = 8
+109161 futex(0x7b23e00005c0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109161 <... futex resumed>)             = 1
+109148 <... futex resumed>)             = 0
+109148 epoll_wait(4,  <unfinished ...>
+109161 sendto(14, "2\1\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+109161 sendto(14, "{\"DataflowStopped\":{\"uuid\":\"0190"..., 306, MSG_NOSIGNAL, NULL, 0) = 306
+109161 recvfrom(14, 0x7b23d80014a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+109161 futex(0x7b23dcc005c0, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109148 <... epoll_wait resumed>[{events=EPOLLIN|EPOLLOUT|EPOLLRDHUP, data={u32=3623883264, u64=135393877955072}}], 1024, 1581) = 1
+109148 recvfrom(14, "", 8, 0, NULL, NULL) = 0
+109148 epoll_ctl(6, EPOLL_CTL_DEL, 14, NULL) = 0
+109148 close(14)                        = 0
+109148 epoll_wait(4, [], 1024, 1580)    = 0
+109148 epoll_wait(4, [], 1024, 33)      = 0
+109148 futex(0x7b23e04b5a40, FUTEX_WAKE_PRIVATE, 1) = 1
+109147 <... futex resumed>)             = 0
+109148 epoll_wait(4,  <unfinished ...>
+109147 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+109147 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+109147 write(5, "\1\0\0\0\0\0\0\0", 8)  = 8
+109148 <... epoll_wait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1) = 1
+109147 futex(0x7b23e04b5a40, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+109148 epoll_wait(4,  <detached ...>
