@@ -6,6 +6,7 @@
 - Starry 代码：https://github.com/Starry-OS/Starry/
 - Dora 代码：https://github.com/dora-rs/dora
 - Dora 以 musl-libc 编译的 x86_64 执行版本：https://github.com/Starry-OS/Starry/releases/tag/dora
+- Dora on Starry 项目地址：https://github.com/orgs/Starry-OS/projects/1/views/4
 
 ## 运行流程说明
 
