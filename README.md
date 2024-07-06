@@ -32,14 +32,18 @@
   $ cargo build -p dora-cli
   $ ./target/release/dora -h
   
-  # 运行 Dora-example
-  $ cargo build --example rust-dataflow
-  $ cargo build -p rust-dataflow-example-node
-  $ cargo build -p rust-dataflow-example-status-node
-  $ cargo build -p rust-dataflow-example-sink
-  $ cd examples/rust-dataflow
-  $ ../../target/debug/dora start dataflow.yml
+  # 运行 Dora-benchmark
+  $ cd {workspace} # 这里的 workspace 是自选的工作目录
+  $ git clone https://github.com/dora-rs/dora-benchmark.git
+  $ cd dora-benchmark
+  $ cd dora-rs/rs-latency
+  $ cargo build -p benchmark-example-node --release
+  $ cargo build -p benchmark-example-sink --release
+  $ cp {dora-pwd} ./ # 将第一步编译得到的 dora 的可执行文件放在 rs-latency 文件夹下
+  $ ./dora up
+  $ ./dora start dataflow.yml
   ```
+  
 
 - 如何将 dora 放到 Starry 上运行
 
@@ -65,26 +69,28 @@
 
 - `Dora up` 指令在 linux 上运行得到的`starce` 结果：[up-log](./log/dora-up.txt)
 
-- `Dora rust-dataflow example`跟踪指令
+- `Dora-benchmark-rs-latency`跟踪指令
 
   - 生成方式：
 
     ```sh
-    $  ./target/release/dora up
+    # 在 rs-latency 目录下
+    $  ./dora up
     # 查看 dora daemon 所在进程
     $ ps -a
-    # 假设 daemon 所在进程为 pid
-    $ strace -p {pid} -o daemon.txt -v -f -F
-    
+    # 假设 daemon 所在进程为 daemon-pid
+    $ strace -p {daemon-pid} -o daemon.txt -v -f -F
     # 新开一个进程窗口
-    $ cd examples/rust-dataflow
+    # 假设 coordinator 所在进程为 coordinator-pid
+    $ strace -p {coordinator-pid} -o daemon.txt -v -f -F
+    # 新开一个进程窗口
     $ strace -v -f -F -o ./cli.txt ./dora start ./dataflow.yml --attach
     ```
 
   - 原理描述：dora start 会启动一个 CLI，读取 yml 内容并且向 coordinator 发送，coordinator 会转发给 daemon，由 daemon 去真正运行 node 对应的可执行文件（规定在 dataflow.yml）中。因此我们需要同时检测 daemon 和 CLI 的系统调用内容，结果分别存储在`daemon.txt` 和 `cli.txt` 下
 
   - 结果：
-
+  
     - daemon 分析结果：[daemon](./log/daemon.txt)
     - cli 分析结果：[cli](./log/cli.txt)
     - coordinator 分析结果：[coordinator](./log/coordinator.txt)
@@ -111,7 +117,7 @@
 
    1. `EPOLLRDHUP`：用于监视 socket 文件描述符的关闭事件。具体来说，当对方关闭连接（半关闭）或关闭一半的读操作时，会触发 `EPOLLRDHUP` 事件。
       在实际应用中，`EPOLLRDHUP` 主要用于检测对端关闭连接的情况，这在长连接（如 HTTP 长连接或 WebSocket 连接）中尤为重要。使用 `EPOLLRDHUP` 可以有效地检测到对端关闭连接，避免资源浪费或处理无效连接。
-	  如果不好实现，可以先考虑绕过。
+	    如果不好实现，可以先考虑绕过。
 
    2. `EPOLLET`：触发方式改为边缘触发。在这种模式下，当文件描述符的状态发生变化时，只会通知一次，直到下一次状态变化。如果实现较为复杂可以考虑绕过
 

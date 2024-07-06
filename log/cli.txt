@@ -1,209 +1,240 @@
-223802 execve("./dora", ["./dora", "start", "./dataflow.yml", "--attach"], ["LC_TELEPHONE=en_US.UTF-8", "GDMSESSION=ubuntu", "DESKTOP_SESSION=ubuntu", "PWD=/home/yoimiya/OS/dora/target"..., "all_proxy=socks://127.0.0.1:7890"..., "LOGNAME=yoimiya", "HTTPS_PROXY=http://127.0.0.1:789"..., "GNOME_DESKTOP_SESSION_ID=this-is"..., "LC_MEASUREMENT=en_US.UTF-8", "XDG_SESSION_TYPE=x11", "SYSTEMD_EXEC_PID=3345", "PATH=/home/yoimiya/.cargo/bin:/h"..., "HOME=/home/yoimiya", "USERNAME=yoimiya", "QT_IM_MODULE=fcitx", "USER=yoimiya", "DISPLAY=:1", "ALL_PROXY=socks://127.0.0.1:7890"..., "SDL_IM_MODULE=fcitx", "LANG=en_US.UTF-8", "CLUTTER_IM_MODULE=fcitx", "XAUTHORITY=/run/user/1000/gdm/Xa"..., "LC_PAPER=en_US.UTF-8", "LC_NAME=en_US.UTF-8", "LANGUAGE=en", "SESSION_MANAGER=local/Firefly:@/"..., "IM_CONFIG_PHASE=1", "XDG_RUNTIME_DIR=/run/user/1000", "https_proxy=http://127.0.0.1:789"..., "HTTP_PROXY=http://127.0.0.1:7890"..., "http_proxy=http://127.0.0.1:7890"..., "XDG_SESSION_DESKTOP=ubuntu", "VTE_VERSION=7600", "XDG_CURRENT_DESKTOP=ubuntu:GNOME", "XDG_DATA_DIRS=/usr/share/ubuntu:"..., "GNOME_TERMINAL_SERVICE=:1.141", "QTWEBENGINE_DICTIONARIES_PATH=/u"..., "XDG_CONFIG_DIRS=/etc/xdg/xdg-ubu"..., "LC_ADDRESS=en_US.UTF-8", "_=/usr/bin/strace", "GPG_AGENT_INFO=/run/user/1000/gn"..., "SHELL=/usr/bin/zsh", "GTK_IM_MODULE=fcitx", "XDG_SESSION_CLASS=user", "MEMORY_PRESSURE_WRITE=c29tZSAyMD"..., "XMODIFIERS=@im=fcitx", "GTK_MODULES=gail:atk-bridge", "PAPERSIZE=letter", "LC_IDENTIFICATION=en_US.UTF-8", "NO_PROXY=localhost,127.0.0.0/8,:"..., "no_proxy=localhost,127.0.0.0/8,:"..., "GNOME_KEYRING_CONTROL=/run/user/"..., "DBUS_SESSION_BUS_ADDRESS=unix:pa"..., "GNOME_TERMINAL_SCREEN=/org/gnome"..., "DEBUGINFOD_URLS=https://debuginf"..., "MEMORY_PRESSURE_WATCH=/sys/fs/cg"..., "LC_NUMERIC=en_US.UTF-8", "GNOME_SHELL_SESSION_MODE=ubuntu", "TERM=xterm-256color", "XDG_MENU_PREFIX=gnome-", "COLORTERM=truecolor", "LC_TIME=en_US.UTF-8", "WINDOWPATH=2", "GSM_SKIP_SSH_AGENT_WORKAROUND=tr"..., "QT_ACCESSIBILITY=1", "SSH_AUTH_SOCK=/run/user/1000/key"..., "LC_MONETARY=en_US.UTF-8", "SHLVL=1", "OLDPWD=/home/yoimiya/OS/dora/tar"..., "P9K_TTY=old", "_P9K_TTY=/dev/pts/1", "ZSH=/home/yoimiya/.oh-my-zsh", "PAGER=less", "LESS=-R", "LSCOLORS=Gxfxcxdxbxegedabagacad", "LS_COLORS=rs=0:di=01;34:ln=01;36"..., "P9K_SSH=0", "_P9K_SSH_TTY=/dev/pts/1"]) = 0
-223802 mmap(NULL, 1168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da30000
-223802 arch_prctl(ARCH_SET_FS, 0x73e33da303c8) = 0
-223802 set_tid_address(0x73e33d96b1a0)  = 223802
-223802 poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout)
-223802 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x73e33d073902}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-223802 rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-223802 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
-223802 rt_sigaction(SIGSEGV, {sa_handler=0x73e33d041eb0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x73e33d073902}, NULL, 8) = 0
-223802 rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-223802 rt_sigaction(SIGBUS, {sa_handler=0x73e33d041eb0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x73e33d073902}, NULL, 8) = 0
-223802 sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
-223802 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x73e33da2d000
-223802 mprotect(0x73e33da2d000, 4096, PROT_NONE) = 0
-223802 sigaltstack({ss_sp=0x73e33da2e000, ss_flags=0, ss_size=8192}, NULL) = 0
-223802 brk(NULL)                        = 0x555556fd9000
-223802 brk(0x555556fdb000)              = 0x555556fdb000
-223802 mmap(0x555556fd9000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x555556fd9000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da2c000
-223802 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
-223802 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
-223802 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da2a000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da29000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da28000
-223802 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da26000
-223802 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da22000
-223802 munmap(0x73e33da26000, 8192)     = 0
-223802 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da26000
-223802 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da20000
-223802 munmap(0x73e33da29000, 4096)     = 0
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da29000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da1f000
-223802 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da1c000
-223802 munmap(0x73e33da20000, 8192)     = 0
-223802 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da20000
-223802 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da18000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da17000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da16000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da15000
-223802 munmap(0x73e33da2a000, 8192)     = 0
-223802 munmap(0x73e33da22000, 16384)    = 0
-223802 munmap(0x73e33da26000, 8192)     = 0
-223802 munmap(0x73e33da18000, 16384)    = 0
-223802 munmap(0x73e33da20000, 8192)     = 0
-223802 munmap(0x73e33da1c000, 12288)    = 0
-223802 munmap(0x73e33da15000, 4096)     = 0
-223802 munmap(0x73e33da16000, 4096)     = 0
-223802 getrandom("\xb8\x62\xe9\xe2\x19\xc2\xf3\xd4\x5a\xe6\x19\xf1\x07\x2d\xcc\xaf", 16, GRND_INSECURE) = 16
-223802 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da0e000
-223802 ioctl(2, TIOCGWINSZ, {ws_row=38, ws_col=163, ws_xpixel=0, ws_ypixel=0}) = 0
-223802 open("./dataflow.yml", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
-223802 fcntl(3, F_SETFD, FD_CLOEXEC)    = 0
-223802 fstat(3, {st_dev=makedev(0x103, 0x2), st_ino=56764223, st_mode=S_IFREG|0664, st_nlink=1, st_uid=1000, st_gid=1000, st_blksize=4096, st_blocks=8, st_size=491, st_atime=1720152052 /* 2024-07-05T12:00:52.010363974+0800 */, st_atime_nsec=10363974, st_mtime=1720152052 /* 2024-07-05T12:00:52.005364292+0800 */, st_mtime_nsec=5364292, st_ctime=1720152052 /* 2024-07-05T12:00:52.005364292+0800 */, st_ctime_nsec=5364292}) = 0
-223802 read(3, "nodes:\n  - id: rust-node\n    cus"..., 491) = 491
-223802 read(3, "", 32)                  = 0
-223802 close(3)                         = 0
-223802 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da23000
-223802 mmap(NULL, 53248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da01000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da2b000
-223802 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da21000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da2a000
-223802 munmap(0x73e33da21000, 8192)     = 0
-223802 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da21000
-223802 munmap(0x73e33da2a000, 4096)     = 0
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da2a000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da20000
-223802 munmap(0x73e33da23000, 20480)    = 0
-223802 munmap(0x73e33da01000, 53248)    = 0
-223802 munmap(0x73e33da2b000, 4096)     = 0
-223802 munmap(0x73e33da21000, 8192)     = 0
-223802 readlink("dataflow.yml", 0x7ffd0935a95f, 4096) = -1 EINVAL (Invalid argument)
-223802 getcwd("/home/yoimiya/OS/dora/target/debug", 4097) = 35
-223802 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da26000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da2b000
-223802 munmap(0x73e33da26000, 8192)     = 0
-223802 readlink("/home", 0x7ffd0935a60f, 4038) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya", 0x7ffd0935a60f, 4046) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS", 0x7ffd0935a60f, 4049) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora", 0x7ffd0935a60f, 4054) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora/target", 0x7ffd0935a60f, 4061) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora/target/debug", 0x7ffd0935a60f, 4067) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora/target/debug/rust-dataflow-example-node", 0x7ffd0935a60f, 4096) = -1 EINVAL (Invalid argument)
-223802 readlink("/home", 0x7ffd0935a60f, 4031) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya", 0x7ffd0935a60f, 4039) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS", 0x7ffd0935a60f, 4042) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora", 0x7ffd0935a60f, 4047) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora/target", 0x7ffd0935a60f, 4054) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora/target/debug", 0x7ffd0935a60f, 4060) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora/target/debug/rust-dataflow-example-status-node", 0x7ffd0935a60f, 4096) = -1 EINVAL (Invalid argument)
-223802 readlink("/home", 0x7ffd0935a60f, 4038) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya", 0x7ffd0935a60f, 4046) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS", 0x7ffd0935a60f, 4049) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora", 0x7ffd0935a60f, 4054) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora/target", 0x7ffd0935a60f, 4061) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora/target/debug", 0x7ffd0935a60f, 4067) = -1 EINVAL (Invalid argument)
-223802 readlink("/home/yoimiya/OS/dora/target/debug/rust-dataflow-example-sink", 0x7ffd0935a60f, 4096) = -1 EINVAL (Invalid argument)
-223802 munmap(0x73e33da2b000, 4096)     = 0
-223802 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_IP) = 3
-223802 connect(3, {sa_family=AF_INET, sin_port=htons(6012), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
-223802 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da26000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da2b000
-223802 sendto(3, "\334\3\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-223802 sendto(3, "{\"Start\":{\"dataflow\":{\"communica"..., 988, MSG_NOSIGNAL, NULL, 0) = 988
-223802 recvfrom(3, "C\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-223802 recvfrom(3, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, 0, NULL, NULL) = 67
-223802 munmap(0x73e33da2b000, 4096)     = 0
-223802 munmap(0x73e33da26000, 8192)     = 0
-223802 write(2, "01908155-95df-7197-905b-6b5dc8bf"..., 36) = 36
-223802 write(2, "\n", 1)                = 1
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da2b000
-223802 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da26000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da25000
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da24000
-223802 munmap(0x73e33da26000, 8192)     = 0
-223802 readlink("dataflow.yml", 0x7ffd0935a1ff, 4096) = -1 EINVAL (Invalid argument)
-223802 getcwd("/home/yoimiya/OS/dora/target/debug", 4097) = 35
-223802 munmap(0x73e33da25000, 4096)     = 0
-223802 munmap(0x73e33da24000, 4096)     = 0
-223802 pipe2([4, 5], O_CLOEXEC)         = 0
-223802 fcntl(5, F_SETFL, O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 0
-223802 rt_sigaction(SIGINT, {sa_handler=0x73e33cee88d0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x73e33d073902}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
-223802 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
-223802 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33be00000
-223802 mprotect(0x73e33be02000, 2101248, PROT_READ|PROT_WRITE) = 0
-223802 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
-223802 clone(child_stack=0x73e33c002748, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[223809], tls=0x73e33c002b38, child_tidptr=0x73e33d96b1a0) = 223809
-223809 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
-223802 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
-223809 <... rt_sigprocmask resumed>NULL, 8) = 0
-223802 <... rt_sigprocmask resumed>NULL, 8) = 0
-223809 sigaltstack(NULL,  <unfinished ...>
-223802 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_IP <unfinished ...>
-223809 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
-223809 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
-223802 <... socket resumed>)            = 6
-223802 connect(6, {sa_family=AF_INET, sin_port=htons(6012), sin_addr=inet_addr("127.0.0.1")}, 16 <unfinished ...>
-223809 <... mmap resumed>)              = 0x73e33da25000
-223809 mprotect(0x73e33da25000, 4096, PROT_NONE) = 0
-223809 sigaltstack({ss_sp=0x73e33da26000, ss_flags=0, ss_size=8192}, NULL) = 0
-223802 <... connect resumed>)           = 0
-223809 prctl(PR_SET_NAME, "ctrl-c" <unfinished ...>
-223802 sendto(6, "V\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-223809 <... prctl resumed>)             = 0
-223809 read(4,  <unfinished ...>
-223802 <... sendto resumed>)            = 8
-223802 sendto(6, "{\"LogSubscribe\":{\"dataflow_id\":\""..., 86, MSG_NOSIGNAL, NULL, 0) = 86
-223802 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33ba00000
-223802 mprotect(0x73e33ba02000, 2101248, PROT_READ|PROT_WRITE) = 0
-223802 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
-223802 clone(child_stack=0x73e33bc02748, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[223812], tls=0x73e33bc02b38, child_tidptr=0x73e33d96b1a0) = 223812
-223802 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
-223812 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
-223802 futex(0x73e33da2c258, FUTEX_WAIT_BITSET_PRIVATE, 4294967295, {tv_sec=13199, tv_nsec=817853794}, FUTEX_BITSET_MATCH_ANY <unfinished ...>
-223812 <... rt_sigprocmask resumed>NULL, 8) = 0
-223812 sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
-223812 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x73e33da22000
-223812 mprotect(0x73e33da22000, 4096, PROT_NONE) = 0
-223812 sigaltstack({ss_sp=0x73e33da23000, ss_flags=0, ss_size=8192}, NULL) = 0
-223812 recvfrom(6, "\273\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-223812 recvfrom(6, "{\"dataflow_id\":\"01908155-95df-71"..., 187, 0, NULL, NULL) = 187
-223812 futex(0x73e33da2c258, FUTEX_WAKE_PRIVATE, 1) = 1
-223802 <... futex resumed>)             = 0
-223812 recvfrom(6,  <unfinished ...>
-223802 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x73e33da21000
-223802 ioctl(1, TIOCGWINSZ, {ws_row=38, ws_col=163, ws_xpixel=0, ws_ypixel=0}) = 0
-223802 write(1, "\33[32mINFO \33[0m\33[1m rust-node\33[0m"..., 61) = 61
-223802 futex(0x73e33da2c258, FUTEX_WAIT_BITSET_PRIVATE, 4294967295, {tv_sec=13200, tv_nsec=815741240}, FUTEX_BITSET_MATCH_ANY <unfinished ...>
-223812 <... recvfrom resumed>"\273\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-223812 recvfrom(6, "{\"dataflow_id\":\"01908155-95df-71"..., 187, 0, NULL, NULL) = 187
-223812 futex(0x73e33da2c258, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-223802 <... futex resumed>)             = 0
-223812 <... futex resumed>)             = 1
-223802 write(1, "\33[32mINFO \33[0m\33[1m rust-sink\33[0m"..., 61 <unfinished ...>
-223812 recvfrom(6,  <unfinished ...>
-223802 <... write resumed>)             = 61
-223802 futex(0x73e33da2c258, FUTEX_WAIT_BITSET_PRIVATE, 4294967295, {tv_sec=13200, tv_nsec=819297064}, FUTEX_BITSET_MATCH_ANY <unfinished ...>
-223812 <... recvfrom resumed>"\302\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-223812 recvfrom(6, "{\"dataflow_id\":\"01908155-95df-71"..., 194, 0, NULL, NULL) = 194
-223812 futex(0x73e33da2c258, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-223802 <... futex resumed>)             = 0
-223812 <... futex resumed>)             = 1
-223802 write(1, "\33[32mINFO \33[0m\33[1m rust-status-n"..., 68 <unfinished ...>
-223812 recvfrom(6,  <unfinished ...>
-223802 <... write resumed>)             = 68
-223802 futex(0x73e33da2c258, FUTEX_WAIT_BITSET_PRIVATE, 4294967295, {tv_sec=13200, tv_nsec=819864177}, FUTEX_BITSET_MATCH_ANY <unfinished ...>
-223812 <... recvfrom resumed>"", 8, 0, NULL, NULL) = 0
-223812 close(6)                         = 0
-223812 sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
-223812 munmap(0x73e33da22000, 12288)    = 0
-223812 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
-223812 rt_sigprocmask(SIG_BLOCK, ~[], ~[KILL STOP RTMIN RT_1 RT_2], 8) = 0
-223812 munmap(0x73e33ba00000, 2109440)  = 0
-223812 exit(0)                          = ?
-223812 +++ exited with 0 +++
-223802 <... futex resumed>)             = -1 ETIMEDOUT (Connection timed out)
-223802 sendto(3, "B\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-223802 sendto(3, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, MSG_NOSIGNAL, NULL, 0) = 66
-223802 recvfrom(3, "2\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-223802 recvfrom(3, "{\"DataflowStopped\":{\"uuid\":\"0190"..., 306, 0, NULL, NULL) = 306
-223802 munmap(0x73e33da17000, 4096)     = 0
-223802 munmap(0x73e33da2a000, 4096)     = 0
-223802 close(3)                         = 0
-223802 munmap(0x73e33da21000, 4096)     = 0
-223802 sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192}, NULL) = 0
-223802 munmap(0x73e33da2d000, 12288)    = 0
-223802 exit_group(0)                    = ?
-223809 <... read resumed> <unfinished ...>) = ?
-223809 +++ exited with 0 +++
-223802 +++ exited with 0 +++
+85907 execve("./dora", ["./dora", "start", "./dataflow.yml", "--attach"], ["LC_TELEPHONE=en_US.UTF-8", "GDMSESSION=ubuntu", "DESKTOP_SESSION=ubuntu", "PWD=/home/yoimiya/OS/dora-benchm"..., "all_proxy=socks://127.0.0.1:7890"..., "LOGNAME=yoimiya", "HTTPS_PROXY=http://127.0.0.1:789"..., "GNOME_DESKTOP_SESSION_ID=this-is"..., "LC_MEASUREMENT=en_US.UTF-8", "XDG_SESSION_TYPE=x11", "SYSTEMD_EXEC_PID=3088", "PATH=/home/yoimiya/.cargo/bin:/h"..., "HOME=/home/yoimiya", "USERNAME=yoimiya", "QT_IM_MODULE=fcitx", "USER=yoimiya", "DISPLAY=:1", "ALL_PROXY=socks://127.0.0.1:7890"..., "SDL_IM_MODULE=fcitx", "LANG=en_US.UTF-8", "CLUTTER_IM_MODULE=fcitx", "XAUTHORITY=/run/user/1000/gdm/Xa"..., "LC_PAPER=en_US.UTF-8", "LC_NAME=en_US.UTF-8", "LANGUAGE=en", "SESSION_MANAGER=local/Firefly:@/"..., "IM_CONFIG_PHASE=1", "XDG_RUNTIME_DIR=/run/user/1000", "https_proxy=http://127.0.0.1:789"..., "HTTP_PROXY=http://127.0.0.1:7890"..., "http_proxy=http://127.0.0.1:7890"..., "XDG_SESSION_DESKTOP=ubuntu", "VTE_VERSION=7600", "XDG_CURRENT_DESKTOP=ubuntu:GNOME", "XDG_DATA_DIRS=/usr/share/ubuntu:"..., "GNOME_TERMINAL_SERVICE=:1.192", "QTWEBENGINE_DICTIONARIES_PATH=/u"..., "XDG_CONFIG_DIRS=/etc/xdg/xdg-ubu"..., "LC_ADDRESS=en_US.UTF-8", "_=/usr/bin/strace", "GPG_AGENT_INFO=/run/user/1000/gn"..., "SHELL=/usr/bin/zsh", "GTK_IM_MODULE=fcitx", "XDG_SESSION_CLASS=user", "MEMORY_PRESSURE_WRITE=c29tZSAyMD"..., "XMODIFIERS=@im=fcitx", "GTK_MODULES=gail:atk-bridge", "PAPERSIZE=letter", "LC_IDENTIFICATION=en_US.UTF-8", "NO_PROXY=localhost,127.0.0.0/8,:"..., "no_proxy=localhost,127.0.0.0/8,:"..., "GNOME_KEYRING_CONTROL=/run/user/"..., "DBUS_SESSION_BUS_ADDRESS=unix:pa"..., "GNOME_TERMINAL_SCREEN=/org/gnome"..., "DEBUGINFOD_URLS=https://debuginf"..., "MEMORY_PRESSURE_WATCH=/sys/fs/cg"..., "LC_NUMERIC=en_US.UTF-8", "GNOME_SHELL_SESSION_MODE=ubuntu", "TERM=xterm-256color", "XDG_MENU_PREFIX=gnome-", "COLORTERM=truecolor", "LC_TIME=en_US.UTF-8", "WINDOWPATH=2", "GSM_SKIP_SSH_AGENT_WORKAROUND=tr"..., "QT_ACCESSIBILITY=1", "SSH_AUTH_SOCK=/run/user/1000/key"..., "LC_MONETARY=en_US.UTF-8", "SHLVL=1", "OLDPWD=/home/yoimiya/OS/dora-ben"..., "ZSH=/home/yoimiya/.oh-my-zsh", "PAGER=less", "LESS=-R", "LSCOLORS=Gxfxcxdxbxegedabagacad", "LS_COLORS=rs=0:di=01;34:ln=01;36"..., "P9K_SSH=0", "_P9K_SSH_TTY=/dev/pts/2", "P9K_TTY=old", "_P9K_TTY=/dev/pts/2"]) = 0
+85907 mmap(NULL, 1168, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58ee000
+85907 arch_prctl(ARCH_SET_FS, 0x76a1c58ee3c8) = 0
+85907 set_tid_address(0x76a1c576b1a0)   = 85907
+85907 poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout)
+85907 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x76a1c4e73902}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+85907 rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+85907 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
+85907 rt_sigaction(SIGSEGV, {sa_handler=0x76a1c4e41eb0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x76a1c4e73902}, NULL, 8) = 0
+85907 rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+85907 rt_sigaction(SIGBUS, {sa_handler=0x76a1c4e41eb0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x76a1c4e73902}, NULL, 8) = 0
+85907 sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+85907 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x76a1c58eb000
+85907 mprotect(0x76a1c58eb000, 4096, PROT_NONE) = 0
+85907 sigaltstack({ss_sp=0x76a1c58ec000, ss_flags=0, ss_size=8192}, NULL) = 0
+85907 brk(NULL)                         = 0x555556dc4000
+85907 brk(0x555556dc6000)               = 0x555556dc6000
+85907 mmap(0x555556dc4000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x555556dc4000
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58ea000
+85907 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+85907 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+85907 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e8000
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e7000
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e6000
+85907 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e4000
+85907 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e0000
+85907 munmap(0x76a1c58e4000, 8192)      = 0
+85907 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e4000
+85907 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58de000
+85907 munmap(0x76a1c58e7000, 4096)      = 0
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e7000
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58dd000
+85907 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58da000
+85907 munmap(0x76a1c58de000, 8192)      = 0
+85907 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58de000
+85907 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58d6000
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58d5000
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58d4000
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58d3000
+85907 munmap(0x76a1c58e8000, 8192)      = 0
+85907 munmap(0x76a1c58e0000, 16384)     = 0
+85907 munmap(0x76a1c58e4000, 8192)      = 0
+85907 munmap(0x76a1c58d6000, 16384)     = 0
+85907 munmap(0x76a1c58de000, 8192)      = 0
+85907 munmap(0x76a1c58da000, 12288)     = 0
+85907 munmap(0x76a1c58d3000, 4096)      = 0
+85907 munmap(0x76a1c58d4000, 4096)      = 0
+85907 getrandom("\xed\x90\x8a\xd2\x2f\x42\x13\x75\x2c\x0e\x33\x22\x9b\x52\x3d\xd8", 16, GRND_INSECURE) = 16
+85907 mmap(NULL, 36864, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58cc000
+85907 ioctl(2, TIOCGWINSZ, {ws_row=19, ws_col=85, ws_xpixel=0, ws_ypixel=0}) = 0
+85907 open("./dataflow.yml", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+85907 fcntl(3, F_SETFD, FD_CLOEXEC)     = 0
+85907 fstat(3, {st_dev=makedev(0x103, 0x2), st_ino=54167274, st_mode=S_IFREG|0664, st_nlink=1, st_uid=1000, st_gid=1000, st_blksize=4096, st_blocks=8, st_size=460, st_atime=1720171782 /* 2024-07-05T17:29:42.734614496+0800 */, st_atime_nsec=734614496, st_mtime=1720171774 /* 2024-07-05T17:29:34.331625050+0800 */, st_mtime_nsec=331625050, st_ctime=1720171782 /* 2024-07-05T17:29:42.697614542+0800 */, st_ctime_nsec=697614542}) = 0
+85907 read(3, "nodes:\n  - id: rust-node\n    cus"..., 460) = 460
+85907 read(3, "", 32)                   = 0
+85907 close(3)                          = 0
+85907 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e1000
+85907 mmap(NULL, 53248, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58bf000
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e9000
+85907 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58df000
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e8000
+85907 munmap(0x76a1c58df000, 8192)      = 0
+85907 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58df000
+85907 munmap(0x76a1c58e8000, 4096)      = 0
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e8000
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58de000
+85907 munmap(0x76a1c58e1000, 20480)     = 0
+85907 munmap(0x76a1c58bf000, 53248)     = 0
+85907 munmap(0x76a1c58e9000, 4096)      = 0
+85907 munmap(0x76a1c58df000, 8192)      = 0
+85907 readlink("dataflow.yml", 0x7fffea10e31f, 4096) = -1 EINVAL (Invalid argument)
+85907 getcwd("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target/release", 4097) = 66
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e9000
+85907 readlink("/home", 0x7fffea10dfcf, 4011) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya", 0x7fffea10dfcf, 4019) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS", 0x7fffea10dfcf, 4022) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark", 0x7fffea10dfcf, 4037) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs", 0x7fffea10dfcf, 4045) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency", 0x7fffea10dfcf, 4056) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target", 0x7fffea10dfcf, 4063) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target/release", 0x7fffea10dfcf, 4071) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target/release/benchmark-example-node", 0x7fffea10dfcf, 4096) = -1 EINVAL (Invalid argument)
+85907 readlink("/home", 0x7fffea10dfcf, 4011) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya", 0x7fffea10dfcf, 4019) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS", 0x7fffea10dfcf, 4022) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark", 0x7fffea10dfcf, 4037) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs", 0x7fffea10dfcf, 4045) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency", 0x7fffea10dfcf, 4056) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target", 0x7fffea10dfcf, 4063) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target/release", 0x7fffea10dfcf, 4071) = -1 EINVAL (Invalid argument)
+85907 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target/release/benchmark-example-sink", 0x7fffea10dfcf, 4096) = -1 EINVAL (Invalid argument)
+85907 munmap(0x76a1c58e9000, 4096)      = 0
+85907 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_IP) = 3
+85907 connect(3, {sa_family=AF_INET, sin_port=htons(6012), sin_addr=inet_addr("127.0.0.1")}, 16) = 0
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e9000
+85907 sendto(3, "q\3\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+85907 sendto(3, "{\"Start\":{\"dataflow\":{\"communica"..., 881, MSG_NOSIGNAL, NULL, 0) = 881
+85907 recvfrom(3, "C\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+85907 recvfrom(3, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, 0, NULL, NULL) = 67
+85907 munmap(0x76a1c58e9000, 4096)      = 0
+85907 write(2, "01908720-664d-77c1-9534-cfb078a4"..., 36) = 36
+85907 write(2, "\n", 1)                 = 1
+85907 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e4000
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c58e9000
+85907 munmap(0x76a1c58e4000, 8192)      = 0
+85907 readlink("dataflow.yml", 0x7fffea10db7f, 4096) = -1 EINVAL (Invalid argument)
+85907 getcwd("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target/release", 4097) = 66
+85907 munmap(0x76a1c58e9000, 4096)      = 0
+85907 pipe2([4, 5], O_CLOEXEC)          = 0
+85907 fcntl(5, F_SETFL, O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 0
+85907 rt_sigaction(SIGINT, {sa_handler=0x76a1c4ce88d0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x76a1c4e73902}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+85907 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
+85907 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c3c00000
+85907 mprotect(0x76a1c3c02000, 2101248, PROT_READ|PROT_WRITE) = 0
+85907 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+85907 clone(child_stack=0x76a1c3e02748, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[85912], tls=0x76a1c3e02b38, child_tidptr=0x76a1c576b1a0) = 85912
+85912 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+85907 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+85912 <... rt_sigprocmask resumed>NULL, 8) = 0
+85907 <... rt_sigprocmask resumed>NULL, 8) = 0
+85912 sigaltstack(NULL,  <unfinished ...>
+85907 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC, IPPROTO_IP <unfinished ...>
+85912 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+85907 <... socket resumed>)             = 6
+85912 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+85907 connect(6, {sa_family=AF_INET, sin_port=htons(6012), sin_addr=inet_addr("127.0.0.1")}, 16 <unfinished ...>
+85912 <... mmap resumed>)               = 0x76a1c58e3000
+85912 mprotect(0x76a1c58e3000, 4096, PROT_NONE) = 0
+85907 <... connect resumed>)            = 0
+85912 sigaltstack({ss_sp=0x76a1c58e4000, ss_flags=0, ss_size=8192},  <unfinished ...>
+85907 sendto(6, "V\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+85912 <... sigaltstack resumed>NULL)    = 0
+85912 prctl(PR_SET_NAME, "ctrl-c" <unfinished ...>
+85907 <... sendto resumed>)             = 8
+85912 <... prctl resumed>)              = 0
+85907 sendto(6, "{\"LogSubscribe\":{\"dataflow_id\":\""..., 86, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+85912 read(4,  <unfinished ...>
+85907 <... sendto resumed>)             = 86
+85907 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x76a1c3800000
+85907 mprotect(0x76a1c3802000, 2101248, PROT_READ|PROT_WRITE) = 0
+85907 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+85907 clone(child_stack=0x76a1c3a02748, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000, parent_tid=[85913], tls=0x76a1c3a02b38, child_tidptr=0x76a1c576b1a0) = 85913
+85913 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+85907 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+85913 <... rt_sigprocmask resumed>NULL, 8) = 0
+85907 <... rt_sigprocmask resumed>NULL, 8) = 0
+85913 sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+85907 futex(0x76a1c58ea258, FUTEX_WAIT_BITSET_PRIVATE, 4294967295, {tv_sec=5601, tv_nsec=553680842}, FUTEX_BITSET_MATCH_ANY <unfinished ...>
+85913 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x76a1c58e0000
+85913 mprotect(0x76a1c58e0000, 4096, PROT_NONE) = 0
+85913 sigaltstack({ss_sp=0x76a1c58e1000, ss_flags=0, ss_size=8192}, NULL) = 0
+85913 recvfrom(6,  <unfinished ...>
+85907 <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+85907 sendto(3, "B\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+85907 sendto(3, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, MSG_NOSIGNAL, NULL, 0) = 66
+85907 recvfrom(3, "C\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+85907 recvfrom(3, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, 0, NULL, NULL) = 67
+85907 futex(0x76a1c58ea258, FUTEX_WAIT_BITSET_PRIVATE, 4294967295, {tv_sec=5602, tv_nsec=594729119}, FUTEX_BITSET_MATCH_ANY) = -1 ETIMEDOUT (Connection timed out)
+85907 sendto(3, "B\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+85907 sendto(3, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, MSG_NOSIGNAL, NULL, 0) = 66
+85907 recvfrom(3, "C\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+85907 recvfrom(3, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, 0, NULL, NULL) = 67
+85907 futex(0x76a1c58ea258, FUTEX_WAIT_BITSET_PRIVATE, 4294967295, {tv_sec=5603, tv_nsec=635681806}, FUTEX_BITSET_MATCH_ANY) = -1 ETIMEDOUT (Connection timed out)
+85907 sendto(3, "B\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+85907 sendto(3, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, MSG_NOSIGNAL, NULL, 0) = 66
+85907 recvfrom(3, "C\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+85907 recvfrom(3, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, 0, NULL, NULL) = 67
+85907 futex(0x76a1c58ea258, FUTEX_WAIT_BITSET_PRIVATE, 4294967295, {tv_sec=5604, tv_nsec=677662452}, FUTEX_BITSET_MATCH_ANY) = -1 ETIMEDOUT (Connection timed out)
+85907 sendto(3, "B\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+85907 sendto(3, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, MSG_NOSIGNAL, NULL, 0) = 66
+85907 recvfrom(3, "C\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+85907 recvfrom(3, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, 0, NULL, NULL) = 67
+85907 futex(0x76a1c58ea258, FUTEX_WAIT_BITSET_PRIVATE, 4294967295, {tv_sec=5605, tv_nsec=718644456}, FUTEX_BITSET_MATCH_ANY) = -1 ETIMEDOUT (Connection timed out)
+85907 sendto(3, "B\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+85907 sendto(3, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, MSG_NOSIGNAL, NULL, 0) = 66
+85907 recvfrom(3, "C\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+85907 recvfrom(3, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, 0, NULL, NULL) = 67
+85907 futex(0x76a1c58ea258, FUTEX_WAIT_BITSET_PRIVATE, 4294967295, {tv_sec=5606, tv_nsec=759673434}, FUTEX_BITSET_MATCH_ANY) = -1 ETIMEDOUT (Connection timed out)
+85907 sendto(3, "B\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+85907 sendto(3, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, MSG_NOSIGNAL, NULL, 0) = 66
+85907 recvfrom(3, "C\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+85907 recvfrom(3, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, 0, NULL, NULL) = 67
+85907 futex(0x76a1c58ea258, FUTEX_WAIT_BITSET_PRIVATE, 4294967295, {tv_sec=5607, tv_nsec=800601372}, FUTEX_BITSET_MATCH_ANY) = ? ERESTART_RESTARTBLOCK (Interrupted by signal)
+85907 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+85907 write(5, "\0", 1)                 = 1
+85912 <... read resumed>"\0", 1)        = 1
+85907 rt_sigreturn({mask=[]} <unfinished ...>
+85912 futex(0x76a1c58ea258, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+85907 <... rt_sigreturn resumed>)       = -1 EINTR (Interrupted system call)
+85912 <... futex resumed>)              = 0
+85907 sendto(3, "W\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+85912 read(4,  <unfinished ...>
+85907 <... sendto resumed>)             = 8
+85907 sendto(3, "{\"Stop\":{\"dataflow_uuid\":\"019087"..., 87, MSG_NOSIGNAL, NULL, 0) = 87
+85907 recvfrom(3,  <unfinished ...>
+85913 <... recvfrom resumed>"\273\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+85913 recvfrom(6, "{\"dataflow_id\":\"01908720-664d-77"..., 187, 0, NULL, NULL) = 187
+85913 recvfrom(6, "\273\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+85913 recvfrom(6, "{\"dataflow_id\":\"01908720-664d-77"..., 187, 0, NULL, NULL) = 187
+85913 recvfrom(6,  <unfinished ...>
+85907 <... recvfrom resumed>"\23\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+85913 <... recvfrom resumed>"", 8, 0, NULL, NULL) = 0
+85907 recvfrom(3,  <unfinished ...>
+85913 close(6 <unfinished ...>
+85907 <... recvfrom resumed>"{\"DataflowStopped\":{\"uuid\":\"0190"..., 275, 0, NULL, NULL) = 275
+85907 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+85913 <... close resumed>)              = 0
+85907 <... mmap resumed>)               = 0x76a1c58e9000
+85913 futex(0x76a1c576b190, FUTEX_WAIT_PRIVATE, 2147483650, NULL <unfinished ...>
+85907 futex(0x76a1c576b190, FUTEX_WAKE_PRIVATE, 1) = 1
+85913 <... futex resumed>)              = 0
+85907 futex(0x76a1c576b190, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+85913 sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192},  <unfinished ...>
+85907 <... futex resumed>)              = 0
+85913 <... sigaltstack resumed>NULL)    = 0
+85907 munmap(0x76a1c58e9000, 4096 <unfinished ...>
+85913 munmap(0x76a1c58e0000, 12288 <unfinished ...>
+85907 <... munmap resumed>)             = 0
+85913 <... munmap resumed>)             = 0
+85913 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+85907 munmap(0x76a1c58e8000, 4096 <unfinished ...>
+85913 <... rt_sigprocmask resumed>[], 8) = 0
+85907 <... munmap resumed>)             = 0
+85913 rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+85907 close(3 <unfinished ...>
+85913 <... rt_sigprocmask resumed>~[KILL STOP RTMIN RT_1 RT_2], 8) = 0
+85913 munmap(0x76a1c3800000, 2109440 <unfinished ...>
+85907 <... close resumed>)              = 0
+85907 sigaltstack({ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=8192},  <unfinished ...>
+85913 <... munmap resumed>)             = 0
+85907 <... sigaltstack resumed>NULL)    = 0
+85913 exit(0 <unfinished ...>
+85907 munmap(0x76a1c58eb000, 12288 <unfinished ...>
+85913 <... exit resumed>)               = ?
+85907 <... munmap resumed>)             = 0
+85913 +++ exited with 0 +++
+85907 exit_group(0)                     = ?
+85912 <... read resumed> <unfinished ...>) = ?
+85912 +++ exited with 0 +++
+85907 +++ exited with 0 +++
