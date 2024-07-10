@@ -1,601 +1,1072 @@
-82767 read(11,  <unfinished ...>
-82766 futex(0x770d7a402a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82765 futex(0x770d7a802a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82764 futex(0x770d7ac02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82763 futex(0x770d7b002a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82762 futex(0x770d7b402a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82761 futex(0x770d7b802a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4,  <unfinished ...>
-82759 futex(0x770d7c002a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82758 futex(0x770d7c402a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82757 futex(0x770d7c802a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82756 futex(0x770d7cc02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82755 futex(0x770d7d002a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82754 futex(0x770d7d402a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82753 futex(0x770d7d802a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82752 futex(0x770d7dc02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 futex(0x770d7e002a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... epoll_pwait resumed>[], 1024, 508, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 127, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 50, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 2957, NULL, 8) = 1
-82760 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82760 recvfrom(16,  <unfinished ...>
-82750 <... futex resumed>)              = 0
-82760 <... recvfrom resumed>0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [], 1024, 905, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 41, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 futex(0x770d7f9a75d0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-82750 futex(0x770d7f9a75d0, FUTEX_WAIT_BITSET_PRIVATE, 2, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
-82760 <... futex resumed>)              = 0
-82750 <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
-82760 epoll_pwait(4,  <unfinished ...>
-82750 futex(0x770d7f9a75d0, FUTEX_WAKE_PRIVATE, 1) = 0
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [], 1024, 916, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 2048, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 31, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82760 epoll_pwait(4,  <unfinished ...>
-82750 <... futex resumed>)              = 0
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 2012, NULL, 8) = 1
-82760 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82760 recvfrom(16,  <unfinished ...>
-82750 <... futex resumed>)              = 0
-82760 <... recvfrom resumed>0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82760 epoll_pwait(4,  <unfinished ...>
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 962, NULL, 8) = 1
-82760 epoll_pwait(4, [], 1024, 962, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 959, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 26, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82760 epoll_pwait(4,  <unfinished ...>
-82750 <... futex resumed>)              = 0
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [], 1024, 2980, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 15, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 110, NULL, 8) = 1
-82760 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 recvfrom(16, 0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 58, NULL, 8) = 1
-82760 epoll_pwait(4, [], 1024, 58, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 2880, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 7, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82760 epoll_pwait(4,  <unfinished ...>
-82750 <... futex resumed>)              = 0
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [], 1024, 1204, NULL, 8) = 0
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 1791, NULL, 8) = 1
-82760 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 recvfrom(16, 0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 947, NULL, 8) = 1
-82760 epoll_pwait(4, [], 1024, 947, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82760 epoll_pwait(4,  <unfinished ...>
-82750 <... futex resumed>)              = 0
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [], 1024, 2302, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 637, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 57, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82760 epoll_pwait(4,  <unfinished ...>
-82750 <... futex resumed>)              = 0
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 2948, NULL, 8) = 1
-82760 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82760 recvfrom(16,  <unfinished ...>
-82750 <... futex resumed>)              = 0
-82760 <... recvfrom resumed>0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 1898, NULL, 8) = 1
-82760 epoll_pwait(4, [], 1024, 1898, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 49, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [], 1024, 398, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 2559, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 40, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 1493, NULL, 8) = 1
-82760 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 recvfrom(16, 0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 1442, NULL, 8) = 1
-82760 epoll_pwait(4, [], 1024, 1442, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 1471, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 33, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 2589, NULL, 8) = 1
-82760 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 recvfrom(16, 0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 538, NULL, 8) = 1
-82760 epoll_pwait(4, [], 1024, 538, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 383, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 26, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 <... write resumed>)              = 8
-82760 sched_yield( <unfinished ...>
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... sched_yield resumed>)        = 0
-82760 epoll_pwait(4, [], 1024, 2981, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 16, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [], 1024, 685, NULL, 8) = 0
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 2304, NULL, 8) = 1
-82760 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 recvfrom(16, 0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 1938, NULL, 8) = 1
-82760 epoll_pwait(4, [], 1024, 1938, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 8, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [], 1024, 1781, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 1215, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 1, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82760 epoll_pwait(4,  <unfinished ...>
-82750 <... futex resumed>)              = 0
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 2877, NULL, 8) = 1
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 0, NULL, 8) = 1
-82760 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 recvfrom(16, 0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4, [{events=EPOLLIN, data={u32=2141010432, u64=130899859290624}}], 1024, 2826, NULL, 8) = 1
-82760 accept4(13, {sa_family=AF_INET, sin_port=htons(40702), sin_addr=inet_addr("127.0.0.1")}, [128 => 16], SOCK_CLOEXEC|SOCK_NONBLOCK) = 14
-82760 epoll_ctl(6, EPOLL_CTL_ADD, 14, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2141010944, u64=130899859291136}}) = 0
-82760 accept4(13, 0x770d7bc00fb0, [128], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 2496, NULL, 8) = 1
-82760 recvfrom(14, "q\3\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(14, "{\"Start\":{\"dataflow\":{\"communica"..., 881, 0, NULL, NULL) = 881
-82760 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x770d7f6b8000
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4, [{events=EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 2496, NULL, 8) = 1
-82750 getrandom( <unfinished ...>
-82760 epoll_pwait(4,  <unfinished ...>
-82750 <... getrandom resumed>"\x7a\x7c\x86\x94\x55\x14\xdc\x3e\x71\x8b\xea\xe6\xa5\xe1\xc1\x36\xf3\x94\x74\x32\x0a\x2c\x5e\x10\xe3\x43\x44\x48\x94\x15\x62\xc5", 32, 0) = 32
-82750 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x770d7f6b7000
-82750 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x770d7f6b6000
-82750 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x770d7f6b5000
-82750 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x770d7f6b2000
-82750 munmap(0x770d7f6b5000, 4096)      = 0
-82750 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x770d7f6b5000
-82750 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x770d7f6b1000
-82750 readlink("/home", 0x7ffc952097df, 4011) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya", 0x7ffc952097df, 4019) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS", 0x7ffc952097df, 4022) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark", 0x7ffc952097df, 4037) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs", 0x7ffc952097df, 4045) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency", 0x7ffc952097df, 4056) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target", 0x7ffc952097df, 4063) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target/release", 0x7ffc952097df, 4071) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target/release/benchmark-example-node", 0x7ffc952097df, 4096) = -1 EINVAL (Invalid argument)
-82750 readlink("/home", 0x7ffc952097df, 4011) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya", 0x7ffc952097df, 4019) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS", 0x7ffc952097df, 4022) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark", 0x7ffc952097df, 4037) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs", 0x7ffc952097df, 4045) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency", 0x7ffc952097df, 4056) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target", 0x7ffc952097df, 4063) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target/release", 0x7ffc952097df, 4071) = -1 EINVAL (Invalid argument)
-82750 readlink("/home/yoimiya/OS/dora-benchmark/dora-rs/rs-latency/target/release/benchmark-example-sink", 0x7ffc952097df, 4096) = -1 EINVAL (Invalid argument)
-82750 munmap(0x770d7f6b5000, 4096)      = 0
-82750 munmap(0x770d7f6b1000, 4096)      = 0
-82750 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x770d7f6b5000
-82750 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x770d7f6b1000
-82750 getrandom("\x1a\x39\x1e\xfa\x39\x1d\xf8\x53\xa4\x78\xb0\xcf\x34\x55\xc1\xc7", 16, 0) = 16
-82750 munmap(0x770d7f6b8000, 4096)      = 0
-82750 sendto(15, "q\6\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":{\"Spawn\":{\"dataflow_id\""..., 1649, MSG_NOSIGNAL, NULL, 0) = 1649
-82750 recvfrom(15, 0x7ffc9520cfd8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2141011328, u64=130899859291520}}], 1024, 2496, NULL, 8) = 1
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 recvfrom(15,  <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2141011328, u64=130899859291520}}], 1024, 2483, NULL, 8) = 1
-82750 <... recvfrom resumed>"\33\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 epoll_pwait(4,  <unfinished ...>
-82750 recvfrom(15, "{\"SpawnResult\":{\"Ok\":null}}", 27, 0, NULL, NULL) = 27
-82750 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x770d7f6b8000
-82750 write(3, "2024-07-06T08:19:25.913190Z  INF"..., 1665) = 1665
-82750 munmap(0x770d7f6b2000, 12288)     = 0
-82750 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 2483, NULL, 8) = 1
-82750 <... write resumed>)              = 8
-82760 futex(0x770d7e002a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... futex resumed>)              = 1
-82751 <... futex resumed>)              = 0
-82760 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-82751 epoll_pwait(4,  <unfinished ...>
-82760 <... sendto resumed>)             = 8
-82760 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0) = 67
-82760 recvfrom(14, 0x770d7f96cc98, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82760 futex(0x770d7bc02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=2141010432, u64=130899859290624}}], 1024, 2483, NULL, 8) = 1
-82751 accept4(13, {sa_family=AF_INET, sin_port=htons(40708), sin_addr=inet_addr("127.0.0.1")}, [128 => 16], SOCK_CLOEXEC|SOCK_NONBLOCK) = 17
-82751 epoll_ctl(6, EPOLL_CTL_ADD, 17, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2137748096, u64=130899856028288}}) = 0
-82751 accept4(13, 0x770d7e000fb0, [128], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
-82751 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2137748096, u64=130899856028288}}], 1024, 2481, NULL, 8) = 1
-82751 recvfrom(17, "V\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82751 recvfrom(17, "{\"LogSubscribe\":{\"dataflow_id\":\""..., 86, 0, NULL, NULL) = 86
-82751 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82751 epoll_pwait(4,  <unfinished ...>
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 2481, NULL, 8) = 1
-82751 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82751 recvfrom(14, 0x770d7f6b99d0, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82751 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 1481, NULL, 8) = 1
-82751 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
-82751 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82751 epoll_pwait(4,  <unfinished ...>
-82750 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
-82751 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 1441, NULL, 8) = 1
-82750 <... write resumed>)              = 8
-82751 futex(0x770d7bc02a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 <... futex resumed>)              = 1
-82760 <... futex resumed>)              = 0
-82751 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-82760 epoll_pwait(4,  <unfinished ...>
-82751 <... sendto resumed>)             = 8
-82751 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0) = 67
-82751 recvfrom(14, 0x770d7f96cc98, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82751 futex(0x770d7e002a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 1441, NULL, 8) = 1
-82760 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(14, 0x770d7f6b9a20, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 440, NULL, 8) = 1
-82760 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 400, NULL, 8) = 1
-82750 <... write resumed>)              = 8
-82760 futex(0x770d7e002a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... futex resumed>)              = 1
-82751 <... futex resumed>)              = 0
-82760 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-82751 epoll_pwait(4,  <unfinished ...>
-82760 <... sendto resumed>)             = 8
-82760 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0) = 67
-82760 recvfrom(14, 0x770d7f96cc98, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82760 futex(0x770d7bc02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 <... epoll_pwait resumed>[], 1024, 400, NULL, 8) = 0
-82751 epoll_pwait(4, [], 1024, 63, NULL, 8) = 0
-82751 epoll_pwait(4, [], 1024, 58, NULL, 8) = 0
-82751 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82751 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82751 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 2949, NULL, 8) = 1
-82751 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82751 recvfrom(14, 0x770d7f6b9ac0, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82751 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 2471, NULL, 8) = 1
-82751 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
-82751 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82751 epoll_pwait(4,  <unfinished ...>
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82751 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 2430, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 futex(0x770d7bc02a68, FUTEX_WAKE_PRIVATE, 1) = 1
-82760 <... futex resumed>)              = 0
-82751 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-82760 epoll_pwait(4,  <unfinished ...>
-82751 <... sendto resumed>)             = 8
-82751 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0) = 67
-82751 recvfrom(14, 0x770d7f96cc98, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82751 futex(0x770d7e002a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 2430, NULL, 8) = 1
-82760 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(14, 0x770d7f6b9b10, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 1429, NULL, 8) = 1
-82760 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 1389, NULL, 8) = 1
-82750 <... write resumed>)              = 8
-82760 futex(0x770d7e002a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... futex resumed>)              = 1
-82751 <... futex resumed>)              = 0
-82760 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-82751 epoll_pwait(4,  <unfinished ...>
-82760 <... sendto resumed>)             = 8
-82760 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0) = 67
-82760 recvfrom(14, 0x770d7f96cc98, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82760 futex(0x770d7bc02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 1389, NULL, 8) = 1
-82751 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82751 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
-82751 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82751 recvfrom(16, 0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 epoll_pwait(4, [{events=EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 898, NULL, 8) = 1
-82751 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 898, NULL, 8) = 1
-82751 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82751 recvfrom(14, 0x770d7f6b99d0, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82751 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 388, NULL, 8) = 1
-82751 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
-82751 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82751 epoll_pwait(4,  <unfinished ...>
-82750 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
-82751 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 348, NULL, 8) = 1
-82750 <... write resumed>)              = 8
-82751 futex(0x770d7bc02a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... futex resumed>)              = 0
-82751 <... futex resumed>)              = 1
-82760 epoll_pwait(4,  <unfinished ...>
-82751 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82751 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0) = 67
-82751 recvfrom(14, 0x770d7f96cc98, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82751 futex(0x770d7e002a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... epoll_pwait resumed>[], 1024, 348, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 49, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 <... write resumed>)              = 8
-82760 sched_yield( <unfinished ...>
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... sched_yield resumed>)        = 0
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 974, NULL, 8) = 1
-82760 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82760 recvfrom(14, 0x770d7f6b9a20, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82760 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 371, NULL, 8) = 1
-82760 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 331, NULL, 8) = 1
-82750 <... write resumed>)              = 8
-82760 futex(0x770d7e002a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... futex resumed>)              = 1
-82751 <... futex resumed>)              = 0
-82760 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-82751 epoll_pwait(4,  <unfinished ...>
-82760 <... sendto resumed>)             = 8
-82760 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0) = 67
-82760 recvfrom(14, 0x770d7f96cc98, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82760 futex(0x770d7bc02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 331, NULL, 8) = 1
-82751 recvfrom(14, "W\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82751 recvfrom(14, 0x770d7f9ea620, 87, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82751 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141010944, u64=130899859291136}}], 1024, 162, NULL, 8) = 1
-82751 recvfrom(14, "{\"Stop\":{\"dataflow_uuid\":\"019087"..., 87, 0, NULL, NULL) = 87
-82751 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82751 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "\275\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":{\"StopDataflow\":{\"dataf"..., 189, MSG_NOSIGNAL, NULL, 0) = 189
-82750 recvfrom(15, 0x7ffc9520cdf8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2141011328, u64=130899859291520}}], 1024, 121, NULL, 8) = 1
-82751 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82751 epoll_pwait(4,  <unfinished ...>
-82750 recvfrom(15, "\32\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82751 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2141011328, u64=130899859291520}}], 1024, 120, NULL, 8) = 1
-82750 recvfrom(15,  <unfinished ...>
-82751 epoll_pwait(4,  <unfinished ...>
-82750 <... recvfrom resumed>"{\"StopResult\":{\"Ok\":null}}", 26, 0, NULL, NULL) = 26
-82750 write(3, "2024-07-06T08:19:32.371793Z  INF"..., 138) = 138
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 120, NULL, 8) = 1
-82751 recvfrom(16, "G\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82751 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 327, 0, NULL, NULL) = 327
-82751 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82751 recvfrom(16, 0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 sendto(17, "\273\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-82751 epoll_pwait(4, [{events=EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 107, NULL, 8) = 1
-82751 epoll_pwait(4,  <unfinished ...>
-82750 <... sendto resumed>)             = 8
-82750 sendto(17, "{\"dataflow_id\":\"01908720-664d-77"..., 187, MSG_NOSIGNAL, NULL, 0) = 187
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 107, NULL, 8) = 1
-82751 recvfrom(16, "G\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82751 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 327, 0, NULL, NULL) = 327
-82751 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82751 recvfrom(16, 0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 sendto(17, "\273\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-82751 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 106, NULL, 8) = 1
-82750 <... sendto resumed>)             = 8
-82751 recvfrom(16, "q\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
-82750 sendto(17, "{\"dataflow_id\":\"01908720-664d-77"..., 187, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-82751 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 369, 0, NULL, NULL) = 369
-82750 <... sendto resumed>)             = 187
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-82750 <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
-82751 <... futex resumed>)              = 0
-82751 futex(0x770d7f9a75d0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-82750 futex(0x770d7f9a75d0, FUTEX_WAIT_BITSET_PRIVATE, 2, NULL, FUTEX_BITSET_MATCH_ANY <unfinished ...>
-82751 <... futex resumed>)              = 0
-82750 <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
-82751 recvfrom(16,  <unfinished ...>
-82750 futex(0x770d7f9a75d0, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-82751 <... recvfrom resumed>0x770d7f96c7a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82750 <... futex resumed>)              = 0
-82751 epoll_pwait(4, [{events=EPOLLOUT, data={u32=2141011712, u64=130899859291904}}], 1024, 106, NULL, 8) = 1
-82750 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
-82751 epoll_pwait(4,  <unfinished ...>
-82750 <... mmap resumed>)               = 0x770d7f6b4000
-82750 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x770d7f6b3000
-82750 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
-82751 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 106, NULL, 8) = 1
-82750 <... write resumed>)              = 8
-82751 futex(0x770d7bc02a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
-82750 epoll_ctl(6, EPOLL_CTL_DEL, 17, NULL <unfinished ...>
-82751 <... futex resumed>)              = 1
-82760 <... futex resumed>)              = 0
-82750 <... epoll_ctl resumed>)          = 0
-82751 sendto(14, "\23\1\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-82760 epoll_pwait(4,  <unfinished ...>
-82750 close(17 <unfinished ...>
-82751 <... sendto resumed>)             = 8
-82751 sendto(14, "{\"DataflowStopped\":{\"uuid\":\"0190"..., 275, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
-82750 <... close resumed>)              = 0
-82751 <... sendto resumed>)             = 275
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82751 munmap(0x770d7f6b3000, 4096)      = 0
-82751 recvfrom(14, 0x770d7f96cc98, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
-82751 futex(0x770d7e002a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT|EPOLLRDHUP, data={u32=2141010944, u64=130899859291136}}], 1024, 106, NULL, 8) = 1
-82760 recvfrom(14, "", 8, 0, NULL, NULL) = 0
-82760 epoll_ctl(6, EPOLL_CTL_DEL, 14, NULL) = 0
-82760 close(14)                         = 0
-82760 epoll_pwait(4, [], 1024, 105, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 1984, NULL, 8) = 0
-82760 epoll_pwait(4, [], 1024, 40, NULL, 8) = 0
-82760 futex(0x770d7f9ee2f8, FUTEX_WAKE_PRIVATE, 1) = 1
-82750 <... futex resumed>)              = 0
-82760 epoll_pwait(4,  <unfinished ...>
-82750 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
-82750 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
-82750 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
-82760 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
-82750 futex(0x770d7f9ee2f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
-82760 epoll_pwait(4,  <detached ...>
+17830 read(11,  <unfinished ...>
+17829 futex(0x7be1aee02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17827 futex(0x7be1af602a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17826 futex(0x7be1afa02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17825 futex(0x7be1afe02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17824 futex(0x7be1b0202a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17823 futex(0x7be1b0602a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17822 futex(0x7be1b0a02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17821 futex(0x7be1b0e02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17820 futex(0x7be1b1202a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17819 futex(0x7be1b1602a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17818 futex(0x7be1b1a02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17817 futex(0x7be1b1e02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17816 futex(0x7be1b2202a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17815 futex(0x7be1b2602a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 futex(0x7be1b2a02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=908, tv_nsec=347177630}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=908, tv_nsec=347289240}) = 0
+17828 epoll_pwait(4, [], 1024, 1314, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=909, tv_nsec=662811232}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=909, tv_nsec=662902028}) = 0
+17828 epoll_pwait(4, [], 1024, 639, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=910, tv_nsec=302896951}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=910, tv_nsec=303143009}) = 0
+17828 epoll_pwait(4, [], 1024, 57, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=910, tv_nsec=360670804}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=910, tv_nsec=360848416}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17828 epoll_pwait(4,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=910, tv_nsec=361088956}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=910, tv_nsec=361161314}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=910, tv_nsec=361220541}) = 0
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337201, tv_nsec=25881792}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=910, tv_nsec=361335853}) = 0
+17813 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+17813 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+17813 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
+17813 <... write resumed>)              = 8
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=910, tv_nsec=361679761}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=910, tv_nsec=361738500}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN, data={u32=3024538112, u64=136209322396160}}], 1024, 2948, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=331853864}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=331945289}) = 0
+17828 accept4(13, {sa_family=AF_INET, sin_port=htons(39060), sin_addr=inet_addr("127.0.0.1")}, [128 => 16], SOCK_CLOEXEC|SOCK_NONBLOCK) = 14
+17828 epoll_ctl(6, EPOLL_CTL_ADD, 14, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=3024083072, u64=136209321941120}}) = 0
+17828 accept4(13, 0x7be1af200fb0, [128], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=332298975}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=332364349}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1977, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=332477216}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=332536722}) = 0
+17828 recvfrom(14, "g\3\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17828 recvfrom(14, "{\"Start\":{\"dataflow\":{\"communica"..., 871, 0, NULL, NULL) = 871
+17828 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7be1b43f9000
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=332836071}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=332937553}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=911, tv_nsec=332987281}) = 0
+17813 <... mmap resumed>)               = 0x7be1b43f4000
+17828 epoll_pwait(4,  <unfinished ...>
+17813 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7be1b43f8000
+17813 readlink("/home", 0x7ffc51b24bcf, 4021) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya", 0x7ffc51b24bcf, 4029) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS", 0x7ffc51b24bcf, 4032) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS/StarryOrg", 0x7ffc51b24bcf, 4042) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS/StarryOrg/Starry", 0x7ffc51b24bcf, 4049) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS/StarryOrg/Starry/testcases", 0x7ffc51b24bcf, 4059) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS/StarryOrg/Starry/testcases/x86_64_dora", 0x7ffc51b24bcf, 4071) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS/StarryOrg/Starry/testcases/x86_64_dora/benchmark-example-node", 0x7ffc51b24bcf, 4096) = -1 EINVAL (Invalid argument)
+17813 readlink("/home", 0x7ffc51b24bcf, 4021) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya", 0x7ffc51b24bcf, 4029) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS", 0x7ffc51b24bcf, 4032) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS/StarryOrg", 0x7ffc51b24bcf, 4042) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS/StarryOrg/Starry", 0x7ffc51b24bcf, 4049) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS/StarryOrg/Starry/testcases", 0x7ffc51b24bcf, 4059) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS/StarryOrg/Starry/testcases/x86_64_dora", 0x7ffc51b24bcf, 4071) = -1 EINVAL (Invalid argument)
+17813 readlink("/home/yoimiya/OS/StarryOrg/Starry/testcases/x86_64_dora/benchmark-example-sink", 0x7ffc51b24bcf, 4096) = -1 EINVAL (Invalid argument)
+17813 munmap(0x7be1b43f8000, 4096)      = 0
+17813 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7be1b43f8000
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337201, tv_nsec=998720348}) = 0
+17813 getrandom("\x36\x75\x4d\xa8\xcd\xf9\xe5\x0b\xe3\xa0\x03\x81\x3f\x32\x3a\xe4", 16, 0) = 16
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337201, tv_nsec=998825741}) = 0
+17813 munmap(0x7be1b43f9000, 4096)      = 0
+17813 sendto(15, "g\6\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+17813 sendto(15, "{\"inner\":{\"Spawn\":{\"dataflow_id\""..., 1639, MSG_NOSIGNAL, NULL, 0) = 1639
+17813 recvfrom(15, 0x7ffc51b283c8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=3024539008, u64=136209322397056}}], 1024, 1976, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=337922133}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 recvfrom(15,  <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=911, tv_nsec=338175804}) = 0
+17813 <... recvfrom resumed>"\33\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=338229234}) = 0
+17813 recvfrom(15,  <unfinished ...>
+17828 epoll_pwait(4, [{events=EPOLLOUT, data={u32=3024539008, u64=136209322397056}}], 1024, 1971, NULL, 8) = 1
+17813 <... recvfrom resumed>"{\"SpawnResult\":{\"Ok\":null}}", 27, 0, NULL, NULL) = 27
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=338328970}) = 0
+17813 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=1720337202, tv_nsec=2963680}) = 0
+17828 <... clock_gettime resumed>{tv_sec=911, tv_nsec=338377581}) = 0
+17813 write(3, "2024-07-07T07:26:42.002963Z  INF"..., 1655 <unfinished ...>
+17828 epoll_pwait(4,  <unfinished ...>
+17813 <... write resumed>)              = 1655
+17813 munmap(0x7be1b43f4000, 12288)     = 0
+17813 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 1971, NULL, 8) = 1
+17813 <... write resumed>)              = 8
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=911, tv_nsec=338666174}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=338715902}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=338770240}) = 0
+17828 futex(0x7be1b2a02a68, FUTEX_WAKE_PRIVATE, 1) = 1
+17814 <... futex resumed>)              = 0
+17828 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 <... sendto resumed>)             = 8
+17814 <... clock_gettime resumed>{tv_sec=911, tv_nsec=338901965}) = 0
+17828 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 <... sendto resumed>)             = 67
+17814 <... clock_gettime resumed>{tv_sec=911, tv_nsec=338972577}) = 0
+17828 recvfrom(14,  <unfinished ...>
+17814 epoll_pwait(4,  <unfinished ...>
+17828 <... recvfrom resumed>0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=339091101}) = 0
+17828 futex(0x7be1af202a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=3024538112, u64=136209322396160}}], 1024, 1971, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=339229949}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=339278490}) = 0
+17814 accept4(13, {sa_family=AF_INET, sin_port=htons(39068), sin_addr=inet_addr("127.0.0.1")}, [128 => 16], SOCK_CLOEXEC|SOCK_NONBLOCK) = 17
+17814 epoll_ctl(6, EPOLL_CTL_ADD, 17, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=3024083456, u64=136209321941504}}) = 0
+17814 accept4(13, 0x7be1b2a00fb0, [128], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=339492770}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=339531812}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083456, u64=136209321941504}}], 1024, 0, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=339607592}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=339645517}) = 0
+17814 recvfrom(17, "V\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(17, "{\"LogSubscribe\":{\"dataflow_id\":\""..., 86, 0, NULL, NULL) = 86
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=339786112}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=911, tv_nsec=339859447}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=339898839}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 1970, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=411743823}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=411852919}) = 0
+17814 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
+17814 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337202, tv_nsec=76721185}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=412176154}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 recvfrom(16,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 <... recvfrom resumed>0x7be1b44007a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17813 <... clock_gettime resumed>{tv_sec=911, tv_nsec=412285109}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=911, tv_nsec=412332673}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=911, tv_nsec=412386592}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1897, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=912, tv_nsec=339509701}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=912, tv_nsec=339586808}) = 0
+17814 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(14, 0x7be1b43ffe00, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=912, tv_nsec=339824485}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=912, tv_nsec=339881687}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 970, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=912, tv_nsec=380278170}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=912, tv_nsec=380355696}) = 0
+17814 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=912, tv_nsec=380513472}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=912, tv_nsec=380622777}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=912, tv_nsec=380665870}) = 0
+17814 <... clock_gettime resumed>{tv_sec=912, tv_nsec=380686684}) = 0
+17813 futex(0x7be1af202a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17814 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17828 <... futex resumed>)              = 0
+17813 <... futex resumed>)              = 1
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... sendto resumed>)             = 8
+17828 <... clock_gettime resumed>{tv_sec=912, tv_nsec=380795569}) = 0
+17814 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=912, tv_nsec=380849209}) = 0
+17814 <... sendto resumed>)             = 67
+17828 epoll_pwait(4,  <unfinished ...>
+17814 recvfrom(14, 0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=912, tv_nsec=380972902}) = 0
+17814 futex(0x7be1b2a02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... epoll_pwait resumed>[], 1024, 929, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=310211939}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=310310138}) = 0
+17828 epoll_pwait(4, [], 1024, 50, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=360543988}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=360597837}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17828 epoll_pwait(4,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=360729212}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=360785995}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=360855419}) = 0
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337204, tv_nsec=25503609}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=360949708}) = 0
+17813 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+17813 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+17813 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
+17813 <... write resumed>)              = 8
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=913, tv_nsec=361224332}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=361259672}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 396, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=381106847}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=381173338}) = 0
+17828 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17828 recvfrom(14, 0x7be1b43ffe50, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=381380563}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=381443911}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 376, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=421186312}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=421242676}) = 0
+17828 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=421377264}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17828 <... clock_gettime resumed>{tv_sec=913, tv_nsec=421457305}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=913, tv_nsec=421501655}) = 0
+17813 <... clock_gettime resumed>{tv_sec=913, tv_nsec=421511643}) = 0
+17828 epoll_pwait(4, [], 1024, 0, NULL, 8) = 0
+17813 futex(0x7be1b2a02a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... futex resumed>)              = 1
+17828 <... clock_gettime resumed>{tv_sec=913, tv_nsec=421576387}) = 0
+17814 <... futex resumed>)              = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=913, tv_nsec=421612147}) = 0
+17814 <... clock_gettime resumed>{tv_sec=913, tv_nsec=421616408}) = 0
+17828 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=421674098}) = 0
+17828 <... sendto resumed>)             = 8
+17814 epoll_pwait(4,  <unfinished ...>
+17828 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0) = 67
+17828 recvfrom(14, 0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=421850942}) = 0
+17828 futex(0x7be1af202a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... epoll_pwait resumed>[], 1024, 336, NULL, 8) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=758182281}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=913, tv_nsec=758260715}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 2559, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=914, tv_nsec=422100434}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=914, tv_nsec=422176773}) = 0
+17814 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(14, 0x7be1b43ffea0, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=914, tv_nsec=422413612}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=914, tv_nsec=422466832}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1895, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=914, tv_nsec=462194358}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=914, tv_nsec=462277122}) = 0
+17814 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=914, tv_nsec=462480576}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=914, tv_nsec=462606015}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=914, tv_nsec=462648061}) = 0
+17814 <... clock_gettime resumed>{tv_sec=914, tv_nsec=462669433}) = 0
+17813 futex(0x7be1af202a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17814 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 <... futex resumed>)              = 1
+17828 <... futex resumed>)              = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... sendto resumed>)             = 8
+17828 <... clock_gettime resumed>{tv_sec=914, tv_nsec=462792985}) = 0
+17814 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=914, tv_nsec=462863388}) = 0
+17814 <... sendto resumed>)             = 67
+17828 epoll_pwait(4,  <unfinished ...>
+17814 recvfrom(14, 0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=914, tv_nsec=463041279}) = 0
+17814 futex(0x7be1b2a02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1855, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=915, tv_nsec=463251126}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=915, tv_nsec=463322576}) = 0
+17828 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17828 recvfrom(14, 0x7be1b43ffef0, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=915, tv_nsec=463542094}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=915, tv_nsec=463598387}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 854, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=915, tv_nsec=504231084}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=915, tv_nsec=504309867}) = 0
+17828 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=915, tv_nsec=504482101}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=915, tv_nsec=504596854}) = 0
+17813 <... clock_gettime resumed>{tv_sec=915, tv_nsec=504607609}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=915, tv_nsec=504647141}) = 0
+17813 futex(0x7be1b2a02a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17828 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 <... futex resumed>)              = 1
+17814 <... futex resumed>)              = 0
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 <... sendto resumed>)             = 8
+17828 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=915, tv_nsec=504767760}) = 0
+17828 <... sendto resumed>)             = 67
+17828 recvfrom(14,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 <... recvfrom resumed>0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 <... clock_gettime resumed>{tv_sec=915, tv_nsec=504873782}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=915, tv_nsec=504912406}) = 0
+17814 epoll_pwait(4,  <unfinished ...>
+17828 futex(0x7be1af202a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... epoll_pwait resumed>[], 1024, 813, NULL, 8) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=318999034}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=319135507}) = 0
+17814 epoll_pwait(4, [], 1024, 41, NULL, 8) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=360580553}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=360771644}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 epoll_pwait(4,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=361047316}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=361114016}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=361172196}) = 0
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337207, tv_nsec=25830233}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=361280732}) = 0
+17813 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+17813 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+17813 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
+17814 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=916, tv_nsec=361575052}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=361636095}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 1492, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=411518637}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=411579750}) = 0
+17814 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
+17814 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337207, tv_nsec=76354635}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=411797312}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 recvfrom(16,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 <... recvfrom resumed>0x7be1b44007a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17813 <... clock_gettime resumed>{tv_sec=916, tv_nsec=411885594}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=411907874}) = 0
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=411948034}) = 0
+17814 epoll_pwait(4, [{events=EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 1442, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=412047351}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=412088768}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1441, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=505110196}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=505170820}) = 0
+17814 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(14, 0x7be1b43ffe00, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=505373227}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=505421977}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1348, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=545237508}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=545327396}) = 0
+17814 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=545513878}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=545638408}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=916, tv_nsec=545673260}) = 0
+17814 <... clock_gettime resumed>{tv_sec=916, tv_nsec=545689534}) = 0
+17813 futex(0x7be1af202a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17814 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 <... futex resumed>)              = 1
+17828 <... futex resumed>)              = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... sendto resumed>)             = 8
+17828 <... clock_gettime resumed>{tv_sec=916, tv_nsec=545796324}) = 0
+17814 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=545839557}) = 0
+17814 <... sendto resumed>)             = 67
+17828 epoll_pwait(4,  <unfinished ...>
+17814 recvfrom(14, 0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=916, tv_nsec=545948094}) = 0
+17814 futex(0x7be1b2a02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1308, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=917, tv_nsec=546207023}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=917, tv_nsec=546333859}) = 0
+17828 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17828 recvfrom(14, 0x7be1b43ffe50, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=917, tv_nsec=546578450}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=917, tv_nsec=546638515}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 307, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=917, tv_nsec=586296340}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=917, tv_nsec=586430090}) = 0
+17828 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=917, tv_nsec=586640319}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=917, tv_nsec=586767713}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=917, tv_nsec=586817092}) = 0
+17828 <... clock_gettime resumed>{tv_sec=917, tv_nsec=586834763}) = 0
+17813 futex(0x7be1b2a02a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17828 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 <... futex resumed>)              = 1
+17814 <... futex resumed>)              = 0
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... sendto resumed>)             = 8
+17828 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 <... sendto resumed>)             = 67
+17814 <... clock_gettime resumed>{tv_sec=917, tv_nsec=587054909}) = 0
+17828 recvfrom(14, 0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=917, tv_nsec=587163725}) = 0
+17828 <... clock_gettime resumed>{tv_sec=917, tv_nsec=587185237}) = 0
+17814 epoll_pwait(4,  <unfinished ...>
+17828 futex(0x7be1af202a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... epoll_pwait resumed>[], 1024, 266, NULL, 8) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=917, tv_nsec=853654327}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=917, tv_nsec=853744704}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1472, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=918, tv_nsec=587377770}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=918, tv_nsec=587476110}) = 0
+17814 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(14, 0x7be1b43ffea0, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=918, tv_nsec=587730619}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=918, tv_nsec=587790684}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 738, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=918, tv_nsec=629243485}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=918, tv_nsec=629314096}) = 0
+17814 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=918, tv_nsec=629495899}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=918, tv_nsec=629615191}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=918, tv_nsec=629662894}) = 0
+17814 <... clock_gettime resumed>{tv_sec=918, tv_nsec=629670996}) = 0
+17813 futex(0x7be1af202a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17814 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 <... futex resumed>)              = 1
+17828 <... futex resumed>)              = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 <... sendto resumed>)             = 8
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=918, tv_nsec=629793571}) = 0
+17814 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=918, tv_nsec=629852658}) = 0
+17814 <... sendto resumed>)             = 67
+17828 epoll_pwait(4,  <unfinished ...>
+17814 recvfrom(14, 0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=918, tv_nsec=629976141}) = 0
+17814 futex(0x7be1b2a02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... epoll_pwait resumed>[], 1024, 696, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=326823632}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=326964086}) = 0
+17828 epoll_pwait(4, [], 1024, 34, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=361307113}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=361412646}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17828 epoll_pwait(4,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=361580061}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=361653466}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=361723100}) = 0
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337210, tv_nsec=26384769}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=361843720}) = 0
+17813 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+17813 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+17813 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
+17813 <... write resumed>)              = 8
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=919, tv_nsec=362367894}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=362437667}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 2587, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=630329480}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=630521340}) = 0
+17828 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17828 recvfrom(14, 0x7be1b43ffef0, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=630798967}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=630867623}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 2319, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=670144734}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=670186221}) = 0
+17828 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=919, tv_nsec=670285049}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17828 <... clock_gettime resumed>{tv_sec=919, tv_nsec=670356569}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=919, tv_nsec=670389744}) = 0
+17813 <... clock_gettime resumed>{tv_sec=919, tv_nsec=670396240}) = 0
+17828 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 futex(0x7be1b2a02a68, FUTEX_WAKE_PRIVATE, 1) = 1
+17828 <... sendto resumed>)             = 8
+17814 <... futex resumed>)              = 0
+17828 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=919, tv_nsec=670495836}) = 0
+17828 <... sendto resumed>)             = 67
+17828 recvfrom(14,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 <... recvfrom resumed>0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 <... clock_gettime resumed>{tv_sec=919, tv_nsec=670537323}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 epoll_pwait(4,  <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=919, tv_nsec=670573642}) = 0
+17828 futex(0x7be1af202a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 2279, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=920, tv_nsec=670813021}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=920, tv_nsec=670889849}) = 0
+17814 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(14, 0x7be1b43fff40, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=920, tv_nsec=671160282}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=920, tv_nsec=671226494}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1278, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=920, tv_nsec=711252326}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=920, tv_nsec=711352901}) = 0
+17814 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17814 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7be1b43f9000
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=920, tv_nsec=711627804}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17814 <... clock_gettime resumed>{tv_sec=920, tv_nsec=711746258}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=920, tv_nsec=711809257}) = 0
+17814 <... clock_gettime resumed>{tv_sec=920, tv_nsec=711817359}) = 0
+17813 futex(0x7be1af202a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17814 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 <... futex resumed>)              = 1
+17828 <... futex resumed>)              = 0
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... sendto resumed>)             = 8
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=920, tv_nsec=711907108}) = 0
+17814 <... sendto resumed>)             = 67
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 recvfrom(14,  <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=920, tv_nsec=711950131}) = 0
+17814 <... recvfrom resumed>0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 epoll_pwait(4,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=920, tv_nsec=711991618}) = 0
+17814 futex(0x7be1b2a02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 1238, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=411690638}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=411733383}) = 0
+17828 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17828 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
+17828 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337212, tv_nsec=76482705}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=411919585}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17828 recvfrom(16,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17828 <... recvfrom resumed>0x7be1b44007a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=921, tv_nsec=412029099}) = 0
+17828 <... clock_gettime resumed>{tv_sec=921, tv_nsec=412037271}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=921, tv_nsec=412066605}) = 0
+17828 epoll_pwait(4, [{events=EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 537, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=412139103}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=412176259}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 537, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=712187929}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=712243943}) = 0
+17828 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17828 recvfrom(14, 0x7be1b43ffe50, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=712420298}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=712465766}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 237, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=753267908}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=753426313}) = 0
+17828 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=753652396}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17828 <... clock_gettime resumed>{tv_sec=921, tv_nsec=753736557}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=921, tv_nsec=753781886}) = 0
+17828 <... clock_gettime resumed>{tv_sec=921, tv_nsec=753790476}) = 0
+17813 futex(0x7be1b2a02a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17828 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 <... futex resumed>)              = 1
+17814 <... futex resumed>)              = 0
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... sendto resumed>)             = 8
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=921, tv_nsec=753882460}) = 0
+17828 <... sendto resumed>)             = 67
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 recvfrom(14,  <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=921, tv_nsec=753937217}) = 0
+17828 <... recvfrom resumed>0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 epoll_pwait(4,  <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=754009505}) = 0
+17828 futex(0x7be1af202a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... epoll_pwait resumed>[], 1024, 196, NULL, 8) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=950374604}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=921, tv_nsec=950486773}) = 0
+17814 epoll_pwait(4, [], 1024, 383, NULL, 8) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=334074685}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=334137683}) = 0
+17814 epoll_pwait(4, [], 1024, 26, NULL, 8) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=360352691}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=360433500}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 epoll_pwait(4,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=360564177}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=360621099}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=360674110}) = 0
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337213, tv_nsec=25321043}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=360766094}) = 0
+17813 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+17813 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+17813 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+17814 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
+17813 <... write resumed>)              = 8
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=922, tv_nsec=361035340}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=361081157}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 2980, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=754572448}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=754725475}) = 0
+17814 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(14, 0x7be1b43ffea0, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=754997655}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=755063657}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 2586, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=795752863}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=795898696}) = 0
+17814 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=796325998}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17814 <... clock_gettime resumed>{tv_sec=922, tv_nsec=796523585}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=796606978}) = 0
+17813 <... clock_gettime resumed>{tv_sec=922, tv_nsec=796605162}) = 0
+17814 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 futex(0x7be1af202a68, FUTEX_WAKE_PRIVATE, 1) = 1
+17814 <... sendto resumed>)             = 8
+17828 <... futex resumed>)              = 0
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=796897526}) = 0
+17814 <... sendto resumed>)             = 67
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 recvfrom(14,  <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=922, tv_nsec=796974005}) = 0
+17814 <... recvfrom resumed>0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 epoll_pwait(4,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=922, tv_nsec=797060052}) = 0
+17814 futex(0x7be1b2a02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 2545, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=923, tv_nsec=797275060}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=923, tv_nsec=797343646}) = 0
+17828 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17828 recvfrom(14, 0x7be1b43ffef0, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=923, tv_nsec=797564700}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=923, tv_nsec=797620784}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1544, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=923, tv_nsec=838261660}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=923, tv_nsec=838363562}) = 0
+17828 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=923, tv_nsec=838583080}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=923, tv_nsec=838785136}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=923, tv_nsec=838831163}) = 0
+17828 <... clock_gettime resumed>{tv_sec=923, tv_nsec=838853024}) = 0
+17813 futex(0x7be1b2a02a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17828 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 <... futex resumed>)              = 1
+17814 <... futex resumed>)              = 0
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... sendto resumed>)             = 8
+17814 <... clock_gettime resumed>{tv_sec=923, tv_nsec=838983282}) = 0
+17828 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 <... sendto resumed>)             = 67
+17814 <... clock_gettime resumed>{tv_sec=923, tv_nsec=839070656}) = 0
+17828 recvfrom(14,  <unfinished ...>
+17814 epoll_pwait(4,  <unfinished ...>
+17828 <... recvfrom resumed>0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=923, tv_nsec=839174583}) = 0
+17828 futex(0x7be1af202a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1502, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=924, tv_nsec=839333950}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=924, tv_nsec=839397159}) = 0
+17814 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(14, 0x7be1b43fff40, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=924, tv_nsec=839552630}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=924, tv_nsec=839597120}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 502, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=924, tv_nsec=880151880}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=924, tv_nsec=880208593}) = 0
+17814 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=924, tv_nsec=880321669}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=924, tv_nsec=880406599}) = 0
+17813 <... clock_gettime resumed>{tv_sec=924, tv_nsec=880412745}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=924, tv_nsec=880439495}) = 0
+17813 futex(0x7be1af202a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17814 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 <... futex resumed>)              = 1
+17828 <... futex resumed>)              = 0
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 <... sendto resumed>)             = 8
+17828 <... clock_gettime resumed>{tv_sec=924, tv_nsec=880519675}) = 0
+17814 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=924, tv_nsec=880562140}) = 0
+17814 <... sendto resumed>)             = 67
+17828 epoll_pwait(4,  <unfinished ...>
+17814 recvfrom(14, 0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=924, tv_nsec=880653565}) = 0
+17814 futex(0x7be1b2a02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... epoll_pwait resumed>[], 1024, 461, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=342168472}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=342263389}) = 0
+17828 epoll_pwait(4, [], 1024, 18, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=360538674}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=360632963}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17828 epoll_pwait(4,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=360811343}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=360870570}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=360926375}) = 0
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337216, tv_nsec=25569047}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=361023178}) = 0
+17813 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+17813 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+17813 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
+17828 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=361263718}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=361314355}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 684, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=880815680}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=880874419}) = 0
+17828 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17828 recvfrom(14, 0x7be1b43ffe00, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=881057478}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=881103435}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 164, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=921218672}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=921286769}) = 0
+17828 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=921438189}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=921522211}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=925, tv_nsec=921549170}) = 0
+17828 <... clock_gettime resumed>{tv_sec=925, tv_nsec=921567469}) = 0
+17813 futex(0x7be1b2a02a68, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+17828 sendto(14, "C\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17813 <... futex resumed>)              = 1
+17814 <... futex resumed>)              = 0
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... sendto resumed>)             = 8
+17814 <... clock_gettime resumed>{tv_sec=925, tv_nsec=921651980}) = 0
+17828 sendto(14, "{\"DataflowStarted\":{\"uuid\":\"0190"..., 67, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 <... sendto resumed>)             = 67
+17814 <... clock_gettime resumed>{tv_sec=925, tv_nsec=921690114}) = 0
+17828 recvfrom(14,  <unfinished ...>
+17814 epoll_pwait(4,  <unfinished ...>
+17828 <... recvfrom resumed>0x7be1b4400d18, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=925, tv_nsec=921773647}) = 0
+17828 futex(0x7be1af202a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... epoll_pwait resumed>[], 1024, 124, NULL, 8) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=46051329}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=46153231}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 2303, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=120411887}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=120463361}) = 0
+17814 recvfrom(16, "G\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 327, 0, NULL, NULL) = 327
+17814 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337216, tv_nsec=785235523}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=120678968}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 recvfrom(16,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 <... recvfrom resumed>0x7be1b44007a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17813 <... clock_gettime resumed>{tv_sec=926, tv_nsec=120768647}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 sendto(17, "\273\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=926, tv_nsec=120831017}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... sendto resumed>)             = 8
+17814 <... clock_gettime resumed>{tv_sec=926, tv_nsec=120874320}) = 0
+17813 sendto(17, "{\"dataflow_id\":\"01908c16-7b4e-74"..., 187, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 epoll_pwait(4, [{events=EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 2229, NULL, 8) = 1
+17813 <... sendto resumed>)             = 187
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=926, tv_nsec=120992914}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=121074072}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 2228, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=130094552}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=130146097}) = 0
+17814 recvfrom(16, "G\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 327, 0, NULL, NULL) = 327
+17814 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337216, tv_nsec=794957231}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=130414156}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17814 recvfrom(16,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 <... recvfrom resumed>"q\1\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17813 <... clock_gettime resumed>{tv_sec=926, tv_nsec=130532470}) = 0
+17814 recvfrom(16,  <unfinished ...>
+17813 sendto(17, "\273\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 <... recvfrom resumed>"{\"inner\":{\"Event\":{\"machine_id\":"..., 369, 0, NULL, NULL) = 369
+17814 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+17813 <... sendto resumed>)             = 8
+17814 <... clock_gettime resumed>{tv_sec=1720337216, tv_nsec=795265869}) = 0
+17813 sendto(17, "{\"dataflow_id\":\"01908c16-7b4e-74"..., 187, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17814 recvfrom(16, 0x7be1b44007a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17813 <... sendto resumed>)             = 187
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=926, tv_nsec=130776293}) = 0
+17813 <... mmap resumed>)               = 0x7be1b43f6000
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=130824904}) = 0
+17813 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+17814 epoll_pwait(4,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=1720337216, tv_nsec=795463456}) = 0
+17814 <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 2219, NULL, 8) = 1
+17813 clock_gettime(CLOCK_REALTIME,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=1720337216, tv_nsec=795520867}) = 0
+17814 <... clock_gettime resumed>{tv_sec=926, tv_nsec=130941194}) = 0
+17813 munmap(0x7be1b43f6000, 4096 <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=130983030}) = 0
+17813 <... munmap resumed>)             = 0
+17814 epoll_pwait(4,  <unfinished ...>
+17813 epoll_ctl(6, EPOLL_CTL_DEL, 17, NULL) = 0
+17813 close(17)                         = 0
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 2218, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=412443423}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=412532054}) = 0
+17814 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
+17814 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337217, tv_nsec=77383278}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=412840622}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17814 recvfrom(16,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17814 <... recvfrom resumed>0x7be1b44007a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=412998398}) = 0
+17813 <... clock_gettime resumed>{tv_sec=926, tv_nsec=412995115}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=413089544}) = 0
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 epoll_pwait(4, [{events=EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 1936, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=413225040}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=926, tv_nsec=413280426}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1936, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=131057660}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=131156349}) = 0
+17814 recvfrom(14, "B\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17814 recvfrom(14, 0x7be1b43ffe50, 66, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=131449202}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=131515204}) = 0
+17814 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024083072, u64=136209321941120}}], 1024, 1218, NULL, 8) = 1
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=171288837}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=171453947}) = 0
+17814 recvfrom(14, "{\"Check\":{\"dataflow_uuid\":\"01908"..., 66, 0, NULL, NULL) = 66
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=171726406}) = 0
+17814 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17814 <... clock_gettime resumed>{tv_sec=927, tv_nsec=171889770}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=927, tv_nsec=171950603}) = 0
+17814 epoll_pwait(4,  <unfinished ...>
+17813 <... mmap resumed>)               = 0x7be1b43f6000
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337217, tv_nsec=836728702}) = 0
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337217, tv_nsec=836796799}) = 0
+17813 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+17814 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, 1178, NULL, 8) = 1
+17813 <... write resumed>)              = 8
+17814 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17814 <... clock_gettime resumed>{tv_sec=927, tv_nsec=172330062}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=172378254}) = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=172433920}) = 0
+17814 futex(0x7be1af202a68, FUTEX_WAKE_PRIVATE, 1) = 1
+17828 <... futex resumed>)              = 0
+17814 sendto(14, "\23\1\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=172594489}) = 0
+17814 <... sendto resumed>)             = 8
+17814 sendto(14, "{\"DataflowStopped\":{\"uuid\":\"0190"..., 275, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=172727611}) = 0
+17814 <... sendto resumed>)             = 275
+17828 epoll_pwait(4,  <unfinished ...>
+17814 munmap(0x7be1b43f6000, 4096 <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT|EPOLLRDHUP, data={u32=3024083072, u64=136209321941120}}], 1024, 1177, NULL, 8) = 1
+17814 <... munmap resumed>)             = 0
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17814 recvfrom(14,  <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=927, tv_nsec=172855843}) = 0
+17814 <... recvfrom resumed>"", 8, 0, NULL, NULL) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=172956627}) = 0
+17814 epoll_ctl(6, EPOLL_CTL_DEL, 14, NULL <unfinished ...>
+17828 epoll_pwait(4,  <unfinished ...>
+17814 <... epoll_ctl resumed>)          = 0
+17814 close(14)                         = 0
+17814 clock_gettime(CLOCK_MONOTONIC, {tv_sec=927, tv_nsec=173207016}) = 0
+17814 futex(0x7be1b2a02a68, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... epoll_pwait resumed>[], 1024, 1177, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=928, tv_nsec=351288606}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=928, tv_nsec=351418794}) = 0
+17828 epoll_pwait(4, [], 1024, 9, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=928, tv_nsec=360758529}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=928, tv_nsec=360848627}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17828 epoll_pwait(4,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=928, tv_nsec=361057668}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=928, tv_nsec=361142109}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=928, tv_nsec=361211673}) = 0
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337219, tv_nsec=25871945}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=928, tv_nsec=361330267}) = 0
+17813 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+17813 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+17813 write(5, "\1\0\0\0\0\0\0\0", 8)   = 8
+17828 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=928, tv_nsec=361679484}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=928, tv_nsec=361742902}) = 0
+17828 epoll_pwait(4, [], 1024, 1780, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=930, tv_nsec=144041302}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=930, tv_nsec=144304611}) = 0
+17828 epoll_pwait(4, [], 1024, 1213, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=358880002}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=359040642}) = 0
+17828 epoll_pwait(4, [], 1024, 1, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=360362638}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=360425776}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17828 epoll_pwait(4,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=360544999}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=360604575}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=360657516}) = 0
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337222, tv_nsec=25307522}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=360755996}) = 0
+17813 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+17813 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+17813 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
+17813 <... write resumed>)              = 8
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=931, tv_nsec=361075180}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=361139086}) = 0
+17828 epoll_pwait(4, [{events=EPOLLIN|EPOLLOUT, data={u32=3024539392, u64=136209322397440}}], 1024, 2876, NULL, 8) = 1
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=412365572}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=412601642}) = 0
+17828 recvfrom(16, "\217\0\0\0\0\0\0\0", 8, 0, NULL, NULL) = 8
+17828 recvfrom(16, "{\"inner\":{\"Event\":{\"machine_id\":"..., 143, 0, NULL, NULL) = 143
+17828 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337222, tv_nsec=77896931}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=413349944}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17828 recvfrom(16,  <unfinished ...>
+17813 <... futex resumed>)              = 0
+17828 <... recvfrom resumed>0x7be1b44007a8, 8, 0, NULL, NULL) = -1 EAGAIN (Resource temporarily unavailable)
+17813 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 <... clock_gettime resumed>{tv_sec=931, tv_nsec=413484533}) = 0
+17828 <... clock_gettime resumed>{tv_sec=931, tv_nsec=413501295}) = 0
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=931, tv_nsec=413576097}) = 0
+17828 epoll_pwait(4, [], 1024, 2824, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=934, tv_nsec=240923651}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=934, tv_nsec=241297592}) = 0
+17828 epoll_pwait(4, [], 1024, 60, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=934, tv_nsec=302014608}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=934, tv_nsec=302205769}) = 0
+17828 epoll_pwait(4, [], 1024, 58, NULL, 8) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=934, tv_nsec=360758269}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=934, tv_nsec=361010264}) = 0
+17828 futex(0x7be1b44872f8, FUTEX_WAKE_PRIVATE, 1) = 1
+17813 <... futex resumed>)              = 0
+17828 epoll_pwait(4,  <unfinished ...>
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=934, tv_nsec=361291803}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=934, tv_nsec=361364440}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=934, tv_nsec=361424505}) = 0
+17813 clock_gettime(CLOCK_REALTIME, {tv_sec=1720337225, tv_nsec=26080098}) = 0
+17813 clock_gettime(CLOCK_MONOTONIC, {tv_sec=934, tv_nsec=361534090}) = 0
+17813 sendto(15, "k\0\0\0\0\0\0\0", 8, MSG_NOSIGNAL, NULL, 0) = 8
+17813 sendto(15, "{\"inner\":\"Heartbeat\",\"timestamp\""..., 107, MSG_NOSIGNAL, NULL, 0) = 107
+17813 write(5, "\1\0\0\0\0\0\0\0", 8 <unfinished ...>
+17828 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=0, u64=0}}], 1024, -1, NULL, 8) = 1
+17813 <... write resumed>)              = 8
+17828 clock_gettime(CLOCK_MONOTONIC,  <unfinished ...>
+17813 futex(0x7be1b44872f8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+17828 <... clock_gettime resumed>{tv_sec=934, tv_nsec=361868360}) = 0
+17828 clock_gettime(CLOCK_MONOTONIC, {tv_sec=934, tv_nsec=361923187}) = 0
+17828 epoll_pwait(4,  <detached ...>
