@@ -1,0 +1,1970 @@
+187459 execve("./batch", ["./batch", "./echo", "127.0.0.1:8080"], ["LC_TELEPHONE=en_US.UTF-8", "GDMSESSION=ubuntu", "DESKTOP_SESSION=ubuntu", "PWD=/home/yoimiya/OS/StarryOrg/S"..., "all_proxy=socks://127.0.0.1:7890"..., "LOGNAME=yoimiya", "HTTPS_PROXY=http://127.0.0.1:789"..., "GNOME_DESKTOP_SESSION_ID=this-is"..., "LC_MEASUREMENT=en_US.UTF-8", "XDG_SESSION_TYPE=x11", "SYSTEMD_EXEC_PID=3010", "PATH=/home/yoimiya/.cargo/bin:/h"..., "HOME=/home/yoimiya", "USERNAME=yoimiya", "QT_IM_MODULE=fcitx", "USER=yoimiya", "DISPLAY=:1", "ALL_PROXY=socks://127.0.0.1:7890"..., "SDL_IM_MODULE=fcitx", "LANG=en_US.UTF-8", "CLUTTER_IM_MODULE=fcitx", "XAUTHORITY=/run/user/1000/gdm/Xa"..., "LC_PAPER=en_US.UTF-8", "LC_NAME=en_US.UTF-8", "LANGUAGE=en", "SESSION_MANAGER=local/Firefly:@/"..., "IM_CONFIG_PHASE=1", "XDG_RUNTIME_DIR=/run/user/1000", "https_proxy=http://127.0.0.1:789"..., "HTTP_PROXY=http://127.0.0.1:7890"..., "http_proxy=http://127.0.0.1:7890"..., "XDG_SESSION_DESKTOP=ubuntu", "VTE_VERSION=7600", "XDG_CURRENT_DESKTOP=ubuntu:GNOME", "XDG_DATA_DIRS=/usr/share/ubuntu:"..., "GNOME_TERMINAL_SERVICE=:1.125", "QTWEBENGINE_DICTIONARIES_PATH=/u"..., "XDG_CONFIG_DIRS=/etc/xdg/xdg-ubu"..., "LC_ADDRESS=en_US.UTF-8", "_=/usr/bin/strace", "GPG_AGENT_INFO=/run/user/1000/gn"..., "SHELL=/usr/bin/zsh", "GTK_IM_MODULE=fcitx", "XDG_SESSION_CLASS=user", "MEMORY_PRESSURE_WRITE=c29tZSAyMD"..., "XMODIFIERS=@im=fcitx", "GTK_MODULES=gail:atk-bridge", "PAPERSIZE=letter", "LC_IDENTIFICATION=en_US.UTF-8", "NO_PROXY=localhost,127.0.0.0/8,:"..., "no_proxy=localhost,127.0.0.0/8,:"..., "GNOME_KEYRING_CONTROL=/run/user/"..., "DBUS_SESSION_BUS_ADDRESS=unix:pa"..., "GNOME_TERMINAL_SCREEN=/org/gnome"..., "DEBUGINFOD_URLS=https://debuginf"..., "MEMORY_PRESSURE_WATCH=/sys/fs/cg"..., "LC_NUMERIC=en_US.UTF-8", "GNOME_SHELL_SESSION_MODE=ubuntu", "TERM=xterm-256color", "XDG_MENU_PREFIX=gnome-", "COLORTERM=truecolor", "LC_TIME=en_US.UTF-8", "WINDOWPATH=2", "GSM_SKIP_SSH_AGENT_WORKAROUND=tr"..., "QT_ACCESSIBILITY=1", "SSH_AUTH_SOCK=/run/user/1000/key"..., "LC_MONETARY=en_US.UTF-8", "SHLVL=1", "OLDPWD=/home/yoimiya/OS/StarryOr"..., "P9K_TTY=old", "_P9K_TTY=/dev/pts/4", "ZSH=/home/yoimiya/.oh-my-zsh", "PAGER=less", "LESS=-R", "LSCOLORS=Gxfxcxdxbxegedabagacad", "LS_COLORS=rs=0:di=01;34:ln=01;36"..., "P9K_SSH=0", "_P9K_SSH_TTY=/dev/pts/4"]) = 0
+187459 arch_prctl(ARCH_SET_FS, 0x760b1fa788a8) = 0
+187459 set_tid_address(0x760b1fa78a38)  = 187459
+187459 poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout)
+187459 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x760b1f854e1d}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+187459 rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+187459 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2], NULL, 8) = 0
+187459 rt_sigaction(SIGSEGV, {sa_handler=0x760b1f82acf0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d}, NULL, 8) = 0
+187459 rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+187459 rt_sigaction(SIGBUS, {sa_handler=0x760b1f82acf0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d}, NULL, 8) = 0
+187459 sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187459 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x760b1fa87000
+187459 mprotect(0x760b1fa87000, 4096, PROT_NONE) = 0
+187459 sigaltstack({ss_sp=0x760b1fa88000, ss_flags=0, ss_size=8192}, NULL) = 0
+187459 brk(NULL)                        = 0x555556318000
+187459 brk(0x55555631a000)              = 0x55555631a000
+187459 mmap(0x555556318000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x555556318000
+187459 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x760b1fa86000
+187459 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+187459 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+187459 rt_sigprocmask(SIG_BLOCK, ~[], [], 8) = 0
+187459 pipe2([3, 4], O_CLOEXEC)         = 0
+187459 clone(child_stack=0x7fff9f98d658, flags=CLONE_VM|CLONE_VFORK|SIGCHLD <unfinished ...>
+187460 close(3)                         = 0
+187460 rt_sigaction(SIGBUS, NULL, {sa_handler=0x760b1f82acf0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d}, 8) = 0
+187460 rt_sigaction(SIGBUS, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d}, NULL, 8) = 0
+187460 rt_sigaction(SIGSEGV, NULL, {sa_handler=0x760b1f82acf0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d}, 8) = 0
+187460 rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d}, NULL, 8) = 0
+187460 rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d}, NULL, 8) = 0
+187460 fcntl(4, F_SETFD, FD_CLOEXEC)    = 0
+187460 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+187460 execve("./echo", ["./echo"], ["LC_TELEPHONE=en_US.UTF-8", "GDMSESSION=ubuntu", "DESKTOP_SESSION=ubuntu", "PWD=/home/yoimiya/OS/StarryOrg/S"..., "all_proxy=socks://127.0.0.1:7890"..., "LOGNAME=yoimiya", "HTTPS_PROXY=http://127.0.0.1:789"..., "GNOME_DESKTOP_SESSION_ID=this-is"..., "LC_MEASUREMENT=en_US.UTF-8", "XDG_SESSION_TYPE=x11", "SYSTEMD_EXEC_PID=3010", "PATH=/home/yoimiya/.cargo/bin:/h"..., "HOME=/home/yoimiya", "USERNAME=yoimiya", "QT_IM_MODULE=fcitx", "USER=yoimiya", "DISPLAY=:1", "ALL_PROXY=socks://127.0.0.1:7890"..., "SDL_IM_MODULE=fcitx", "LANG=en_US.UTF-8", "CLUTTER_IM_MODULE=fcitx", "XAUTHORITY=/run/user/1000/gdm/Xa"..., "LC_PAPER=en_US.UTF-8", "LC_NAME=en_US.UTF-8", "LANGUAGE=en", "SESSION_MANAGER=local/Firefly:@/"..., "IM_CONFIG_PHASE=1", "XDG_RUNTIME_DIR=/run/user/1000", "https_proxy=http://127.0.0.1:789"..., "HTTP_PROXY=http://127.0.0.1:7890"..., "http_proxy=http://127.0.0.1:7890"..., "XDG_SESSION_DESKTOP=ubuntu", "VTE_VERSION=7600", "XDG_CURRENT_DESKTOP=ubuntu:GNOME", "XDG_DATA_DIRS=/usr/share/ubuntu:"..., "GNOME_TERMINAL_SERVICE=:1.125", "QTWEBENGINE_DICTIONARIES_PATH=/u"..., "XDG_CONFIG_DIRS=/etc/xdg/xdg-ubu"..., "LC_ADDRESS=en_US.UTF-8", "_=/usr/bin/strace", "GPG_AGENT_INFO=/run/user/1000/gn"..., "SHELL=/usr/bin/zsh", "GTK_IM_MODULE=fcitx", "XDG_SESSION_CLASS=user", "MEMORY_PRESSURE_WRITE=c29tZSAyMD"..., "XMODIFIERS=@im=fcitx", "GTK_MODULES=gail:atk-bridge", "PAPERSIZE=letter", "LC_IDENTIFICATION=en_US.UTF-8", "NO_PROXY=localhost,127.0.0.0/8,:"..., "no_proxy=localhost,127.0.0.0/8,:"..., "GNOME_KEYRING_CONTROL=/run/user/"..., "DBUS_SESSION_BUS_ADDRESS=unix:pa"..., "GNOME_TERMINAL_SCREEN=/org/gnome"..., "DEBUGINFOD_URLS=https://debuginf"..., "MEMORY_PRESSURE_WATCH=/sys/fs/cg"..., "LC_NUMERIC=en_US.UTF-8", "GNOME_SHELL_SESSION_MODE=ubuntu", "TERM=xterm-256color", "XDG_MENU_PREFIX=gnome-", "COLORTERM=truecolor", "LC_TIME=en_US.UTF-8", "WINDOWPATH=2", "GSM_SKIP_SSH_AGENT_WORKAROUND=tr"..., "QT_ACCESSIBILITY=1", "SSH_AUTH_SOCK=/run/user/1000/key"..., "LC_MONETARY=en_US.UTF-8", "SHLVL=1", "OLDPWD=/home/yoimiya/OS/StarryOr"..., "P9K_TTY=old", "_P9K_TTY=/dev/pts/4", "ZSH=/home/yoimiya/.oh-my-zsh", "PAGER=less", "LESS=-R", "LSCOLORS=Gxfxcxdxbxegedabagacad", "LS_COLORS=rs=0:di=01;34:ln=01;36"..., "P9K_SSH=0", "_P9K_SSH_TTY=/dev/pts/4"] <unfinished ...>
+187459 <... clone resumed>)             = 187460
+187459 close(4)                         = 0
+187459 read(3,  <unfinished ...>
+187460 <... execve resumed>)            = 0
+187459 <... read resumed>"", 4)         = 0
+187459 close(3)                         = 0
+187459 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187460 mmap(NULL, 496, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187459 <... rt_sigprocmask resumed>NULL, 8) = 0
+187460 <... mmap resumed>)              = 0x75436281c000
+187459 rt_sigprocmask(SIG_BLOCK, ~[],  <unfinished ...>
+187460 arch_prctl(ARCH_SET_FS, 0x75436281c128 <unfinished ...>
+187459 <... rt_sigprocmask resumed>[], 8) = 0
+187460 <... arch_prctl resumed>)        = 0
+187459 pipe2( <unfinished ...>
+187460 set_tid_address(0x7543626d3b38)  = 187460
+187459 <... pipe2 resumed>[3, 4], O_CLOEXEC) = 0
+187459 clone(child_stack=0x7fff9f98d658, flags=CLONE_VM|CLONE_VFORK|SIGCHLD <unfinished ...>
+187460 poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout)
+187460 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x754362490d88}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+187461 close(3 <unfinished ...>
+187460 rt_sigaction(SIGSEGV, NULL,  <unfinished ...>
+187461 <... close resumed>)             = 0
+187460 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+187461 rt_sigaction(SIGBUS, NULL,  <unfinished ...>
+187460 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2],  <unfinished ...>
+187461 <... rt_sigaction resumed>{sa_handler=0x760b1f82acf0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d}, 8) = 0
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187461 rt_sigaction(SIGBUS, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d},  <unfinished ...>
+187460 rt_sigaction(SIGSEGV, {sa_handler=0x754362465450, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x754362490d88},  <unfinished ...>
+187461 <... rt_sigaction resumed>NULL, 8) = 0
+187460 <... rt_sigaction resumed>NULL, 8) = 0
+187461 rt_sigaction(SIGSEGV, NULL,  <unfinished ...>
+187460 rt_sigaction(SIGBUS, NULL,  <unfinished ...>
+187461 <... rt_sigaction resumed>{sa_handler=0x760b1f82acf0, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d}, 8) = 0
+187460 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+187461 rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d},  <unfinished ...>
+187460 rt_sigaction(SIGBUS, {sa_handler=0x754362465450, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x754362490d88},  <unfinished ...>
+187461 <... rt_sigaction resumed>NULL, 8) = 0
+187461 rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x760b1f854e1d},  <unfinished ...>
+187460 <... rt_sigaction resumed>NULL, 8) = 0
+187461 <... rt_sigaction resumed>NULL, 8) = 0
+187461 fcntl(4, F_SETFD, FD_CLOEXEC <unfinished ...>
+187460 sigaltstack(NULL,  <unfinished ...>
+187461 <... fcntl resumed>)             = 0
+187460 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187461 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+187460 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187461 execve("./connect", ["./connect", "127.0.0.1:8080"], ["LC_TELEPHONE=en_US.UTF-8", "GDMSESSION=ubuntu", "DESKTOP_SESSION=ubuntu", "PWD=/home/yoimiya/OS/StarryOrg/S"..., "all_proxy=socks://127.0.0.1:7890"..., "LOGNAME=yoimiya", "HTTPS_PROXY=http://127.0.0.1:789"..., "GNOME_DESKTOP_SESSION_ID=this-is"..., "LC_MEASUREMENT=en_US.UTF-8", "XDG_SESSION_TYPE=x11", "SYSTEMD_EXEC_PID=3010", "PATH=/home/yoimiya/.cargo/bin:/h"..., "HOME=/home/yoimiya", "USERNAME=yoimiya", "QT_IM_MODULE=fcitx", "USER=yoimiya", "DISPLAY=:1", "ALL_PROXY=socks://127.0.0.1:7890"..., "SDL_IM_MODULE=fcitx", "LANG=en_US.UTF-8", "CLUTTER_IM_MODULE=fcitx", "XAUTHORITY=/run/user/1000/gdm/Xa"..., "LC_PAPER=en_US.UTF-8", "LC_NAME=en_US.UTF-8", "LANGUAGE=en", "SESSION_MANAGER=local/Firefly:@/"..., "IM_CONFIG_PHASE=1", "XDG_RUNTIME_DIR=/run/user/1000", "https_proxy=http://127.0.0.1:789"..., "HTTP_PROXY=http://127.0.0.1:7890"..., "http_proxy=http://127.0.0.1:7890"..., "XDG_SESSION_DESKTOP=ubuntu", "VTE_VERSION=7600", "XDG_CURRENT_DESKTOP=ubuntu:GNOME", "XDG_DATA_DIRS=/usr/share/ubuntu:"..., "GNOME_TERMINAL_SERVICE=:1.125", "QTWEBENGINE_DICTIONARIES_PATH=/u"..., "XDG_CONFIG_DIRS=/etc/xdg/xdg-ubu"..., "LC_ADDRESS=en_US.UTF-8", "_=/usr/bin/strace", "GPG_AGENT_INFO=/run/user/1000/gn"..., "SHELL=/usr/bin/zsh", "GTK_IM_MODULE=fcitx", "XDG_SESSION_CLASS=user", "MEMORY_PRESSURE_WRITE=c29tZSAyMD"..., "XMODIFIERS=@im=fcitx", "GTK_MODULES=gail:atk-bridge", "PAPERSIZE=letter", "LC_IDENTIFICATION=en_US.UTF-8", "NO_PROXY=localhost,127.0.0.0/8,:"..., "no_proxy=localhost,127.0.0.0/8,:"..., "GNOME_KEYRING_CONTROL=/run/user/"..., "DBUS_SESSION_BUS_ADDRESS=unix:pa"..., "GNOME_TERMINAL_SCREEN=/org/gnome"..., "DEBUGINFOD_URLS=https://debuginf"..., "MEMORY_PRESSURE_WATCH=/sys/fs/cg"..., "LC_NUMERIC=en_US.UTF-8", "GNOME_SHELL_SESSION_MODE=ubuntu", "TERM=xterm-256color", "XDG_MENU_PREFIX=gnome-", "COLORTERM=truecolor", "LC_TIME=en_US.UTF-8", "WINDOWPATH=2", "GSM_SKIP_SSH_AGENT_WORKAROUND=tr"..., "QT_ACCESSIBILITY=1", "SSH_AUTH_SOCK=/run/user/1000/key"..., "LC_MONETARY=en_US.UTF-8", "SHLVL=1", "OLDPWD=/home/yoimiya/OS/StarryOr"..., "P9K_TTY=old", "_P9K_TTY=/dev/pts/4", "ZSH=/home/yoimiya/.oh-my-zsh", "PAGER=less", "LESS=-R", "LSCOLORS=Gxfxcxdxbxegedabagacad", "LS_COLORS=rs=0:di=01;34:ln=01;36"..., "P9K_SSH=0", "_P9K_SSH_TTY=/dev/pts/4"] <unfinished ...>
+187460 <... mmap resumed>)              = 0x754362819000
+187460 mprotect(0x754362819000, 4096, PROT_NONE) = 0
+187460 sigaltstack({ss_sp=0x75436281a000, ss_flags=0, ss_size=8192}, NULL) = 0
+187460 brk(NULL)                        = 0x555555f67000
+187459 <... clone resumed>)             = 187461
+187459 close(4 <unfinished ...>
+187460 brk(0x555555f69000 <unfinished ...>
+187459 <... close resumed>)             = 0
+187460 <... brk resumed>)               = 0x555555f69000
+187459 read(3,  <unfinished ...>
+187460 mmap(0x555555f67000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187459 <... read resumed>"", 4)         = 0
+187459 close(3 <unfinished ...>
+187461 <... execve resumed>)            = 0
+187460 <... mmap resumed>)              = 0x555555f67000
+187459 <... close resumed>)             = 0
+187460 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187459 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187460 <... mmap resumed>)              = 0x754362818000
+187459 <... rt_sigprocmask resumed>NULL, 8) = 0
+187459 wait4(187460,  <unfinished ...>
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187461 mmap(NULL, 496, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187461 <... mmap resumed>)              = 0x7efd97c4c000
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187461 arch_prctl(ARCH_SET_FS, 0x7efd97c4c128 <unfinished ...>
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187461 <... arch_prctl resumed>)        = 0
+187461 set_tid_address(0x7efd97ae6b58)  = 187461
+187460 getrandom("\x33\x1f\x73\x83\x61\x1c\xe3\x07\x83\x29\xba\xdd\xd7\x73\x27\x13", 16, GRND_INSECURE) = 16
+187461 poll([{fd=0, events=0}, {fd=1, events=0}, {fd=2, events=0}], 3, 0) = 0 (Timeout)
+187460 open("/proc/self/cgroup", O_RDONLY|O_LARGEFILE|O_CLOEXEC <unfinished ...>
+187461 rt_sigaction(SIGPIPE, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7efd9789f894}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+187461 rt_sigaction(SIGSEGV, NULL,  <unfinished ...>
+187460 <... open resumed>)              = 3
+187461 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+187460 fcntl(3, F_SETFD, FD_CLOEXEC <unfinished ...>
+187461 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2],  <unfinished ...>
+187460 <... fcntl resumed>)             = 0
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187461 rt_sigaction(SIGSEGV, {sa_handler=0x7efd97873f60, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7efd9789f894},  <unfinished ...>
+187460 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... rt_sigaction resumed>NULL, 8) = 0
+187461 rt_sigaction(SIGBUS, NULL,  <unfinished ...>
+187460 <... mmap resumed>)              = 0x754362811000
+187461 <... rt_sigaction resumed>{sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+187461 rt_sigaction(SIGBUS, {sa_handler=0x7efd97873f60, sa_mask=[], sa_flags=SA_RESTORER|SA_ONSTACK|SA_SIGINFO, sa_restorer=0x7efd9789f894},  <unfinished ...>
+187460 read(3,  <unfinished ...>
+187461 <... rt_sigaction resumed>NULL, 8) = 0
+187460 <... read resumed>"0::/user.slice/user-1000.slice/u"..., 8192) = 141
+187461 sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187460 read(3,  <unfinished ...>
+187461 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187460 <... read resumed>"", 8192)      = 0
+187461 <... mmap resumed>)              = 0x7efd97c49000
+187460 madvise(0x754362812000, 4096, MADV_FREE <unfinished ...>
+187461 mprotect(0x7efd97c49000, 4096, PROT_NONE) = 0
+187460 <... madvise resumed>)           = 0
+187461 sigaltstack({ss_sp=0x7efd97c4a000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187460 munmap(0x754362811000, 28672 <unfinished ...>
+187461 <... sigaltstack resumed>NULL)   = 0
+187461 brk(NULL <unfinished ...>
+187460 <... munmap resumed>)            = 0
+187461 <... brk resumed>)               = 0x55555567f000
+187460 close(3 <unfinished ...>
+187461 brk(0x555555681000 <unfinished ...>
+187460 <... close resumed>)             = 0
+187461 <... brk resumed>)               = 0x555555681000
+187461 mmap(0x55555567f000, 4096, PROT_NONE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 open("/proc/self/mountinfo", O_RDONLY|O_LARGEFILE|O_CLOEXEC <unfinished ...>
+187461 <... mmap resumed>)              = 0x55555567f000
+187460 <... open resumed>)              = 3
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 fcntl(3, F_SETFD, FD_CLOEXEC <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c48000
+187460 <... fcntl resumed>)             = 0
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187460 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187460 <... mmap resumed>)              = 0x754362811000
+187461 rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+187460 read(3,  <unfinished ...>
+187461 getrandom("\xba\x9d\xc3\x30\x30\x37\x1c\xc2\x4a\x6e\x2d\xa9\x20\xec\xbc\x83", 16, GRND_INSECURE) = 16
+187461 open("/proc/self/cgroup", O_RDONLY|O_LARGEFILE|O_CLOEXEC) = 3
+187461 fcntl(3, F_SETFD, FD_CLOEXEC)    = 0
+187461 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efd97c41000
+187460 <... read resumed>"25 30 0:23 / /sys rw,nosuid,node"..., 8192) = 4048
+187461 read(3,  <unfinished ...>
+187460 madvise(0x754362812000, 4096, MADV_FREE <unfinished ...>
+187461 <... read resumed>"0::/user.slice/user-1000.slice/u"..., 8192) = 141
+187460 <... madvise resumed>)           = 0
+187461 read(3,  <unfinished ...>
+187460 munmap(0x754362811000, 28672 <unfinished ...>
+187461 <... read resumed>"", 8192)      = 0
+187460 <... munmap resumed>)            = 0
+187461 madvise(0x7efd97c42000, 4096, MADV_FREE <unfinished ...>
+187460 close(3 <unfinished ...>
+187461 <... madvise resumed>)           = 0
+187460 <... close resumed>)             = 0
+187461 munmap(0x7efd97c41000, 28672 <unfinished ...>
+187460 open("/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-dbafe8b3-e19c-49cd-bc4c-79432b1bf258.scope/cpu.max", O_RDONLY|O_LARGEFILE|O_CLOEXEC <unfinished ...>
+187461 <... munmap resumed>)            = 0
+187460 <... open resumed>)              = -1 ENOENT (No such file or directory)
+187461 close(3 <unfinished ...>
+187460 sched_getaffinity(0, 128, [0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]) = 8
+187461 <... close resumed>)             = 0
+187461 open("/proc/self/mountinfo", O_RDONLY|O_LARGEFILE|O_CLOEXEC <unfinished ...>
+187460 epoll_create1(EPOLL_CLOEXEC)     = 3
+187461 <... open resumed>)              = 3
+187460 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK <unfinished ...>
+187461 fcntl(3, F_SETFD, FD_CLOEXEC)    = 0
+187460 <... eventfd2 resumed>)          = 4
+187461 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 epoll_ctl(3, EPOLL_CTL_ADD, 4, {events=EPOLLIN|EPOLLRDHUP|EPOLLET, data={u32=0, u64=0}} <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c41000
+187460 <... epoll_ctl resumed>)         = 0
+187461 read(3,  <unfinished ...>
+187460 fcntl(3, F_DUPFD_CLOEXEC, 3)     = 5
+187460 fcntl(5, F_SETFD, FD_CLOEXEC)    = 0
+187460 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x754362814000
+187460 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0, [6, 7]) = 0
+187460 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... read resumed>"25 30 0:23 / /sys rw,nosuid,node"..., 8192) = 4048
+187460 <... mmap resumed>)              = 0x754362813000
+187460 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 madvise(0x7efd97c42000, 4096, MADV_FREE <unfinished ...>
+187460 <... mmap resumed>)              = 0x754362812000
+187461 <... madvise resumed>)           = 0
+187461 munmap(0x7efd97c41000, 28672 <unfinished ...>
+187460 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x754362811000
+187461 <... munmap resumed>)            = 0
+187461 close(3 <unfinished ...>
+187460 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... close resumed>)             = 0
+187460 <... mmap resumed>)              = 0x754362810000
+187461 open("/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-org.gnome.Terminal.slice/vte-spawn-dbafe8b3-e19c-49cd-bc4c-79432b1bf258.scope/cpu.max", O_RDONLY|O_LARGEFILE|O_CLOEXEC <unfinished ...>
+187460 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x75436280f000
+187461 <... open resumed>)              = -1 ENOENT (No such file or directory)
+187461 sched_getaffinity(0, 128,  <unfinished ...>
+187460 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... sched_getaffinity resumed>[0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15]) = 8
+187460 <... mmap resumed>)              = 0x75436280e000
+187461 epoll_create1(EPOLL_CLOEXEC <unfinished ...>
+187460 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... epoll_create1 resumed>)     = 3
+187460 <... mmap resumed>)              = 0x75436280d000
+187461 eventfd2(0, EFD_CLOEXEC|EFD_NONBLOCK <unfinished ...>
+187460 fcntl(6, F_DUPFD_CLOEXEC, 3 <unfinished ...>
+187461 <... eventfd2 resumed>)          = 4
+187460 <... fcntl resumed>)             = 8
+187461 epoll_ctl(3, EPOLL_CTL_ADD, 4, {events=EPOLLIN|EPOLLRDHUP|EPOLLET, data={u32=0, u64=0}} <unfinished ...>
+187460 fcntl(8, F_SETFD, FD_CLOEXEC <unfinished ...>
+187461 <... epoll_ctl resumed>)         = 0
+187460 <... fcntl resumed>)             = 0
+187461 fcntl(3, F_DUPFD_CLOEXEC, 3 <unfinished ...>
+187460 epoll_ctl(5, EPOLL_CTL_ADD, 8, {events=EPOLLIN|EPOLLRDHUP|EPOLLET, data={u32=1, u64=1}} <unfinished ...>
+187461 <... fcntl resumed>)             = 5
+187460 <... epoll_ctl resumed>)         = 0
+187461 fcntl(5, F_SETFD, FD_CLOEXEC)    = 0
+187460 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... mmap resumed>)              = 0x75436280c000
+187461 <... mmap resumed>)              = 0x7efd97c44000
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 socketpair(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0,  <unfinished ...>
+187460 <... mmap resumed>)              = 0x75436280a000
+187461 <... socketpair resumed>[6, 7])  = 0
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... mmap resumed>)              = 0x754362808000
+187461 <... mmap resumed>)              = 0x7efd97c43000
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... mmap resumed>)              = 0x754362806000
+187461 <... mmap resumed>)              = 0x7efd97c42000
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... mmap resumed>)              = 0x754362804000
+187461 <... mmap resumed>)              = 0x7efd97c41000
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... mmap resumed>)              = 0x754362802000
+187461 <... mmap resumed>)              = 0x7efd97c40000
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... mmap resumed>)              = 0x754362800000
+187461 <... mmap resumed>)              = 0x7efd97c3f000
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... mmap resumed>)              = 0x7543627fe000
+187461 <... mmap resumed>)              = 0x7efd97c3e000
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... mmap resumed>)              = 0x7543627fc000
+187461 <... mmap resumed>)              = 0x7efd97c3d000
+187460 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 fcntl(6, F_DUPFD_CLOEXEC, 3 <unfinished ...>
+187460 <... mmap resumed>)              = 0x7543627f8000
+187461 <... fcntl resumed>)             = 8
+187461 fcntl(8, F_SETFD, FD_CLOEXEC <unfinished ...>
+187460 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... fcntl resumed>)             = 0
+187460 <... mmap resumed>)              = 0x7543627f3000
+187461 epoll_ctl(5, EPOLL_CTL_ADD, 8, {events=EPOLLIN|EPOLLRDHUP|EPOLLET, data={u32=1, u64=1}}) = 0
+187460 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... mmap resumed>)              = 0x7543627ee000
+187461 <... mmap resumed>)              = 0x7efd97c3c000
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c3a000
+187460 <... mmap resumed>)              = 0x7543627ec000
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c38000
+187460 <... mmap resumed>)              = 0x7543627eb000
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c36000
+187460 <... mmap resumed>)              = 0x7543627e9000
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c34000
+187460 <... mmap resumed>)              = 0x7543627e7000
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c32000
+187460 <... mmap resumed>)              = 0x7543627e5000
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c30000
+187460 <... mmap resumed>)              = 0x7543627e2000
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c2e000
+187460 <... mmap resumed>)              = 0x7543627e0000
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c2c000
+187460 <... mmap resumed>)              = 0x7543627df000
+187461 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2],  <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c28000
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... mmap resumed>)              = 0x754362000000
+187461 <... mmap resumed>)              = 0x7efd97c23000
+187460 mprotect(0x754362002000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187461 mmap(NULL, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... mprotect resumed>)          = 0
+187461 <... mmap resumed>)              = 0x7efd97c1e000
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 clone(child_stack=0x7543622029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c1c000
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efd97c1b000
+187460 <... clone resumed>, parent_tid=[187462], tls=0x754362202b38, child_tidptr=0x7543626d3b38) = 187462
+187462 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187462 <... rt_sigprocmask resumed>NULL, 8) = 0
+187461 <... mmap resumed>)              = 0x7efd97c19000
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187462 sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187462 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c17000
+187460 <... mmap resumed>)              = 0x7543627dd000
+187462 <... mmap resumed>)              = 0x7543627da000
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187462 mprotect(0x7543627da000, 4096, PROT_NONE <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c15000
+187460 <... mmap resumed>)              = 0x754361c00000
+187462 <... mprotect resumed>)          = 0
+187461 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mprotect(0x754361c02000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187462 sigaltstack({ss_sp=0x7543627db000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c12000
+187460 <... mprotect resumed>)          = 0
+187462 <... sigaltstack resumed>NULL)   = 0
+187462 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187462 <... prctl resumed>)             = 0
+187461 <... mmap resumed>)              = 0x7efd97c10000
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187462 sched_yield( <unfinished ...>
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 clone(child_stack=0x754361e029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187462 <... sched_yield resumed>)       = 0
+187461 <... mmap resumed>)              = 0x7efd97c0f000
+187462 sched_yield()                    = 0
+187461 rt_sigprocmask(SIG_UNBLOCK, [RT_1 RT_2],  <unfinished ...>
+187462 sched_yield( <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187460 <... clone resumed>, parent_tid=[187463], tls=0x754361e02b38, child_tidptr=0x7543626d3b38) = 187463
+187463 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187462 <... sched_yield resumed>)       = 0
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187463 <... rt_sigprocmask resumed>NULL, 8) = 0
+187462 sched_yield( <unfinished ...>
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187463 sigaltstack(NULL,  <unfinished ...>
+187462 <... sched_yield resumed>)       = 0
+187461 <... mmap resumed>)              = 0x7efd97400000
+187463 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187462 sched_yield( <unfinished ...>
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187463 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187462 <... sched_yield resumed>)       = 0
+187461 mprotect(0x7efd97402000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187462 sched_yield( <unfinished ...>
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187462 <... sched_yield resumed>)       = 0
+187461 <... mprotect resumed>)          = 0
+187463 <... mmap resumed>)              = 0x7543627d7000
+187462 sched_yield( <unfinished ...>
+187460 <... mmap resumed>)              = 0x754361800000
+187463 mprotect(0x7543627d7000, 4096, PROT_NONE <unfinished ...>
+187462 <... sched_yield resumed>)       = 0
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187462 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mprotect(0x754361802000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187463 <... mprotect resumed>)          = 0
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187462 <... mmap resumed>)              = 0x7543627d6000
+187460 <... mprotect resumed>)          = 0
+187463 sigaltstack({ss_sp=0x7543627d8000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187461 clone(child_stack=0x7efd976029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187463 <... sigaltstack resumed>NULL)   = 0
+187462 futex(0x754362202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187463 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187464 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187460 clone(child_stack=0x754361a029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187464 <... rt_sigprocmask resumed>NULL, 8) = 0
+187463 <... prctl resumed>)             = 0
+187461 <... clone resumed>, parent_tid=[187464], tls=0x7efd97602b38, child_tidptr=0x7efd97ae6b58) = 187464
+187464 sigaltstack(NULL,  <unfinished ...>
+187463 futex(0x754361e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187464 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187464 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187465 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187461 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187464 <... mmap resumed>)              = 0x7efd97c0c000
+187465 <... rt_sigprocmask resumed>NULL, 8) = 0
+187460 <... clone resumed>, parent_tid=[187465], tls=0x754361a02b38, child_tidptr=0x7543626d3b38) = 187465
+187465 sigaltstack(NULL,  <unfinished ...>
+187464 mprotect(0x7efd97c0c000, 4096, PROT_NONE <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97c0a000
+187465 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187465 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187464 <... mprotect resumed>)          = 0
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187465 <... mmap resumed>)              = 0x7543627d3000
+187464 sigaltstack({ss_sp=0x7efd97c0d000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187465 mprotect(0x7543627d3000, 4096, PROT_NONE <unfinished ...>
+187464 <... sigaltstack resumed>NULL)   = 0
+187461 <... mmap resumed>)              = 0x7efd97000000
+187465 <... mprotect resumed>)          = 0
+187464 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187460 futex(0x754362202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187465 sigaltstack({ss_sp=0x7543627d4000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187464 <... prctl resumed>)             = 0
+187461 mprotect(0x7efd97002000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187465 <... sigaltstack resumed>NULL)   = 0
+187464 sched_yield( <unfinished ...>
+187462 <... futex resumed>)             = 0
+187460 <... futex resumed>)             = 1
+187465 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187464 <... sched_yield resumed>)       = 0
+187462 futex(0x754361e02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187461 <... mprotect resumed>)          = 0
+187465 <... prctl resumed>)             = 0
+187464 sched_yield( <unfinished ...>
+187462 <... futex resumed>)             = 1
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187465 sched_yield( <unfinished ...>
+187464 <... sched_yield resumed>)       = 0
+187463 <... futex resumed>)             = 0
+187462 getrandom( <unfinished ...>
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187465 <... sched_yield resumed>)       = 0
+187464 sched_yield( <unfinished ...>
+187463 sched_yield( <unfinished ...>
+187462 <... getrandom resumed>"\x98\x52\xf5\xb4\x02\x96\x07\x91\x0e\xb6\x45\xcf\x8c\x49\xb2\xb9", 16, GRND_INSECURE) = 16
+187460 <... mmap resumed>)              = 0x754361400000
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187465 sched_yield( <unfinished ...>
+187464 <... sched_yield resumed>)       = 0
+187463 <... sched_yield resumed>)       = 0
+187462 epoll_pwait(3,  <unfinished ...>
+187460 mprotect(0x754361402000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187465 <... sched_yield resumed>)       = 0
+187464 sched_yield( <unfinished ...>
+187463 sched_yield( <unfinished ...>
+187461 clone(child_stack=0x7efd972029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187465 sched_yield( <unfinished ...>
+187464 <... sched_yield resumed>)       = 0
+187463 <... sched_yield resumed>)       = 0
+187460 <... mprotect resumed>)          = 0
+187465 <... sched_yield resumed>)       = 0
+187464 sched_yield( <unfinished ...>
+187463 sched_yield( <unfinished ...>
+187466 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187465 sched_yield( <unfinished ...>
+187464 <... sched_yield resumed>)       = 0
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187466 <... rt_sigprocmask resumed>NULL, 8) = 0
+187465 <... sched_yield resumed>)       = 0
+187464 sched_yield( <unfinished ...>
+187463 <... sched_yield resumed>)       = 0
+187461 <... clone resumed>, parent_tid=[187466], tls=0x7efd97202b38, child_tidptr=0x7efd97ae6b58) = 187466
+187466 sigaltstack(NULL,  <unfinished ...>
+187465 sched_yield( <unfinished ...>
+187464 <... sched_yield resumed>)       = 0
+187463 sched_yield( <unfinished ...>
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187466 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187465 <... sched_yield resumed>)       = 0
+187464 sched_yield( <unfinished ...>
+187463 <... sched_yield resumed>)       = 0
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187466 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187465 sched_yield( <unfinished ...>
+187464 <... sched_yield resumed>)       = 0
+187463 sched_yield( <unfinished ...>
+187460 clone(child_stack=0x7543616029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187466 <... mmap resumed>)              = 0x7efd97c07000
+187465 <... sched_yield resumed>)       = 0
+187464 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187463 <... sched_yield resumed>)       = 0
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187466 mprotect(0x7efd97c07000, 4096, PROT_NONE <unfinished ...>
+187465 sched_yield( <unfinished ...>
+187464 <... mmap resumed>)              = 0x7efd97c06000
+187463 sched_yield( <unfinished ...>
+187466 <... mprotect resumed>)          = 0
+187465 <... sched_yield resumed>)       = 0
+187463 <... sched_yield resumed>)       = 0
+187461 futex(0x7efd97ae6b48, FUTEX_WAIT_PRIVATE, 2147483650, NULL <unfinished ...>
+187464 futex(0x7efd97ae6b48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187460 <... clone resumed>, parent_tid=[187467], tls=0x754361602b38, child_tidptr=0x7543626d3b38) = 187467
+187467 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187466 sigaltstack({ss_sp=0x7efd97c08000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187465 futex(0x754361a02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187464 <... futex resumed>)             = 0
+187463 futex(0x754361e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187467 <... rt_sigprocmask resumed>NULL, 8) = 0
+187466 <... sigaltstack resumed>NULL)   = 0
+187464 futex(0x7efd97ae6b48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187467 sigaltstack(NULL,  <unfinished ...>
+187466 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187464 <... futex resumed>)             = 0
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187467 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187466 <... prctl resumed>)             = 0
+187464 sched_yield( <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd96c00000
+187467 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187466 sched_yield( <unfinished ...>
+187464 <... sched_yield resumed>)       = 0
+187460 futex(0x754361a02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187467 <... mmap resumed>)              = 0x7543627d0000
+187466 <... sched_yield resumed>)       = 0
+187464 sched_yield( <unfinished ...>
+187461 mprotect(0x7efd96c02000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187467 mprotect(0x7543627d0000, 4096, PROT_NONE <unfinished ...>
+187466 sched_yield( <unfinished ...>
+187465 <... futex resumed>)             = 0
+187464 <... sched_yield resumed>)       = 0
+187460 <... futex resumed>)             = 1
+187467 <... mprotect resumed>)          = 0
+187466 <... sched_yield resumed>)       = 0
+187465 futex(0x754361e02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187464 sched_yield( <unfinished ...>
+187461 <... mprotect resumed>)          = 0
+187467 sigaltstack({ss_sp=0x7543627d1000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187466 sched_yield( <unfinished ...>
+187465 <... futex resumed>)             = 1
+187464 <... sched_yield resumed>)       = 0
+187463 <... futex resumed>)             = 0
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187467 <... sigaltstack resumed>NULL)   = 0
+187466 <... sched_yield resumed>)       = 0
+187465 getrandom( <unfinished ...>
+187464 sched_yield( <unfinished ...>
+187463 sched_yield( <unfinished ...>
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187467 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187466 sched_yield( <unfinished ...>
+187465 <... getrandom resumed>"\x4c\x40\x90\xc0\x62\xa3\x98\x21\x04\xcd\xca\xf2\xd6\x83\xb3\x30", 16, GRND_INSECURE) = 16
+187464 <... sched_yield resumed>)       = 0
+187463 <... sched_yield resumed>)       = 0
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187460 <... mmap resumed>)              = 0x754361000000
+187467 <... prctl resumed>)             = 0
+187466 <... sched_yield resumed>)       = 0
+187465 futex(0x754361a02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187464 sched_yield( <unfinished ...>
+187463 sched_yield( <unfinished ...>
+187461 clone(child_stack=0x7efd96e029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187460 mprotect(0x754361002000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187467 sched_yield( <unfinished ...>
+187466 sched_yield( <unfinished ...>
+187464 <... sched_yield resumed>)       = 0
+187463 <... sched_yield resumed>)       = 0
+187467 <... sched_yield resumed>)       = 0
+187466 <... sched_yield resumed>)       = 0
+187464 sched_yield( <unfinished ...>
+187460 <... mprotect resumed>)          = 0
+187467 sched_yield( <unfinished ...>
+187466 sched_yield( <unfinished ...>
+187464 <... sched_yield resumed>)       = 0
+187463 sched_yield( <unfinished ...>
+187468 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187467 <... sched_yield resumed>)       = 0
+187466 <... sched_yield resumed>)       = 0
+187464 sched_yield( <unfinished ...>
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187468 <... rt_sigprocmask resumed>NULL, 8) = 0
+187467 sched_yield( <unfinished ...>
+187466 sched_yield( <unfinished ...>
+187464 <... sched_yield resumed>)       = 0
+187463 <... sched_yield resumed>)       = 0
+187461 <... clone resumed>, parent_tid=[187468], tls=0x7efd96e02b38, child_tidptr=0x7efd97ae6b58) = 187468
+187468 sigaltstack(NULL,  <unfinished ...>
+187467 <... sched_yield resumed>)       = 0
+187466 <... sched_yield resumed>)       = 0
+187464 futex(0x7efd97602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187463 sched_yield( <unfinished ...>
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187468 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187467 sched_yield( <unfinished ...>
+187466 futex(0x7efd97202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187463 <... sched_yield resumed>)       = 0
+187460 clone(child_stack=0x7543612029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187468 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187467 <... sched_yield resumed>)       = 0
+187463 sched_yield( <unfinished ...>
+187467 sched_yield( <unfinished ...>
+187468 <... mmap resumed>)              = 0x7efd97c03000
+187461 futex(0x7efd97602ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187468 mprotect(0x7efd97c03000, 4096, PROT_NONE <unfinished ...>
+187467 <... sched_yield resumed>)       = 0
+187463 <... sched_yield resumed>)       = 0
+187469 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187468 <... mprotect resumed>)          = 0
+187467 sched_yield( <unfinished ...>
+187464 <... futex resumed>)             = 0
+187461 <... futex resumed>)             = 1
+187463 sched_yield( <unfinished ...>
+187469 <... rt_sigprocmask resumed>NULL, 8) = 0
+187468 sigaltstack({ss_sp=0x7efd97c04000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187467 <... sched_yield resumed>)       = 0
+187464 futex(0x7efd97202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187460 <... clone resumed>, parent_tid=[187469], tls=0x754361202b38, child_tidptr=0x7543626d3b38) = 187469
+187469 sigaltstack(NULL,  <unfinished ...>
+187468 <... sigaltstack resumed>NULL)   = 0
+187467 sched_yield( <unfinished ...>
+187463 <... sched_yield resumed>)       = 0
+187464 <... futex resumed>)             = 1
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187469 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187468 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187467 <... sched_yield resumed>)       = 0
+187466 <... futex resumed>)             = 0
+187464 getrandom( <unfinished ...>
+187463 sched_yield( <unfinished ...>
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187469 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187468 <... prctl resumed>)             = 0
+187467 futex(0x754361602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187466 sched_yield( <unfinished ...>
+187464 <... getrandom resumed>"\xce\xc6\x57\xb9\x18\x8c\x03\x12\xa9\x89\x4e\x8b\x9c\xe0\x0a\x2f", 16, GRND_INSECURE) = 16
+187463 <... sched_yield resumed>)       = 0
+187461 <... mmap resumed>)              = 0x7efd96800000
+187469 <... mmap resumed>)              = 0x7543627cd000
+187468 sched_yield( <unfinished ...>
+187467 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+187466 <... sched_yield resumed>)       = 0
+187464 epoll_pwait(3,  <unfinished ...>
+187463 futex(0x754361e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 futex(0x754361602ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187461 mprotect(0x7efd96802000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187469 mprotect(0x7543627cd000, 4096, PROT_NONE <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187467 futex(0x754361e02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187466 sched_yield( <unfinished ...>
+187463 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+187469 <... mprotect resumed>)          = 0
+187468 sched_yield( <unfinished ...>
+187467 <... futex resumed>)             = 0
+187466 <... sched_yield resumed>)       = 0
+187461 <... mprotect resumed>)          = 0
+187460 <... futex resumed>)             = 0
+187469 sigaltstack({ss_sp=0x7543627ce000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187467 getrandom( <unfinished ...>
+187466 sched_yield( <unfinished ...>
+187463 getrandom( <unfinished ...>
+187469 <... sigaltstack resumed>NULL)   = 0
+187468 sched_yield( <unfinished ...>
+187467 <... getrandom resumed>"\xcd\xd2\x67\x2d\x8f\x9b\x9f\x3d\xfc\x2a\xb5\x18\xcb\x61\x8e\xe1", 16, GRND_INSECURE) = 16
+187466 <... sched_yield resumed>)       = 0
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187469 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187467 futex(0x754361602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187466 sched_yield( <unfinished ...>
+187463 <... getrandom resumed>"\x73\x7c\x66\x98\x5e\xf7\xcc\xcf\x80\x11\xe7\xb0\xc0\xe9\xab\x3b", 16, GRND_INSECURE) = 16
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187469 <... prctl resumed>)             = 0
+187468 sched_yield( <unfinished ...>
+187466 <... sched_yield resumed>)       = 0
+187463 futex(0x754361e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 <... mmap resumed>)              = 0x754360c00000
+187469 sched_yield( <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187466 sched_yield( <unfinished ...>
+187461 clone(child_stack=0x7efd96a029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187469 <... sched_yield resumed>)       = 0
+187468 sched_yield( <unfinished ...>
+187466 <... sched_yield resumed>)       = 0
+187460 mprotect(0x754360c02000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187469 sched_yield( <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187466 sched_yield( <unfinished ...>
+187469 <... sched_yield resumed>)       = 0
+187468 sched_yield( <unfinished ...>
+187466 <... sched_yield resumed>)       = 0
+187469 sched_yield( <unfinished ...>
+187460 <... mprotect resumed>)          = 0
+187470 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187469 <... sched_yield resumed>)       = 0
+187466 sched_yield( <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187470], tls=0x7efd96a02b38, child_tidptr=0x7efd97ae6b58) = 187470
+187470 <... rt_sigprocmask resumed>NULL, 8) = 0
+187469 sched_yield( <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187466 <... sched_yield resumed>)       = 0
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187470 sigaltstack(NULL,  <unfinished ...>
+187469 <... sched_yield resumed>)       = 0
+187468 sched_yield( <unfinished ...>
+187466 futex(0x7efd97202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187470 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187469 sched_yield( <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187470 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187469 <... sched_yield resumed>)       = 0
+187468 futex(0x7efd96e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187470 <... mmap resumed>)              = 0x7efd97c00000
+187469 sched_yield( <unfinished ...>
+187460 clone(child_stack=0x754360e029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187470 mprotect(0x7efd97c00000, 4096, PROT_NONE <unfinished ...>
+187469 <... sched_yield resumed>)       = 0
+187461 futex(0x7efd97202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187470 <... mprotect resumed>)          = 0
+187469 sched_yield( <unfinished ...>
+187470 sigaltstack({ss_sp=0x7efd97c01000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187461 <... futex resumed>)             = 1
+187466 <... futex resumed>)             = 0
+187470 <... sigaltstack resumed>NULL)   = 0
+187469 <... sched_yield resumed>)       = 0
+187471 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187470 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187466 futex(0x7efd96e02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187469 futex(0x754361202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187471 <... rt_sigprocmask resumed>NULL, 8) = 0
+187470 <... prctl resumed>)             = 0
+187468 <... futex resumed>)             = 0
+187466 <... futex resumed>)             = 1
+187460 <... clone resumed>, parent_tid=[187471], tls=0x754360e02b38, child_tidptr=0x7543626d3b38) = 187471
+187471 sigaltstack(NULL,  <unfinished ...>
+187470 sched_yield( <unfinished ...>
+187468 sched_yield( <unfinished ...>
+187466 getrandom( <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd96400000
+187471 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187470 <... sched_yield resumed>)       = 0
+187468 <... sched_yield resumed>)       = 0
+187466 <... getrandom resumed>"\x07\x18\x73\x9d\x51\x80\x86\xb2\x92\x5e\x30\x45\x89\xcc\xcd\xe0", 16, GRND_INSECURE) = 16
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187471 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187470 sched_yield( <unfinished ...>
+187468 sched_yield( <unfinished ...>
+187461 mprotect(0x7efd96402000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187471 <... mmap resumed>)              = 0x7543627ca000
+187470 <... sched_yield resumed>)       = 0
+187468 <... sched_yield resumed>)       = 0
+187466 futex(0x7efd97202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187471 mprotect(0x7543627ca000, 4096, PROT_NONE <unfinished ...>
+187470 sched_yield( <unfinished ...>
+187461 <... mprotect resumed>)          = 0
+187471 <... mprotect resumed>)          = 0
+187470 <... sched_yield resumed>)       = 0
+187468 sched_yield( <unfinished ...>
+187460 futex(0x754361202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187471 sigaltstack({ss_sp=0x7543627cb000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187470 sched_yield( <unfinished ...>
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187471 <... sigaltstack resumed>NULL)   = 0
+187470 <... sched_yield resumed>)       = 0
+187469 <... futex resumed>)             = 0
+187468 <... sched_yield resumed>)       = 0
+187460 <... futex resumed>)             = 1
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187471 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187470 sched_yield( <unfinished ...>
+187469 getrandom( <unfinished ...>
+187468 sched_yield( <unfinished ...>
+187471 <... prctl resumed>)             = 0
+187470 <... sched_yield resumed>)       = 0
+187469 <... getrandom resumed>"\x13\x74\x1d\xd2\xc2\x61\x99\x95\xc0\xa3\x43\xf3\x1b\x18\x46\xd3", 16, GRND_INSECURE) = 16
+187461 clone(child_stack=0x7efd966029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187471 sched_yield( <unfinished ...>
+187470 sched_yield( <unfinished ...>
+187469 futex(0x754361202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187471 <... sched_yield resumed>)       = 0
+187470 <... sched_yield resumed>)       = 0
+187460 <... mmap resumed>)              = 0x754360800000
+187471 sched_yield( <unfinished ...>
+187470 sched_yield( <unfinished ...>
+187468 sched_yield( <unfinished ...>
+187472 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187471 <... sched_yield resumed>)       = 0
+187470 <... sched_yield resumed>)       = 0
+187460 mprotect(0x754360802000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187472 <... rt_sigprocmask resumed>NULL, 8) = 0
+187471 sched_yield( <unfinished ...>
+187470 futex(0x7efd96a02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187461 <... clone resumed>, parent_tid=[187472], tls=0x7efd96602b38, child_tidptr=0x7efd97ae6b58) = 187472
+187472 sigaltstack(NULL,  <unfinished ...>
+187471 <... sched_yield resumed>)       = 0
+187468 futex(0x7efd96e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 <... mprotect resumed>)          = 0
+187472 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187471 sched_yield( <unfinished ...>
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187472 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187471 <... sched_yield resumed>)       = 0
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187472 <... mmap resumed>)              = 0x7efd97bfd000
+187471 sched_yield( <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187472 mprotect(0x7efd97bfd000, 4096, PROT_NONE <unfinished ...>
+187471 <... sched_yield resumed>)       = 0
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187472 <... mprotect resumed>)          = 0
+187471 sched_yield( <unfinished ...>
+187461 futex(0x7efd96a02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187472 sigaltstack({ss_sp=0x7efd97bfe000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187471 <... sched_yield resumed>)       = 0
+187460 clone(child_stack=0x754360a029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187472 <... sigaltstack resumed>NULL)   = 0
+187471 sched_yield( <unfinished ...>
+187470 <... futex resumed>)             = 0
+187461 <... futex resumed>)             = 1
+187472 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187471 <... sched_yield resumed>)       = 0
+187470 futex(0x7efd96e02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187472 <... prctl resumed>)             = 0
+187471 futex(0x754360e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... clone resumed>, parent_tid=[187473], tls=0x754360a02b38, child_tidptr=0x7543626d3b38) = 187473
+187473 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187472 sched_yield( <unfinished ...>
+187470 <... futex resumed>)             = 1
+187468 <... futex resumed>)             = 0
+187461 <... mmap resumed>)              = 0x7efd96000000
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187473 <... rt_sigprocmask resumed>NULL, 8) = 0
+187472 <... sched_yield resumed>)       = 0
+187470 getrandom( <unfinished ...>
+187468 sched_yield( <unfinished ...>
+187461 mprotect(0x7efd96002000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187473 sigaltstack(NULL,  <unfinished ...>
+187472 sched_yield( <unfinished ...>
+187470 <... getrandom resumed>"\x41\x83\x1a\xc8\x36\x06\x9d\xc4\x48\x7f\x9a\x9a\x0d\x0e\x8b\xe9", 16, GRND_INSECURE) = 16
+187468 <... sched_yield resumed>)       = 0
+187461 <... mprotect resumed>)          = 0
+187460 futex(0x754360e02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187473 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187472 <... sched_yield resumed>)       = 0
+187470 futex(0x7efd96a02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187468 sched_yield( <unfinished ...>
+187473 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187472 sched_yield( <unfinished ...>
+187471 <... futex resumed>)             = 0
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187460 <... futex resumed>)             = 1
+187468 <... sched_yield resumed>)       = 0
+187473 <... mmap resumed>)              = 0x7543627c7000
+187472 <... sched_yield resumed>)       = 0
+187471 getrandom( <unfinished ...>
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187468 sched_yield( <unfinished ...>
+187473 mprotect(0x7543627c7000, 4096, PROT_NONE <unfinished ...>
+187472 sched_yield( <unfinished ...>
+187471 <... getrandom resumed>"\xb4\x34\x8b\x05\xc3\x55\x79\x8a\x44\x31\x7f\x1c\x2b\x05\x4a\x71", 16, GRND_INSECURE) = 16
+187461 clone(child_stack=0x7efd962029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187460 <... mmap resumed>)              = 0x754360400000
+187473 <... mprotect resumed>)          = 0
+187472 <... sched_yield resumed>)       = 0
+187471 futex(0x754360e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187468 sched_yield( <unfinished ...>
+187473 sigaltstack({ss_sp=0x7543627c8000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187472 sched_yield( <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187460 mprotect(0x754360402000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187474 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187473 <... sigaltstack resumed>NULL)   = 0
+187472 <... sched_yield resumed>)       = 0
+187468 sched_yield( <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187474], tls=0x7efd96202b38, child_tidptr=0x7efd97ae6b58) = 187474
+187474 <... rt_sigprocmask resumed>NULL, 8) = 0
+187473 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187472 sched_yield( <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187460 <... mprotect resumed>)          = 0
+187474 sigaltstack(NULL,  <unfinished ...>
+187473 <... prctl resumed>)             = 0
+187472 <... sched_yield resumed>)       = 0
+187468 sched_yield( <unfinished ...>
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187474 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187473 sched_yield( <unfinished ...>
+187472 sched_yield( <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187474 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187473 <... sched_yield resumed>)       = 0
+187472 <... sched_yield resumed>)       = 0
+187468 sched_yield( <unfinished ...>
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187474 <... mmap resumed>)              = 0x7efd97bfa000
+187473 sched_yield( <unfinished ...>
+187472 futex(0x7efd96602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187468 <... sched_yield resumed>)       = 0
+187474 mprotect(0x7efd97bfa000, 4096, PROT_NONE <unfinished ...>
+187473 <... sched_yield resumed>)       = 0
+187461 <... mmap resumed>)              = 0x7efd95c00000
+187460 clone(child_stack=0x7543606029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187468 futex(0x7efd96e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187474 <... mprotect resumed>)          = 0
+187473 sched_yield( <unfinished ...>
+187461 mprotect(0x7efd95c02000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187474 sigaltstack({ss_sp=0x7efd97bfb000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187473 <... sched_yield resumed>)       = 0
+187474 <... sigaltstack resumed>NULL)   = 0
+187473 sched_yield( <unfinished ...>
+187461 <... mprotect resumed>)          = 0
+187460 <... clone resumed>, parent_tid=[187475], tls=0x754360602b38, child_tidptr=0x7543626d3b38) = 187475
+187475 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187474 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187473 <... sched_yield resumed>)       = 0
+187475 <... rt_sigprocmask resumed>NULL, 8) = 0
+187474 <... prctl resumed>)             = 0
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187473 sched_yield( <unfinished ...>
+187475 sigaltstack(NULL,  <unfinished ...>
+187474 futex(0x7efd96202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187473 <... sched_yield resumed>)       = 0
+187475 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187461 clone(child_stack=0x7efd95e029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187473 sched_yield( <unfinished ...>
+187475 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187473 <... sched_yield resumed>)       = 0
+187460 <... mmap resumed>)              = 0x754360000000
+187473 sched_yield( <unfinished ...>
+187475 <... mmap resumed>)              = 0x7543627c4000
+187460 mprotect(0x754360002000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187475 mprotect(0x7543627c4000, 4096, PROT_NONE <unfinished ...>
+187473 <... sched_yield resumed>)       = 0
+187476 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187476], tls=0x7efd95e02b38, child_tidptr=0x7efd97ae6b58) = 187476
+187476 <... rt_sigprocmask resumed>NULL, 8) = 0
+187475 <... mprotect resumed>)          = 0
+187473 futex(0x754360a02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 <... mprotect resumed>)          = 0
+187476 sigaltstack(NULL,  <unfinished ...>
+187475 sigaltstack({ss_sp=0x7543627c5000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187476 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187475 <... sigaltstack resumed>NULL)   = 0
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187476 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187475 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187476 <... mmap resumed>)              = 0x7efd97bf7000
+187475 <... prctl resumed>)             = 0
+187461 futex(0x7efd96602ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187460 clone(child_stack=0x7543602029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187476 mprotect(0x7efd97bf7000, 4096, PROT_NONE <unfinished ...>
+187475 futex(0x754360602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 <... futex resumed>)             = 1
+187472 <... futex resumed>)             = 0
+187476 <... mprotect resumed>)          = 0
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187472 futex(0x7efd96e02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187476 sigaltstack({ss_sp=0x7efd97bf8000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187477 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187472 <... futex resumed>)             = 1
+187460 <... clone resumed>, parent_tid=[187477], tls=0x754360202b38, child_tidptr=0x7543626d3b38) = 187477
+187468 <... futex resumed>)             = 0
+187477 <... rt_sigprocmask resumed>NULL, 8) = 0
+187476 <... sigaltstack resumed>NULL)   = 0
+187472 getrandom( <unfinished ...>
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187477 sigaltstack(NULL,  <unfinished ...>
+187472 <... getrandom resumed>"\xcb\x2b\x85\x92\x9b\x6a\x61\x1a\xe3\xe0\xa9\x97\x10\x32\x83\x99", 16, GRND_INSECURE) = 16
+187468 futex(0x7efd96202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187476 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187477 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187472 futex(0x7efd96602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187468 <... futex resumed>)             = 1
+187477 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187476 <... prctl resumed>)             = 0
+187474 <... futex resumed>)             = 0
+187460 futex(0x754360a02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187468 getrandom( <unfinished ...>
+187477 <... mmap resumed>)              = 0x7543627c1000
+187476 getrandom( <unfinished ...>
+187474 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187460 <... futex resumed>)             = 1
+187477 mprotect(0x7543627c1000, 4096, PROT_NONE <unfinished ...>
+187473 <... futex resumed>)             = 0
+187468 <... getrandom resumed>"\x7d\xad\xd4\xd2\x9f\xdc\x3c\x30\xb9\xb7\x7f\xd8\xc5\x28\x5b\x70", 16, GRND_INSECURE) = 16
+187476 <... getrandom resumed>"\x50\x7d\x2e\x9c\x65\x72\x15\x8f\xae\x60\x93\x53\xf7\x20\x82\x8d", 16, GRND_INSECURE) = 16
+187477 <... mprotect resumed>)          = 0
+187474 <... futex resumed>)             = 1
+187473 futex(0x754360602ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187461 <... futex resumed>)             = 0
+187468 futex(0x7efd96e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 futex(0x75436281c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187477 sigaltstack({ss_sp=0x7543627c2000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187476 futex(0x7efd95e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187474 getrandom( <unfinished ...>
+187475 <... futex resumed>)             = 0
+187473 <... futex resumed>)             = 1
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187477 <... sigaltstack resumed>NULL)   = 0
+187475 futex(0x75436281c0a8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187474 <... getrandom resumed>"\xd6\xc5\xd7\x93\xae\xcd\xc0\x79\x32\x4b\xb6\xfe\x4c\x57\x0a\x25", 16, GRND_INSECURE) = 16
+187477 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187475 <... futex resumed>)             = 1
+187473 getrandom( <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd95800000
+187460 <... futex resumed>)             = 0
+187477 <... prctl resumed>)             = 0
+187475 getrandom( <unfinished ...>
+187474 futex(0x7efd96202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187473 <... getrandom resumed>"\xb6\xd0\x72\x1a\x16\x43\xf6\x98\x70\x4d\xe5\x8f\xaa\xca\xc1\x13", 16, GRND_INSECURE) = 16
+187461 mprotect(0x7efd95802000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187477 sched_yield( <unfinished ...>
+187475 <... getrandom resumed>"\xbc\x04\x8f\xd3\xb9\x89\x8a\x63\x96\xf9\x48\x5a\x32\x52\xb3\x6e", 16, GRND_INSECURE) = 16
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187477 <... sched_yield resumed>)       = 0
+187475 futex(0x754360602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187473 futex(0x754360a02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 <... mprotect resumed>)          = 0
+187477 sched_yield( <unfinished ...>
+187460 <... mmap resumed>)              = 0x75435fc00000
+187477 <... sched_yield resumed>)       = 0
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187460 mprotect(0x75435fc02000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187477 sched_yield( <unfinished ...>
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187477 <... sched_yield resumed>)       = 0
+187460 <... mprotect resumed>)          = 0
+187461 clone(child_stack=0x7efd95a029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187477 sched_yield( <unfinished ...>
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187477 <... sched_yield resumed>)       = 0
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187477 sched_yield( <unfinished ...>
+187460 clone(child_stack=0x75435fe029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187477 <... sched_yield resumed>)       = 0
+187461 <... clone resumed>, parent_tid=[187478], tls=0x7efd95a02b38, child_tidptr=0x7efd97ae6b58) = 187478
+187478 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187477 sched_yield( <unfinished ...>
+187478 <... rt_sigprocmask resumed>NULL, 8) = 0
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187478 sigaltstack(NULL,  <unfinished ...>
+187477 <... sched_yield resumed>)       = 0
+187479 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187478 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187460 <... clone resumed>, parent_tid=[187479], tls=0x75435fe02b38, child_tidptr=0x7543626d3b38) = 187479
+187479 <... rt_sigprocmask resumed>NULL, 8) = 0
+187478 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187477 sched_yield( <unfinished ...>
+187479 sigaltstack(NULL,  <unfinished ...>
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187479 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187478 <... mmap resumed>)              = 0x7efd97bf4000
+187477 <... sched_yield resumed>)       = 0
+187479 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187478 mprotect(0x7efd97bf4000, 4096, PROT_NONE <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd95400000
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187477 futex(0x754360202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187478 <... mprotect resumed>)          = 0
+187461 mprotect(0x7efd95402000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187479 <... mmap resumed>)              = 0x7543627be000
+187478 sigaltstack({ss_sp=0x7efd97bf5000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187477 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+187460 futex(0x754360202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187479 mprotect(0x7543627be000, 4096, PROT_NONE <unfinished ...>
+187478 <... sigaltstack resumed>NULL)   = 0
+187461 <... mprotect resumed>)          = 0
+187477 getrandom( <unfinished ...>
+187479 <... mprotect resumed>)          = 0
+187478 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187460 <... futex resumed>)             = 0
+187479 sigaltstack({ss_sp=0x7543627bf000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187477 <... getrandom resumed>"\xb0\x3b\x77\xc0\x2b\x75\x73\x18\xa1\xa6\xc4\xd0\xb2\xac\xf9\x36", 16, GRND_INSECURE) = 16
+187478 <... prctl resumed>)             = 0
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187479 <... sigaltstack resumed>NULL)   = 0
+187478 sched_yield( <unfinished ...>
+187477 futex(0x754360202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187479 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187478 <... sched_yield resumed>)       = 0
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187460 <... mmap resumed>)              = 0x75435f800000
+187479 <... prctl resumed>)             = 0
+187478 sched_yield( <unfinished ...>
+187461 clone(child_stack=0x7efd956029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187460 mprotect(0x75435f802000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187479 sched_yield( <unfinished ...>
+187478 <... sched_yield resumed>)       = 0
+187479 <... sched_yield resumed>)       = 0
+187478 sched_yield( <unfinished ...>
+187460 <... mprotect resumed>)          = 0
+187479 sched_yield( <unfinished ...>
+187478 <... sched_yield resumed>)       = 0
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187479 <... sched_yield resumed>)       = 0
+187478 sched_yield( <unfinished ...>
+187480 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187480], tls=0x7efd95602b38, child_tidptr=0x7efd97ae6b58) = 187480
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187479 sched_yield( <unfinished ...>
+187480 <... rt_sigprocmask resumed>NULL, 8) = 0
+187478 <... sched_yield resumed>)       = 0
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187480 sigaltstack(NULL,  <unfinished ...>
+187479 <... sched_yield resumed>)       = 0
+187478 sched_yield( <unfinished ...>
+187460 clone(child_stack=0x75435fa029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187480 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187479 sched_yield( <unfinished ...>
+187478 <... sched_yield resumed>)       = 0
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187480 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187479 <... sched_yield resumed>)       = 0
+187478 sched_yield( <unfinished ...>
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187480 <... mmap resumed>)              = 0x7efd97bf1000
+187479 sched_yield( <unfinished ...>
+187460 <... clone resumed>, parent_tid=[187481], tls=0x75435fa02b38, child_tidptr=0x7543626d3b38) = 187481
+187481 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187480 mprotect(0x7efd97bf1000, 4096, PROT_NONE <unfinished ...>
+187478 <... sched_yield resumed>)       = 0
+187479 <... sched_yield resumed>)       = 0
+187461 <... mmap resumed>)              = 0x7efd95000000
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187481 <... rt_sigprocmask resumed>NULL, 8) = 0
+187480 <... mprotect resumed>)          = 0
+187479 sched_yield( <unfinished ...>
+187478 sched_yield( <unfinished ...>
+187461 mprotect(0x7efd95002000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187481 sigaltstack(NULL,  <unfinished ...>
+187480 sigaltstack({ss_sp=0x7efd97bf2000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187479 <... sched_yield resumed>)       = 0
+187478 <... sched_yield resumed>)       = 0
+187481 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187480 <... sigaltstack resumed>NULL)   = 0
+187461 <... mprotect resumed>)          = 0
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187479 sched_yield( <unfinished ...>
+187481 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187480 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187478 futex(0x7efd95a02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187479 <... sched_yield resumed>)       = 0
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187480 <... prctl resumed>)             = 0
+187460 <... mmap resumed>)              = 0x75435f400000
+187481 <... mmap resumed>)              = 0x7543627bb000
+187479 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187480 futex(0x7efd95602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187481 mprotect(0x7543627bb000, 4096, PROT_NONE <unfinished ...>
+187479 <... mmap resumed>)              = 0x7543627b7000
+187461 clone(child_stack=0x7efd952029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187460 mprotect(0x75435f402000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187481 <... mprotect resumed>)          = 0
+187481 sigaltstack({ss_sp=0x7543627bc000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187479 futex(0x75435fe02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 <... mprotect resumed>)          = 0
+187481 <... sigaltstack resumed>NULL)   = 0
+187482 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187482 <... rt_sigprocmask resumed>NULL, 8) = 0
+187481 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187482], tls=0x7efd95202b38, child_tidptr=0x7efd97ae6b58) = 187482
+187481 <... prctl resumed>)             = 0
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187482 sigaltstack(NULL,  <unfinished ...>
+187481 futex(0x75435fa02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187482 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187460 clone(child_stack=0x75435f6029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187482 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187461 futex(0x7efd95a02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187482 <... mmap resumed>)              = 0x7efd97bee000
+187478 <... futex resumed>)             = 0
+187461 <... futex resumed>)             = 1
+187460 <... clone resumed>, parent_tid=[187483], tls=0x75435f602b38, child_tidptr=0x7543626d3b38) = 187483
+187483 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187482 mprotect(0x7efd97bee000, 4096, PROT_NONE <unfinished ...>
+187478 futex(0x7efd95602ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187483 <... rt_sigprocmask resumed>NULL, 8) = 0
+187482 <... mprotect resumed>)          = 0
+187478 <... futex resumed>)             = 1
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187483 sigaltstack(NULL,  <unfinished ...>
+187482 sigaltstack({ss_sp=0x7efd97bef000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187480 <... futex resumed>)             = 0
+187478 getrandom( <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd94c00000
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187483 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187482 <... sigaltstack resumed>NULL)   = 0
+187480 sched_yield( <unfinished ...>
+187478 <... getrandom resumed>"\xd6\xc4\x59\xfa\x5f\xf6\x3f\x99\xc9\xf7\x74\xc9\x32\xfb\x0a\x78", 16, GRND_INSECURE) = 16
+187461 mprotect(0x7efd94c02000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187483 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187482 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187480 <... sched_yield resumed>)       = 0
+187460 futex(0x75435fe02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187478 futex(0x7efd95a02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187483 <... mmap resumed>)              = 0x7543627b4000
+187482 <... prctl resumed>)             = 0
+187480 sched_yield( <unfinished ...>
+187461 <... mprotect resumed>)          = 0
+187460 <... futex resumed>)             = 1
+187483 mprotect(0x7543627b4000, 4096, PROT_NONE <unfinished ...>
+187482 sched_yield( <unfinished ...>
+187480 <... sched_yield resumed>)       = 0
+187479 <... futex resumed>)             = 0
+187483 <... mprotect resumed>)          = 0
+187482 <... sched_yield resumed>)       = 0
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187480 sched_yield( <unfinished ...>
+187460 futex(0x75436281c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187483 sigaltstack({ss_sp=0x7543627b5000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187482 sched_yield( <unfinished ...>
+187479 futex(0x75435fa02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187480 <... sched_yield resumed>)       = 0
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187483 <... sigaltstack resumed>NULL)   = 0
+187482 <... sched_yield resumed>)       = 0
+187479 <... futex resumed>)             = 1
+187480 sched_yield( <unfinished ...>
+187481 <... futex resumed>)             = 0
+187483 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187482 sched_yield( <unfinished ...>
+187479 getrandom( <unfinished ...>
+187461 clone(child_stack=0x7efd94e029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187483 <... prctl resumed>)             = 0
+187482 <... sched_yield resumed>)       = 0
+187481 futex(0x75436281c0a8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187480 <... sched_yield resumed>)       = 0
+187479 <... getrandom resumed>"\x8c\x13\x2f\xce\x51\xd1\xcd\xe0\xab\x80\x0a\xfe\x32\xba\x1a\xf5", 16, GRND_INSECURE) = 16
+187483 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187482 sched_yield( <unfinished ...>
+187481 <... futex resumed>)             = 1
+187480 sched_yield( <unfinished ...>
+187460 <... futex resumed>)             = 0
+187483 <... mmap resumed>)              = 0x7543627b2000
+187482 <... sched_yield resumed>)       = 0
+187481 getrandom( <unfinished ...>
+187480 <... sched_yield resumed>)       = 0
+187479 futex(0x75435fe02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 futex(0x7543626d3b28, FUTEX_WAIT_PRIVATE, 2147483650, NULL <unfinished ...>
+187484 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187483 futex(0x7543626d3b28, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187482 sched_yield( <unfinished ...>
+187481 <... getrandom resumed>"\xc7\x8c\x63\x06\xd5\xd5\xc6\xed\x14\xcf\x3e\x72\xac\x77\xb4\x2f", 16, GRND_INSECURE) = 16
+187480 sched_yield( <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187484], tls=0x7efd94e02b38, child_tidptr=0x7efd97ae6b58) = 187484
+187460 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+187484 <... rt_sigprocmask resumed>NULL, 8) = 0
+187483 <... futex resumed>)             = 0
+187482 <... sched_yield resumed>)       = 0
+187481 futex(0x75435fa02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187480 <... sched_yield resumed>)       = 0
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187484 sigaltstack(NULL,  <unfinished ...>
+187483 sched_yield( <unfinished ...>
+187482 sched_yield( <unfinished ...>
+187480 sched_yield( <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187484 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187483 <... sched_yield resumed>)       = 0
+187482 <... sched_yield resumed>)       = 0
+187480 <... sched_yield resumed>)       = 0
+187460 <... mmap resumed>)              = 0x75435f000000
+187484 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187483 sched_yield( <unfinished ...>
+187482 sched_yield( <unfinished ...>
+187480 futex(0x7efd95602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mprotect(0x75435f002000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187484 <... mmap resumed>)              = 0x7efd97beb000
+187483 <... sched_yield resumed>)       = 0
+187482 <... sched_yield resumed>)       = 0
+187484 mprotect(0x7efd97beb000, 4096, PROT_NONE <unfinished ...>
+187483 sched_yield( <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd94800000
+187460 <... mprotect resumed>)          = 0
+187484 <... mprotect resumed>)          = 0
+187483 <... sched_yield resumed>)       = 0
+187482 mmap(NULL, 16384, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 mprotect(0x7efd94802000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187484 sigaltstack({ss_sp=0x7efd97bec000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187483 sched_yield( <unfinished ...>
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187484 <... sigaltstack resumed>NULL)   = 0
+187483 <... sched_yield resumed>)       = 0
+187482 <... mmap resumed>)              = 0x7efd97be7000
+187461 <... mprotect resumed>)          = 0
+187484 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187483 sched_yield( <unfinished ...>
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187484 <... prctl resumed>)             = 0
+187483 <... sched_yield resumed>)       = 0
+187482 futex(0x7efd95202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187484 futex(0x7efd94e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187483 sched_yield( <unfinished ...>
+187460 clone(child_stack=0x75435f2029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187483 <... sched_yield resumed>)       = 0
+187483 sched_yield( <unfinished ...>
+187461 clone(child_stack=0x7efd94a029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187483 <... sched_yield resumed>)       = 0
+187460 <... clone resumed>, parent_tid=[187485], tls=0x75435f202b38, child_tidptr=0x7543626d3b38) = 187485
+187485 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187483 futex(0x75435f602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187485 <... rt_sigprocmask resumed>NULL, 8) = 0
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187486 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187485 sigaltstack(NULL,  <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187486], tls=0x7efd94a02b38, child_tidptr=0x7efd97ae6b58) = 187486
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187486 <... rt_sigprocmask resumed>NULL, 8) = 0
+187485 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187486 sigaltstack(NULL,  <unfinished ...>
+187485 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187460 futex(0x75435f602ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187486 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187486 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187485 <... mmap resumed>)              = 0x7543627af000
+187483 <... futex resumed>)             = 0
+187460 <... futex resumed>)             = 1
+187486 <... mmap resumed>)              = 0x7efd97be4000
+187485 mprotect(0x7543627af000, 4096, PROT_NONE <unfinished ...>
+187483 getrandom( <unfinished ...>
+187461 futex(0x7efd95602ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187486 mprotect(0x7efd97be4000, 4096, PROT_NONE <unfinished ...>
+187485 <... mprotect resumed>)          = 0
+187483 <... getrandom resumed>"\xaa\xbf\xa3\x56\x00\x17\x38\x45\x45\x71\x7f\x01\x3d\x51\x3e\xe0", 16, GRND_INSECURE) = 16
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187486 <... mprotect resumed>)          = 0
+187485 sigaltstack({ss_sp=0x7543627b0000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187483 futex(0x75435f602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187480 <... futex resumed>)             = 0
+187461 <... futex resumed>)             = 1
+187486 sigaltstack({ss_sp=0x7efd97be5000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187485 <... sigaltstack resumed>NULL)   = 0
+187480 futex(0x7efd95202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187460 <... mmap resumed>)              = 0x75435ec00000
+187486 <... sigaltstack resumed>NULL)   = 0
+187485 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187480 <... futex resumed>)             = 1
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 mprotect(0x75435ec02000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187482 <... futex resumed>)             = 0
+187486 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187485 <... prctl resumed>)             = 0
+187480 getrandom( <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd94400000
+187460 <... mprotect resumed>)          = 0
+187482 futex(0x7efd95202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187486 <... prctl resumed>)             = 0
+187485 sched_yield( <unfinished ...>
+187480 <... getrandom resumed>"\x37\x80\x47\x23\x93\x23\x07\xca\x74\xa8\x9d\xdb\xfe\x8b\xc4\x9f", 16, GRND_INSECURE) = 16
+187461 mprotect(0x7efd94402000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187486 mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187485 <... sched_yield resumed>)       = 0
+187480 futex(0x7efd95602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187486 <... mmap resumed>)              = 0x7efd97be2000
+187485 sched_yield( <unfinished ...>
+187461 <... mprotect resumed>)          = 0
+187485 <... sched_yield resumed>)       = 0
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187486 futex(0x7efd94a02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187485 sched_yield( <unfinished ...>
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187460 clone(child_stack=0x75435ee029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187485 <... sched_yield resumed>)       = 0
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187485 sched_yield( <unfinished ...>
+187461 clone(child_stack=0x7efd946029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187485 <... sched_yield resumed>)       = 0
+187487 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187460 <... clone resumed>, parent_tid=[187487], tls=0x75435ee02b38, child_tidptr=0x7543626d3b38) = 187487
+187487 <... rt_sigprocmask resumed>NULL, 8) = 0
+187485 sched_yield( <unfinished ...>
+187487 sigaltstack(NULL,  <unfinished ...>
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187488 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187487 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187485 <... sched_yield resumed>)       = 0
+187461 <... clone resumed>, parent_tid=[187488], tls=0x7efd94602b38, child_tidptr=0x7efd97ae6b58) = 187488
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187488 <... rt_sigprocmask resumed>NULL, 8) = 0
+187487 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187485 sched_yield( <unfinished ...>
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187488 sigaltstack(NULL,  <unfinished ...>
+187487 <... mmap resumed>)              = 0x7543627ac000
+187485 <... sched_yield resumed>)       = 0
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187488 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187487 mprotect(0x7543627ac000, 4096, PROT_NONE <unfinished ...>
+187485 sched_yield( <unfinished ...>
+187460 <... mmap resumed>)              = 0x75435e800000
+187461 futex(0x7efd94e02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187488 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187487 <... mprotect resumed>)          = 0
+187485 <... sched_yield resumed>)       = 0
+187460 mprotect(0x75435e802000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187488 <... mmap resumed>)              = 0x7efd97bdf000
+187487 sigaltstack({ss_sp=0x7543627ad000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187485 futex(0x75435f202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187484 <... futex resumed>)             = 0
+187461 <... futex resumed>)             = 1
+187488 mprotect(0x7efd97bdf000, 4096, PROT_NONE <unfinished ...>
+187487 <... sigaltstack resumed>NULL)   = 0
+187484 futex(0x7efd95202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187460 <... mprotect resumed>)          = 0
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187488 <... mprotect resumed>)          = 0
+187487 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187484 <... futex resumed>)             = 1
+187482 <... futex resumed>)             = 0
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187488 sigaltstack({ss_sp=0x7efd97be0000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187487 <... prctl resumed>)             = 0
+187484 getrandom( <unfinished ...>
+187482 futex(0x7efd94a02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187488 <... sigaltstack resumed>NULL)   = 0
+187487 futex(0x75435ee02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187484 <... getrandom resumed>"\xb2\x97\x6e\x88\x2f\x2b\xcc\xc2\xa8\x71\xc7\xc6\x28\xbd\x06\x4d", 16, GRND_INSECURE) = 16
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187488 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187486 <... futex resumed>)             = 0
+187484 futex(0x7efd94e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187482 <... futex resumed>)             = 1
+187460 clone(child_stack=0x75435ea029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187488 <... prctl resumed>)             = 0
+187486 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187482 getrandom( <unfinished ...>
+187488 getrandom( <unfinished ...>
+187486 <... futex resumed>)             = 1
+187482 <... getrandom resumed>"\x38\xa2\x09\x15\x03\xe9\x9a\xd9\xee\xd7\x83\x42\x38\x63\x6e\xc6", 16, GRND_INSECURE) = 16
+187461 <... futex resumed>)             = 0
+187488 <... getrandom resumed>"\xe2\x68\x0b\x7d\x0c\x1c\xee\x6f\x79\x7c\xc7\x5e\xa9\xf6\x9b\x48", 16, GRND_INSECURE) = 16
+187486 getrandom( <unfinished ...>
+187482 futex(0x7efd95202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 <... clone resumed>, parent_tid=[187489], tls=0x75435ea02b38, child_tidptr=0x7543626d3b38) = 187489
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187489 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187488 futex(0x7efd94602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187486 <... getrandom resumed>"\xe3\x45\x1f\xa8\xc6\xcb\xed\x7d\xa8\xbf\x94\x75\x44\x3c\xd3\xce", 16, GRND_INSECURE) = 16
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187489 <... rt_sigprocmask resumed>NULL, 8) = 0
+187486 futex(0x7efd94a02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd94000000
+187489 sigaltstack(NULL,  <unfinished ...>
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187489 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187461 mprotect(0x7efd94002000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187489 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187460 futex(0x75435f202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187461 <... mprotect resumed>)          = 0
+187489 <... mmap resumed>)              = 0x7543627a9000
+187460 <... futex resumed>)             = 1
+187485 <... futex resumed>)             = 0
+187489 mprotect(0x7543627a9000, 4096, PROT_NONE <unfinished ...>
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187460 futex(0x75436281c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187489 <... mprotect resumed>)          = 0
+187485 futex(0x75435ee02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187489 sigaltstack({ss_sp=0x7543627aa000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187485 <... futex resumed>)             = 1
+187487 <... futex resumed>)             = 0
+187489 <... sigaltstack resumed>NULL)   = 0
+187485 getrandom( <unfinished ...>
+187461 clone(child_stack=0x7efd942029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187489 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187487 futex(0x75436281c0a8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187485 <... getrandom resumed>"\x83\x02\xef\x14\x99\x4c\xba\xe3\xee\x45\xba\xa7\x37\xcb\x6a\x41", 16, GRND_INSECURE) = 16
+187489 <... prctl resumed>)             = 0
+187487 <... futex resumed>)             = 1
+187485 futex(0x75435f202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187489 getrandom( <unfinished ...>
+187460 <... futex resumed>)             = 0
+187487 getrandom( <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187490], tls=0x7efd94202b38, child_tidptr=0x7efd97ae6b58) = 187490
+187490 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187489 <... getrandom resumed>"\x4e\x71\x1a\xed\x20\x92\x50\x03\x67\xe4\x05\xe7\xb4\x81\x78\x9e", 16, GRND_INSECURE) = 16
+187487 <... getrandom resumed>"\xaa\x58\xb6\xf9\x72\xef\xa6\xc5\x5b\xe4\x57\xec\x61\x14\xe5\x2a", 16, GRND_INSECURE) = 16
+187460 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187490 <... rt_sigprocmask resumed>NULL, 8) = 0
+187489 futex(0x75435ea02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187487 futex(0x75435ee02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 <... mmap resumed>)              = 0x75435e400000
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187490 sigaltstack(NULL,  <unfinished ...>
+187460 mprotect(0x75435e402000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187490 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187490 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187460 <... mprotect resumed>)          = 0
+187461 <... mmap resumed>)              = 0x7efd93c00000
+187490 <... mmap resumed>)              = 0x7efd97bdc000
+187461 mprotect(0x7efd93c02000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187460 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187490 mprotect(0x7efd97bdc000, 4096, PROT_NONE <unfinished ...>
+187461 <... mprotect resumed>)          = 0
+187460 <... rt_sigprocmask resumed>[], 8) = 0
+187490 <... mprotect resumed>)          = 0
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187460 clone(child_stack=0x75435e6029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187490 sigaltstack({ss_sp=0x7efd97bdd000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187490 <... sigaltstack resumed>NULL)   = 0
+187461 clone(child_stack=0x7efd93e029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187490 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187491 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187460 <... clone resumed>, parent_tid=[187491], tls=0x75435e602b38, child_tidptr=0x7543626d3b38) = 187491
+187490 <... prctl resumed>)             = 0
+187491 <... rt_sigprocmask resumed>NULL, 8) = 0
+187490 sched_yield( <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187492], tls=0x7efd93e02b38, child_tidptr=0x7efd97ae6b58) = 187492
+187460 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187492 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187491 sigaltstack(NULL,  <unfinished ...>
+187490 <... sched_yield resumed>)       = 0
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187460 <... rt_sigprocmask resumed>NULL, 8) = 0
+187492 <... rt_sigprocmask resumed>NULL, 8) = 0
+187491 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187490 sched_yield( <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187492 sigaltstack(NULL,  <unfinished ...>
+187491 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187490 <... sched_yield resumed>)       = 0
+187460 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP <unfinished ...>
+187492 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187491 <... mmap resumed>)              = 0x7543627a6000
+187490 sched_yield( <unfinished ...>
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187492 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187491 mprotect(0x7543627a6000, 4096, PROT_NONE <unfinished ...>
+187490 <... sched_yield resumed>)       = 0
+187460 <... socket resumed>)            = 9
+187492 <... mmap resumed>)              = 0x7efd97bd9000
+187490 sched_yield( <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd93800000
+187460 setsockopt(9, SOL_SOCKET, SO_REUSEADDR, [1], 4 <unfinished ...>
+187492 mprotect(0x7efd97bd9000, 4096, PROT_NONE <unfinished ...>
+187491 <... mprotect resumed>)          = 0
+187490 <... sched_yield resumed>)       = 0
+187461 mprotect(0x7efd93802000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187492 <... mprotect resumed>)          = 0
+187491 sigaltstack({ss_sp=0x7543627a7000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187490 sched_yield( <unfinished ...>
+187460 <... setsockopt resumed>)        = 0
+187492 sigaltstack({ss_sp=0x7efd97bda000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187491 <... sigaltstack resumed>NULL)   = 0
+187490 <... sched_yield resumed>)       = 0
+187461 <... mprotect resumed>)          = 0
+187460 bind(9, {sa_family=AF_INET, sin_port=htons(8080), sin_addr=inet_addr("127.0.0.1")}, 16 <unfinished ...>
+187492 <... sigaltstack resumed>NULL)   = 0
+187491 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187490 sched_yield( <unfinished ...>
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187492 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187491 <... prctl resumed>)             = 0
+187490 <... sched_yield resumed>)       = 0
+187460 <... bind resumed>)              = 0
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187492 <... prctl resumed>)             = 0
+187491 getrandom( <unfinished ...>
+187490 sched_yield( <unfinished ...>
+187460 listen(9, 1024 <unfinished ...>
+187461 clone(child_stack=0x7efd93a029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187492 sched_yield( <unfinished ...>
+187491 <... getrandom resumed>"\x05\x15\x86\xf3\xf4\x3b\x91\x7c\xa0\x08\x0d\x5d\x8b\x9e\x95\x4f", 16, GRND_INSECURE) = 16
+187490 <... sched_yield resumed>)       = 0
+187460 <... listen resumed>)            = 0
+187492 <... sched_yield resumed>)       = 0
+187491 futex(0x75435e602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187490 futex(0x7efd94202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187460 epoll_ctl(5, EPOLL_CTL_ADD, 9, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1652605568, u64=128932275864192}} <unfinished ...>
+187493 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187492 futex(0x7efd93e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187493], tls=0x7efd93a02b38, child_tidptr=0x7efd97ae6b58) = 187493
+187493 <... rt_sigprocmask resumed>NULL, 8) = 0
+187460 <... epoll_ctl resumed>)         = 0
+187493 sigaltstack(NULL,  <unfinished ...>
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187493 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187460 write(1, "Listening on: 127.0.0.1:8080\n", 29 <unfinished ...>
+187493 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0 <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187460 <... write resumed>)             = 29
+187493 <... mmap resumed>)              = 0x7efd97bd6000
+187461 futex(0x7efd94202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187460 futex(0x75436281c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187493 mprotect(0x7efd97bd6000, 4096, PROT_NONE <unfinished ...>
+187490 <... futex resumed>)             = 0
+187461 <... futex resumed>)             = 1
+187493 <... mprotect resumed>)          = 0
+187490 futex(0x7efd93e02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187493 sigaltstack({ss_sp=0x7efd97bd7000, ss_flags=0, ss_size=8192},  <unfinished ...>
+187461 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187493 <... sigaltstack resumed>NULL)   = 0
+187492 <... futex resumed>)             = 0
+187490 <... futex resumed>)             = 1
+187493 prctl(PR_SET_NAME, "tokio-runtime-w"... <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd97bcf000
+187492 getrandom( <unfinished ...>
+187493 <... prctl resumed>)             = 0
+187490 getrandom( <unfinished ...>
+187492 <... getrandom resumed>"\x00\xb1\x60\xce\xde\x55\x42\x8d\x1e\x72\x7b\xac\x4e\xe2\x95\x81", 16, GRND_INSECURE) = 16
+187493 getrandom( <unfinished ...>
+187490 <... getrandom resumed>"\x44\x17\xad\x3e\x22\x58\xf1\xfe\x39\x5f\x20\xb8\x3c\xf8\xbd\xbd", 16, GRND_INSECURE) = 16
+187461 socket(AF_INET, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, IPPROTO_IP <unfinished ...>
+187493 <... getrandom resumed>"\xeb\x59\x0a\x88\xb1\xfc\x83\x79\x0e\x8d\x1a\x18\x92\xd9\xa0\xd8", 16, GRND_INSECURE) = 16
+187492 futex(0x7efd93e02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187490 futex(0x7efd94202ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187493 futex(0x7efd93a02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 <... socket resumed>)            = 9
+187461 connect(9, {sa_family=AF_INET, sin_port=htons(8080), sin_addr=inet_addr("127.0.0.1")}, 16 <unfinished ...>
+187462 <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=1652605568, u64=128932275864192}}], 1024, -1, NULL, 8) = 1
+187461 <... connect resumed>)           = -1 EINPROGRESS (Operation now in progress)
+187462 futex(0x75436281c0a8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187461 epoll_ctl(5, EPOLL_CTL_ADD, 9, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=2546188928, u64=139627638014592}} <unfinished ...>
+187462 <... futex resumed>)             = 1
+187460 <... futex resumed>)             = 0
+187464 <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=2546188928, u64=139627638014592}}], 1024, -1, NULL, 8) = 1
+187461 <... epoll_ctl resumed>)         = 0
+187462 epoll_pwait(3,  <unfinished ...>
+187460 accept4(9,  <unfinished ...>
+187464 epoll_pwait(3,  <unfinished ...>
+187461 getsockopt(9, SOL_SOCKET, SO_ERROR,  <unfinished ...>
+187460 <... accept4 resumed>{sa_family=AF_INET, sin_port=htons(42650), sin_addr=inet_addr("127.0.0.1")}, [128 => 16], SOCK_CLOEXEC|SOCK_NONBLOCK) = 10
+187461 <... getsockopt resumed>[0], [4]) = 0
+187460 epoll_ctl(5, EPOLL_CTL_ADD, 10, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1652605952, u64=128932275864576}} <unfinished ...>
+187461 mmap(NULL, 28672, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 <... epoll_ctl resumed>)         = 0
+187462 <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=1652605952, u64=128932275864576}}], 1024, -1, NULL, 8) = 1
+187461 <... mmap resumed>)              = 0x7efd97bc8000
+187460 futex(0x75435e602ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187462 epoll_pwait(3,  <unfinished ...>
+187460 <... futex resumed>)             = 1
+187491 <... futex resumed>)             = 0
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187460 accept4(9,  <unfinished ...>
+187491 futex(0x75435ee02ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187461 <... mmap resumed>)              = 0x7efd93400000
+187460 <... accept4 resumed>0x7ffd0c820510, [128], SOCK_CLOEXEC|SOCK_NONBLOCK) = -1 EAGAIN (Resource temporarily unavailable)
+187491 <... futex resumed>)             = 1
+187487 <... futex resumed>)             = 0
+187461 mprotect(0x7efd93402000, 2101248, PROT_READ|PROT_WRITE <unfinished ...>
+187460 futex(0x75436281c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187491 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+187487 futex(0x75435ee02ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 <... mprotect resumed>)          = 0
+187491 <... mmap resumed>)              = 0x7543627a5000
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2],  <unfinished ...>
+187491 futex(0x75435e602ab8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187461 <... rt_sigprocmask resumed>[], 8) = 0
+187461 clone(child_stack=0x7efd936029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187494 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187494], tls=0x7efd93602b38, child_tidptr=0x7efd97ae6b58) = 187494
+187494 <... rt_sigprocmask resumed>NULL, 8) = 0
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187494 sigaltstack(NULL,  <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187494 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187494 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efd97bc5000
+187494 mprotect(0x7efd97bc5000, 4096, PROT_NONE) = 0
+187494 sigaltstack({ss_sp=0x7efd97bc6000, ss_flags=0, ss_size=8192}, NULL) = 0
+187494 prctl(PR_SET_NAME, "tokio-runtime-w"...) = 0
+187494 read(0, "2161\n", 8192)          = 5
+187494 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1) = 1
+187494 futex(0x7efd93602ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999998407} <unfinished ...>
+187461 <... futex resumed>)             = 0
+187461 futex(0x7efd93602ab8, FUTEX_WAKE_PRIVATE, 1) = 1
+187494 <... futex resumed>)             = 0
+187494 read(0,  <unfinished ...>
+187461 writev(9, [{iov_base="2161\n", iov_len=5}], 1 <unfinished ...>
+187462 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1652605952, u64=128932275864576}}], 1024, -1, NULL, 8) = 1
+187461 <... writev resumed>)            = 5
+187462 recvfrom(10,  <unfinished ...>
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187462 <... recvfrom resumed>"2161\n", 1024, 0, NULL, NULL) = 5
+187462 sendto(10, "2161\n", 5, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+187464 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2546188928, u64=139627638014592}}], 1024, -1, NULL, 8) = 1
+187462 <... sendto resumed>)            = 5
+187464 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1) = 1
+187462 epoll_pwait(3,  <unfinished ...>
+187461 <... futex resumed>)             = 0
+187464 epoll_pwait(3,  <unfinished ...>
+187461 recvfrom(9, "2161\n", 8192, 0, NULL, NULL) = 5
+187461 mmap(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efd97bc4000
+187461 mmap(NULL, 2109440, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7efd93000000
+187461 mprotect(0x7efd93002000, 2101248, PROT_READ|PROT_WRITE) = 0
+187461 rt_sigprocmask(SIG_BLOCK, ~[RTMIN RT_1 RT_2], [], 8) = 0
+187461 clone(child_stack=0x7efd932029e8, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM|CLONE_SETTLS|CLONE_PARENT_SETTID|CLONE_CHILD_CLEARTID|0x400000 <unfinished ...>
+187504 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187461 <... clone resumed>, parent_tid=[187504], tls=0x7efd93202b38, child_tidptr=0x7efd97ae6b58) = 187504
+187504 <... rt_sigprocmask resumed>NULL, 8) = 0
+187461 rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+187504 sigaltstack(NULL,  <unfinished ...>
+187461 <... rt_sigprocmask resumed>NULL, 8) = 0
+187504 <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187504 mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS|MAP_STACK, -1, 0) = 0x7efd97bc1000
+187504 mprotect(0x7efd97bc1000, 4096, PROT_NONE) = 0
+187504 sigaltstack({ss_sp=0x7efd97bc2000, ss_flags=0, ss_size=8192}, NULL) = 0
+187504 prctl(PR_SET_NAME, "tokio-runtime-w"...) = 0
+187504 write(1, "2161\n", 5)            = 5
+187504 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1) = 1
+187461 <... futex resumed>)             = 0
+187504 futex(0x7efd93202ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999999298} <unfinished ...>
+187461 futex(0x7efd93202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187504 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+187461 <... futex resumed>)             = 0
+187504 futex(0x7efd93202ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999999870} <unfinished ...>
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187494 <... read resumed>"26161\n", 8192) = 6
+187494 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1) = 1
+187461 <... futex resumed>)             = 0
+187494 futex(0x7efd93602ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999999098} <unfinished ...>
+187461 futex(0x7efd93202ab8, FUTEX_WAKE_PRIVATE, 1) = 1
+187504 <... futex resumed>)             = 0
+187461 writev(9, [{iov_base="26161\n", iov_len=6}], 1 <unfinished ...>
+187504 read(0,  <unfinished ...>
+187462 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1652605952, u64=128932275864576}}], 1024, -1, NULL, 8) = 1
+187461 <... writev resumed>)            = 6
+187462 recvfrom(10,  <unfinished ...>
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187462 <... recvfrom resumed>"26161\n", 1024, 0, NULL, NULL) = 6
+187462 sendto(10, "26161\n", 6, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+187464 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2546188928, u64=139627638014592}}], 1024, -1, NULL, 8) = 1
+187462 <... sendto resumed>)            = 6
+187464 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187462 epoll_pwait(3,  <unfinished ...>
+187464 <... futex resumed>)             = 1
+187461 <... futex resumed>)             = 0
+187464 epoll_pwait(3,  <unfinished ...>
+187461 recvfrom(9, "26161\n", 8187, 0, NULL, NULL) = 6
+187461 futex(0x7efd93602ab8, FUTEX_WAKE_PRIVATE, 1) = 1
+187494 <... futex resumed>)             = 0
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187494 write(1, "26161\n", 6)           = 6
+187494 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1) = 1
+187494 futex(0x7efd93602ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999999810} <unfinished ...>
+187461 <... futex resumed>)             = 0
+187461 futex(0x7efd93602ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187494 <... futex resumed>)             = 0
+187461 <... futex resumed>)             = 1
+187494 futex(0x7efd93602ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999999880} <unfinished ...>
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187504 <... read resumed>"161126127\n", 8192) = 10
+187504 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1) = 1
+187461 <... futex resumed>)             = 0
+187504 futex(0x7efd93202ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999999379} <unfinished ...>
+187461 futex(0x7efd93602ab8, FUTEX_WAKE_PRIVATE, 1) = 1
+187494 <... futex resumed>)             = 0
+187494 read(0,  <unfinished ...>
+187461 writev(9, [{iov_base="161126127\n", iov_len=10}], 1 <unfinished ...>
+187462 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1652605952, u64=128932275864576}}], 1024, -1, NULL, 8) = 1
+187461 <... writev resumed>)            = 10
+187462 recvfrom(10,  <unfinished ...>
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187462 <... recvfrom resumed>"161126127\n", 1024, 0, NULL, NULL) = 10
+187462 sendto(10, "161126127\n", 10, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+187464 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2546188928, u64=139627638014592}}], 1024, -1, NULL, 8) = 1
+187462 <... sendto resumed>)            = 10
+187464 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1) = 1
+187461 <... futex resumed>)             = 0
+187462 epoll_pwait(3,  <unfinished ...>
+187464 epoll_pwait(3,  <unfinished ...>
+187461 recvfrom(9, "161126127\n", 8181, 0, NULL, NULL) = 10
+187461 futex(0x7efd93202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187504 <... futex resumed>)             = 0
+187461 <... futex resumed>)             = 1
+187504 write(1, "161126127\n", 10 <unfinished ...>
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187504 <... write resumed>)             = 10
+187504 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1) = 1
+187461 <... futex resumed>)             = 0
+187504 futex(0x7efd93202ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999999690} <unfinished ...>
+187461 futex(0x7efd93202ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187504 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+187461 <... futex resumed>)             = 0
+187504 futex(0x7efd93202ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999999189} <unfinished ...>
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187494 <... read resumed>"211\n", 8192) = 4
+187494 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1) = 1
+187494 futex(0x7efd93602ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999999288} <unfinished ...>
+187461 <... futex resumed>)             = 0
+187461 futex(0x7efd93202ab8, FUTEX_WAKE_PRIVATE, 1) = 1
+187504 <... futex resumed>)             = 0
+187461 writev(9, [{iov_base="211\n", iov_len=4}], 1 <unfinished ...>
+187504 read(0,  <unfinished ...>
+187461 <... writev resumed>)            = 4
+187462 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=1652605952, u64=128932275864576}}], 1024, -1, NULL, 8) = 1
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187462 recvfrom(10, "211\n", 1024, 0, NULL, NULL) = 4
+187462 sendto(10, "211\n", 4, MSG_NOSIGNAL, NULL, 0 <unfinished ...>
+187464 <... epoll_pwait resumed>[{events=EPOLLIN|EPOLLOUT, data={u32=2546188928, u64=139627638014592}}], 1024, -1, NULL, 8) = 1
+187462 <... sendto resumed>)            = 4
+187464 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187462 epoll_pwait(3,  <unfinished ...>
+187464 <... futex resumed>)             = 1
+187461 <... futex resumed>)             = 0
+187464 epoll_pwait(3,  <unfinished ...>
+187461 recvfrom(9, "211\n", 8171, 0, NULL, NULL) = 4
+187461 futex(0x7efd93602ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187494 <... futex resumed>)             = 0
+187461 <... futex resumed>)             = 1
+187494 write(1, "211\n", 4 <unfinished ...>
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187494 <... write resumed>)             = 4
+187494 futex(0x7efd97c4c0a8, FUTEX_WAKE_PRIVATE, 1) = 1
+187461 <... futex resumed>)             = 0
+187494 futex(0x7efd93602ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999999579} <unfinished ...>
+187461 futex(0x7efd93602ab8, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+187494 <... futex resumed>)             = -1 EAGAIN (Resource temporarily unavailable)
+187461 <... futex resumed>)             = 0
+187494 futex(0x7efd93602ab8, FUTEX_WAIT_PRIVATE, 1, {tv_sec=9, tv_nsec=999999899} <unfinished ...>
+187461 futex(0x7efd97c4c0a8, FUTEX_WAIT_PRIVATE, 1, NULL <unfinished ...>
+187459 <... wait4 resumed>0x7fff9f98daa0, 0, NULL) = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+187461 <... futex resumed>)             = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+187460 <... futex resumed>)             = ? ERESTARTSYS (To be restarted if SA_RESTART is set)
+187459 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+187460 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+187461 --- SIGINT {si_signo=SIGINT, si_code=SI_KERNEL} ---
+187491 <... futex resumed>)             = ?
+187489 <... futex resumed>)             = ?
+187483 <... futex resumed>)             = ?
+187481 <... futex resumed>)             = ?
+187477 <... futex resumed>)             = ?
+187475 <... futex resumed>)             = ?
+187473 <... futex resumed>)             = ?
+187471 <... futex resumed>)             = ?
+187487 <... futex resumed>)             = ?
+187469 <... futex resumed>)             = ?
+187467 <... futex resumed>)             = ?
+187459 +++ killed by SIGINT +++
+187504 <... read resumed> <unfinished ...>) = ?
+187494 <... futex resumed>)             = ?
+187493 <... futex resumed>)             = ?
+187492 <... futex resumed>)             = ?
+187490 <... futex resumed>)             = ?
+187488 <... futex resumed>)             = ?
+187486 <... futex resumed>)             = ?
+187485 <... futex resumed>)             = ?
+187484 <... futex resumed>)             = ?
+187482 <... futex resumed>)             = ?
+187480 <... futex resumed>)             = ?
+187479 <... futex resumed>)             = ?
+187478 <... futex resumed>)             = ?
+187476 <... futex resumed>)             = ?
+187474 <... futex resumed>)             = ?
+187472 <... futex resumed>)             = ?
+187470 <... futex resumed>)             = ?
+187468 <... futex resumed>)             = ?
+187466 <... futex resumed>)             = ?
+187465 <... futex resumed>)             = ?
+187464 <... epoll_pwait resumed> <unfinished ...>) = ?
+187463 <... futex resumed>)             = ?
+187462 <... epoll_pwait resumed> <unfinished ...>) = ?
+187504 +++ killed by SIGINT +++
+187494 +++ killed by SIGINT +++
+187493 +++ killed by SIGINT +++
+187492 +++ killed by SIGINT +++
+187491 +++ killed by SIGINT +++
+187490 +++ killed by SIGINT +++
+187489 +++ killed by SIGINT +++
+187488 +++ killed by SIGINT +++
+187487 +++ killed by SIGINT +++
+187486 +++ killed by SIGINT +++
+187485 +++ killed by SIGINT +++
+187484 +++ killed by SIGINT +++
+187483 +++ killed by SIGINT +++
+187482 +++ killed by SIGINT +++
+187481 +++ killed by SIGINT +++
+187480 +++ killed by SIGINT +++
+187479 +++ killed by SIGINT +++
+187478 +++ killed by SIGINT +++
+187477 +++ killed by SIGINT +++
+187476 +++ killed by SIGINT +++
+187475 +++ killed by SIGINT +++
+187474 +++ killed by SIGINT +++
+187473 +++ killed by SIGINT +++
+187472 +++ killed by SIGINT +++
+187471 +++ killed by SIGINT +++
+187470 +++ killed by SIGINT +++
+187469 +++ killed by SIGINT +++
+187468 +++ killed by SIGINT +++
+187467 +++ killed by SIGINT +++
+187466 +++ killed by SIGINT +++
+187465 +++ killed by SIGINT +++
+187464 +++ killed by SIGINT +++
+187463 +++ killed by SIGINT +++
+187462 +++ killed by SIGINT +++
+187460 +++ killed by SIGINT +++
+187461 +++ killed by SIGINT +++
