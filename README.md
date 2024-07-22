@@ -301,3 +301,11 @@ $ make A=apps/monolithic_userboot LOG=info FEATURES=img,sched_rr ACCEL=n APP_FEA
            其中`echo_outside`是将 `echo.rs` 的源码的目标地址从 127.0.0.1 修改为 10.0.2.2 之后编译成的可执行文件。在主机上进行输入，期望能够在按下回车之后将输入内容重新输出。但 Starry 目前无法完成链接。
    
 
+
+
+## 提交规范
+
+- 通过本地 fork 模块或者在模块上开分支的形式进行开发，project 中给大家分配的任务都在 [Starry](https://github.com/Starry-OS/Starry/issues) 仓库上有对应的 issue。
+- 如果有问题，可以在 issue 评论区讨论。
+- 提起 PR 时将所有涉及修改的模块提起 PR，PR 中引用该次修改解决的问题的 ISSUE 地址（即 project 中给大家分配的任务对应的 issue，都在 Starry 仓库下）。
+- 当一个 PR 合并之后，在对应的 issue 中将本次修改涉及的所有模块的 PR 链接以一个 comment 的形式提交，并且 close issue。之后如果出现问题方便进行回滚追溯。
