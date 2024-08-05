@@ -278,34 +278,116 @@ $ make A=apps/monolithic_userboot LOG=info FEATURES=img,sched_rr ACCEL=n APP_FEA
    
    
       - 在 QEMU 中将 Starry 执行指令修改为：`./hello_world`，并且运行如下指令：    
-       ```sh
-           $ make A=apps/monolithic_userboot LOG=info FEATURES=img,sched_rr ACCEL=n APP_FEATURES=batch run NET_DUMP=y
-           ```
-           
-           这里的`hello_world`是修改了源码，将目标地址从`127.0.0.1:6142`改为了`10.0.2.2:6142`，从而能够让 QEMU 访问主机上某一个端口。（原理是 QEMU 自己建立了一个子网，10.0.2.15是它的地址，10.0.2.2 是网关（本机）的地址）
-           
-           在当前的 Starry，他会在第一次 connect 返回 EINPROGRESS 之后进入 Futex，但是始终不会解锁。分析 Linux 上该程序的表现发现虽然也是返回 EINPROGRESS，但是 Futex 不久之后就会解锁，从而完成链接。这里关键是解决 Futex 为何不解锁的问题。
-           
-           另外还有一个测例：`echo_outside`，运行方式为：在主机上运行：
-           
-           ```sh
-           $ ./connect 127.0.0.1:8080
-           ```
-           
-           在 QEMU 中将 Starry 执行指令修改为：`./echo_outside`，并且运行如下指令：
-           
-           ```sh
-           $ make A=apps/monolithic_userboot LOG=info FEATURES=img,sched_rr ACCEL=n APP_FEATURES=batch run NET_DUMP=y
-           ```
-           
-           其中`echo_outside`是将 `echo.rs` 的源码的目标地址从 127.0.0.1 修改为 10.0.2.2 之后编译成的可执行文件。在主机上进行输入，期望能够在按下回车之后将输入内容重新输出。但 Starry 目前无法完成链接。
+   
+        ```sh
+            $ make A=apps/monolithic_userboot LOG=info FEATURES=img,sched_rr ACCEL=n APP_FEATURES=batch run NET_DUMP=y
+        ```
+   
+        这里的`hello_world`是修改了源码，将目标地址从`127.0.0.1:6142`改为了`10.0.2.2:6142`，从而能够让 QEMU 访问主机上某一个端口。（原理是 QEMU 自己建立了一个子网，10.0.2.15是它的地址，10.0.2.2 是网关（本机）的地址）
+
+        在当前的 Starry，他会在第一次 connect 返回 EINPROGRESS 之后进入 Futex，但是始终不会解锁。分析 Linux 上该程序的表现发现虽然也是返回 EINPROGRESS，但是 Futex 不久之后就会解锁，从而完成链接。这里关键是解决 Futex 为何不解锁的问题。
+
+        另外还有一个测例：`echo_outside`，运行方式为：在主机上运行：
+
+        ```sh
+        $ ./connect 127.0.0.1:8080
+        ```
+
+        在 QEMU 中将 Starry 执行指令修改为：`./echo_outside`，并且运行如下指令：
+
+        ```sh
+        $ make A=apps/monolithic_userboot LOG=info FEATURES=img,sched_rr ACCEL=n APP_FEATURES=batch run NET_DUMP=y
+        ```
+
+        其中`echo_outside`是将 `echo.rs` 的源码的目标地址从 127.0.0.1 修改为 10.0.2.2 之后编译成的可执行文件。在主机上进行输入，期望能够在按下回车之后将输入内容重新输出。但 Starry 目前无法完成链接。
    
 
+### 目前 example 支持情况
+
+由于 Starry 当前仅支持单个网络设备，因此交替使用本地回环和以太网设备会导致丢包问题。单独使用本地回环或者以太网均不会导致问题的出现。
+
+以下的测试均通过本地回环测试进行，如果没有特殊说明均在 Starry 中终端运行
+
+- [ ] chat
+
+- 没法起多个终端, 不方便, 一个终端服务器跑在后台, 一个服务器跑在前台，不过应该是可以运行的
+
+```sh
+$ ./chat 127.0.0.1:8080
+$ telnet localhost 8080
+```
+
+- [ ] hello_world
+
+- 目前由于网桥不支持，所以暂时无法通过
+
+```sh
+# 主机上运行
+$ netcat -l -p 6142
+
+# Starry 中终端
+$ ./hello_world
+```
+
+- [x] tiny-http
+
+```sh
+$ ./tinyhttp &
+$ busybox wget 127.0.0.1:8080/plaintext
+Connecting to 127.0.0.1:8080 (127.0.0.1:8080)
+saving to 'plaintext'
+plaintext            100% |********************************|    13  0:00:00 ETA
+'plaintext' saved
+$ busybox cat ./plaintext
+hello_world
+$ busybox wget 127.0.0.1:8080/json
+$ busybox cat ./json
+```
+
+- [x] ~~named-pipe-ready只支持windows~~
+
+- [x] print_each_packet
+
+```sh
+$ ./print_each_packet &
+
+$ ./connect 127.0.0.1:8080
+```
+
+- [ ] echo-udp和udp-client
+- 需要使用EOF terminate
+
+```
+echo-udp 127.0.0.1:8080
+./udp-client
+```
+
+- [x] ~~dump：不支持 linux 相关系统~~
+
+- [x] echo
+
+- [x] proxy
+
+  ```sh
+  $ ./proxy &
+  $ ./echo &
+  $ ./connect 127.0.0.1:8081
+  ```
+
+- [x] tinydb
+
+  ```sh
+  $ ./tinydb &
+  $ ./connect 127.0.0.1:8080
+  ```
+
+- [x] udp-codec
 
 
 ## 提交规范
 
 - 通过本地 fork 模块或者在模块上开分支的形式进行开发，project 中给大家分配的任务都在 [Starry](https://github.com/Starry-OS/Starry/issues) 仓库上有对应的 issue。
 - 如果有问题，可以在 issue 评论区讨论。
+- 提交 commit 时，在 commit comment 前写下对应的 issue，格式为 Starry-OS/Starry#IssueId，如 Starry-OS/Starry#23。
 - 提起 PR 时将所有涉及修改的模块提起 PR，PR 中引用该次修改解决的问题的 ISSUE 地址（即 project 中给大家分配的任务对应的 issue，都在 Starry 仓库下）。
 - 当一个 PR 合并之后，在对应的 issue 中将本次修改涉及的所有模块的 PR 链接以一个 comment 的形式提交，并且 close issue。之后如果出现问题方便进行回滚追溯。
